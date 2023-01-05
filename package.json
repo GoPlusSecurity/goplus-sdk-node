@@ -1,0 +1,32 @@
+{
+  "name": "goplus-sdk-js",
+  "version": "1.0.0",
+  "description": "goplus api sdk for nodejs",
+  "author": "GoplusSecurity",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "node": {
+      "require": "./index.js",
+      "import": "./index.js"
+    },
+    "default": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoPlusSecurity/goplus-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GoPlusSecurity/goplus-sdk-js/issues"
+  },
+  "homepage": "https://github.com/GoPlusSecurity/goplus-sdk-js#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "form-data": "^4.0.0",
+    "node-fetch": "^3.3.0"
+  }
+}
