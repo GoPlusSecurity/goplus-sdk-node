@@ -14,7 +14,7 @@ npm install goplus-sdk-js
 
 ### Get AccessToken
 ```javascript
-import {GoPlus} from './index.js';
+import {GoPlus} from 'goplus-sdk-js';
 
 let app_key = "";
 let app_secret = "";
@@ -32,7 +32,8 @@ if (ret.code != 1) {
 ### Get Supported Blockchains
 
 ```javascript
-let ret = await GoPlus.supportedChains(GoPlus.API_NAMES.address_security);
+let api_name = GoPlus.API_NAMES.address_security;
+let ret = await GoPlus.supportedChains(api_name);
 
 
 if (ret.code != 1) {
@@ -46,9 +47,10 @@ if (ret.code != 1) {
 ### Token Security
 
 ```javascript
-
+let chainId = '1';
+let addresses = ['0x408e41876cccdc0f92210600ef50372656052a38'];
 // It will only return 1 result for the 1st token address if not called getAccessToken before
-let ret = await GoPlus.tokenSecurity('1', ['0x408e41876cccdc0f92210600ef50372656052a38']);
+let ret = await GoPlus.tokenSecurity(chainId, addresses);
 if (ret.code != 1) {
     console.error(ret.message);
 } else {
@@ -60,8 +62,9 @@ if (ret.code != 1) {
 ### Address Security
 
 ```javascript
-
-let ret = await GoPlus.addressSecurity('1', '0x408e41876cccdc0f92210600ef50372656052a38');
+let chainId = '1';
+let address = '0x408e41876cccdc0f92210600ef50372656052a38';
+let ret = await GoPlus.addressSecurity(chainId, address);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -72,9 +75,11 @@ if (ret.code != 1) {
 
 
 ### Approval Security API
-```javascript
 
-let ret = await GoPlus.approvalSecurity('1', '0x408e41876cccdc0f92210600ef50372656052a38');
+```javascript
+let chainId = '1';
+let address = '0x408e41876cccdc0f92210600ef50372656052a38';
+let ret = await GoPlus.approvalSecurity(chainId, address);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -87,8 +92,9 @@ if (ret.code != 1) {
 ### ERC20 Approval Security
 
 ```javascript
-
-let ret = await GoPlus.erc20ApprovalSecurity('56', '0xd018e2b543a2669410537f96293590138cacedf3');
+let chainId = '56';
+let address = '0xd018e2b543a2669410537f96293590138cacedf3';
+let ret = await GoPlus.erc20ApprovalSecurity(chainId, address);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -100,7 +106,9 @@ if (ret.code != 1) {
 #### ERC721 Approval Security
 
 ```javascript
-let ret = await GoPlus.erc721ApprovalSecurity('1', '0xd95dbdab08a9fed2d71ac9c3028aac40905d8cf3');
+let chainId = '56';
+let address = '0xd018e2b543a2669410537f96293590138cacedf3';
+let ret = await GoPlus.erc721ApprovalSecurity(chainId, address);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -123,6 +131,7 @@ if (ret.code != 1) {
 ```
 
 ### Signature Data Decode
+
 ```javascript
 let chainId = '1';
 let contract = '0x4cc8aa0c6ffbe18534584da9b592aa438733ee66';
@@ -136,9 +145,11 @@ if (ret.code != 1) {
 }
 ```
 ### NFT Security
-```javascript
 
-let ret = await GoPlus.nftSecurity('1', '0x11450058d796b02eb53e65374be59cff65d3fe7f');
+```javascript
+let chainId = '1';
+let address = '0x11450058d796b02eb53e65374be59cff65d3fe7f';
+let ret = await GoPlus.nftSecurity(chainId, address);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -148,8 +159,10 @@ if (ret.code != 1) {
 ```
 
 ### dApp Security Info API
+
 ```javascript
-let ret = await GoPlus.dappSecurity('https://for.tube');
+let dAppUrl = 'https://for.tube';
+let ret = await GoPlus.dappSecurity(dAppUrl);
 
 if (ret.code != 1) {
     console.error(ret.message);
@@ -159,8 +172,10 @@ if (ret.code != 1) {
 ```
 
 ### Phishing Site Detection API
+
 ```javascript
-let ret = await GoPlus.phishingSite('https://xn--cm-68s.cc/');
+let site = 'https://xn--cm-68s.cc/';
+let ret = await GoPlus.phishingSite(site);
 
 if (ret.code != 1) {
     console.error(ret.message);
