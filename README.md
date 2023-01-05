@@ -8,9 +8,9 @@ npm install goplus-sdk-js
 
 ### Description
 
->1.After the getAccessToken method is executed, the accessToken will be passed in for each function by default. When receiving error code 4022, you need to call getAccessToken again.
->2.GoPlus.config can set the global request timeout. And each function can set its timeout by passed in the last parameter.
->3.GoPlus.approvalSecurity and GoPlus.nftSecurity may return error code 2, it means partial data obtained, the complete data can be requested again in about 15 seconds.
+1.After the getAccessToken method is executed, the accessToken will be passed in for each function by default. When receiving error code 4022, you need to call getAccessToken again.
+2.GoPlus.config can set the global request timeout. And each function can set its timeout by passed in the last parameter.
+3.GoPlus.approvalSecurity and GoPlus.nftSecurity may return error code 2, it means partial data obtained, the complete data can be requested again in about 15 seconds.
 
 ### Get AccessToken
 ```javascript
