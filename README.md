@@ -8,13 +8,13 @@ npm install goplus-sdk-js
 
 ### Description
 
-
-1.After the getAccessToken method is executed, the accessToken will be passed in for each function by default. When receiving error code 4022, you need to call getAccessToken again
-2.GoPlus.config can set the global request timeout. And each function can set its timeout by passed in the last parameter.
+>1.After the getAccessToken method is executed, the accessToken will be passed in for each function by default. When receiving error code 4022, you need to call getAccessToken again.
+>2.GoPlus.config can set the global request timeout. And each function can set its timeout by passed in the last parameter.
+>3.GoPlus.approvalSecurity and GoPlus.nftSecurity may return error code 2, it means partial data obtained, the complete data can be requested again in about 15 seconds.
 
 ### Get AccessToken
 ```javascript
-import {GoPlus} from 'goplus-sdk-js';
+import { GoPlus, ErrorCode } from 'goplus-sdk-js';
 
 let app_key = "";
 let app_secret = "";
@@ -22,7 +22,7 @@ let timeout = 30; // set global request timeout
 GoPlus.config(app_key, app_secret, timeout);
 let ret = await GoPlus.getAccessToken();
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -35,8 +35,7 @@ if (ret.code != 1) {
 let api_name = GoPlus.API_NAMES.address_security;
 let ret = await GoPlus.supportedChains(api_name);
 
-
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -51,7 +50,8 @@ let chainId = '1';
 let addresses = ['0x408e41876cccdc0f92210600ef50372656052a38'];
 // It will only return 1 result for the 1st token address if not called getAccessToken before
 let ret = await GoPlus.tokenSecurity(chainId, addresses);
-if (ret.code != 1) {
+
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result['0x408e41876cccdc0f92210600ef50372656052a38']);
@@ -66,7 +66,7 @@ let chainId = '1';
 let address = '0x408e41876cccdc0f92210600ef50372656052a38';
 let ret = await GoPlus.addressSecurity(chainId, address);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -81,7 +81,7 @@ let chainId = '1';
 let address = '0x408e41876cccdc0f92210600ef50372656052a38';
 let ret = await GoPlus.approvalSecurity(chainId, address);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS  && ret.code != ErrorCode.DATA_PENDING_SYNC) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -96,7 +96,7 @@ let chainId = '56';
 let address = '0xd018e2b543a2669410537f96293590138cacedf3';
 let ret = await GoPlus.erc20ApprovalSecurity(chainId, address);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -110,7 +110,7 @@ let chainId = '56';
 let address = '0xd018e2b543a2669410537f96293590138cacedf3';
 let ret = await GoPlus.erc721ApprovalSecurity(chainId, address);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -123,7 +123,7 @@ if (ret.code != 1) {
 
 let ret = await GoPlus.erc1155ApprovalSecurity('56', '0xb0dccbb9c4a65a94a41a0165aaea79c8b2fc54ce');
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -138,7 +138,7 @@ let contract = '0x4cc8aa0c6ffbe18534584da9b592aa438733ee66';
 let data = '0xa0712d680000000000000000000000000000000000000000000000000000000062fee481';
 let ret = await GoPlus.inputDecode(chainId, contract, data);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -151,7 +151,7 @@ let chainId = '1';
 let address = '0x11450058d796b02eb53e65374be59cff65d3fe7f';
 let ret = await GoPlus.nftSecurity(chainId, address);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS && ret.code != ErrorCode.DATA_PENDING_SYNC) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -164,7 +164,7 @@ if (ret.code != 1) {
 let dAppUrl = 'https://for.tube';
 let ret = await GoPlus.dappSecurity(dAppUrl);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);
@@ -177,7 +177,7 @@ if (ret.code != 1) {
 let site = 'https://xn--cm-68s.cc/';
 let ret = await GoPlus.phishingSite(site);
 
-if (ret.code != 1) {
+if (ret.code != ErrorCode.SUCCESS) {
     console.error(ret.message);
 } else {
     console.log(ret.result);

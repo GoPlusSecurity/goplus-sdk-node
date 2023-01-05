@@ -1,4 +1,4 @@
-import {GoPlus} from '../index.js';
+import {GoPlus, ErrorCode} from '../index.js';
 
 async function test() {
     let app_key = '';
@@ -15,7 +15,7 @@ async function test() {
 
     // supported chains
     let supportedChains = await GoPlus.supportedChains(GoPlus.API_NAMES.address_security);
-    if (supportedChains.code != 1) {
+    if (supportedChains.code != ErrorCode.SUCCESS) {
         console.error(supportedChains.message);
     } else {
         console.log(supportedChains.result);
@@ -23,7 +23,7 @@ async function test() {
 
     // token security
     let tokenRet = await GoPlus.tokenSecurity('1', ['0x408e41876cccdc0f92210600ef50372656052a38']);
-    if (tokenRet.code != 1) {
+    if (tokenRet.code != ErrorCode.SUCCESS) {
         console.error(tokenRet.message);
     } else {
         console.log(tokenRet.result['0x408e41876cccdc0f92210600ef50372656052a38']);
@@ -31,7 +31,7 @@ async function test() {
 
     // address security
     let addressRet = await GoPlus.addressSecurity('1', '0x408e41876cccdc0f92210600ef50372656052a38');
-    if (addressRet.code != 1) {
+    if (addressRet.code != ErrorCode.SUCCESS) {
         console.error(addressRet.message);
     } else {
         console.log(addressRet.result);
@@ -39,7 +39,7 @@ async function test() {
 
     // approval security
     let approvalRet = await GoPlus.approvalSecurity('1', '0x408e41876cccdc0f92210600ef50372656052a38');
-    if (approvalRet.code != 1) {
+    if (approvalRet.code != ErrorCode.SUCCESS && approvalRet.code != ErrorCode.DATA_PENDING_SYNC) {
         console.error(approvalRet.message);
     } else {
         console.log(approvalRet.result);
@@ -47,7 +47,7 @@ async function test() {
 
     // erc20 approval security
     let erc20ApprovalRet = await GoPlus.erc20ApprovalSecurity('56', '0xd018e2b543a2669410537f96293590138cacedf3');
-    if (erc20ApprovalRet.code != 1) {
+    if (erc20ApprovalRet.code != ErrorCode.SUCCESS) {
         console.error(erc20ApprovalRet.message);
     } else {
         console.log(erc20ApprovalRet.result);
@@ -55,7 +55,7 @@ async function test() {
 
     // erc721 approval security
     let erc721ApprovalRet = await GoPlus.erc721ApprovalSecurity('1', '0xd95dbdab08a9fed2d71ac9c3028aac40905d8cf3');
-    if (erc721ApprovalRet.code != 1) {
+    if (erc721ApprovalRet.code != ErrorCode.SUCCESS) {
         console.error(erc721ApprovalRet.message);
     } else {
         console.log(erc721ApprovalRet.result);
@@ -63,7 +63,7 @@ async function test() {
 
     // erc1155 approval security
     let erc1155ApprovalRet = await GoPlus.erc1155ApprovalSecurity('56', '0xb0dccbb9c4a65a94a41a0165aaea79c8b2fc54ce');
-    if (erc1155ApprovalRet.code != 1) {
+    if (erc1155ApprovalRet.code != ErrorCode.SUCCESS) {
         console.error(erc1155ApprovalRet.message);
     } else {
         console.log(erc1155ApprovalRet.result);
@@ -71,7 +71,7 @@ async function test() {
 
     // input decode
     let decodeRet = await GoPlus.inputDecode('1', '0x4cc8aa0c6ffbe18534584da9b592aa438733ee66', '0xa0712d680000000000000000000000000000000000000000000000000000000062fee481');
-    if (decodeRet.code != 1) {
+    if (decodeRet.code != ErrorCode.SUCCESS) {
         console.error(decodeRet.message);
     } else {
         console.log(decodeRet.result);
@@ -79,7 +79,7 @@ async function test() {
 
     // nft security
     let nftRet = await GoPlus.nftSecurity('1', '0x11450058d796b02eb53e65374be59cff65d3fe7f');
-    if (nftRet.code != 1) {
+    if (nftRet.code != ErrorCode.SUCCESS && nftRet.code != ErrorCode.DATA_PENDING_SYNC) {
         console.error(nftRet.message);
     } else {
         console.log(nftRet.result);
@@ -87,7 +87,7 @@ async function test() {
 
     // dapp security
     let dappRet = await GoPlus.dappSecurity('https://for.tube');
-    if (dappRet.code != 1) {
+    if (dappRet.code != ErrorCode.SUCCESS) {
         console.error(dappRet.message);
     } else {
         console.log(dappRet.result);
@@ -95,7 +95,7 @@ async function test() {
 
     // // phishing site
     let phishingRet = await GoPlus.phishingSite('https://xn--cm-68s.cc/');
-    if (phishingRet.code != 1) {
+    if (phishingRet.code != ErrorCode.SUCCESS) {
         console.error(phishingRet.message);
     } else {
         console.log(phishingRet.result);
