@@ -3,17 +3,8 @@ import {GoPlus, ErrorCode} from '../index.js';
 async function test() {
     let app_key = '';
     let app_secret = '';
-    let timeout = 30; // default timeout is 30s
+    let timeout = 30;
     GoPlus.config(app_key, app_secret, 30);
-
-    // let accessTokenRet = await GoPlus.getAccessToken();
-    // if (accessTokenRet.code != 1) {
-    //     console.error(accessTokenRet.message);
-    // } else {
-    //     console.log(accessTokenRet.result);
-    // }
-
-    // supported chains
     let supportedChains = await GoPlus.supportedChains(GoPlus.API_NAMES.address_security);
     if (supportedChains.code != ErrorCode.SUCCESS) {
         console.error(supportedChains.message);
@@ -22,13 +13,14 @@ async function test() {
     }
 
     // token security
-    let tokenRet = await GoPlus.tokenSecurity('1', ['0x408e41876cccdc0f92210600ef50372656052a38']);
+    let tokenRet = await GoPlus.tokenSecurity('1', ['0xbE790fC7E1e7d2817b9f476b4B04faabc2637967']);
     if (tokenRet.code != ErrorCode.SUCCESS) {
         console.error(tokenRet.message);
     } else {
-        console.log(tokenRet.result['0x408e41876cccdc0f92210600ef50372656052a38']);
+        console.log(tokenRet.result['0xbE790fC7E1e7d2817b9f476b4B04faabc2637967']);
     }
 
+    
     process.exit(0);
 }
 

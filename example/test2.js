@@ -22,13 +22,14 @@ async function test() {
     }
 
     // token security
-    let tokenRet = await GoPlus.tokenSecurity('1', ['0x408e41876cccdc0f92210600ef50372656052a38']);
+    let tokenRet = await GoPlus.tokenSecurity('1', ['0xc09d9fea24901e00a19321270daf88e022050c8e']);
     if (tokenRet.code != ErrorCode.SUCCESS) {
         console.error(tokenRet.message);
     } else {
-        console.log(tokenRet.result['0x408e41876cccdc0f92210600ef50372656052a38']);
+        console.log(tokenRet.result['0xc09d9fea24901e00a19321270daf88e022050c8e']);
     }
 
+    
     process.exit(0);
 }
 
