@@ -48,11 +48,13 @@ export class GetAccessTokenResponse {
 }
 
 /**
+ * access_token
  * @member {String} accessToken
  */
 GetAccessTokenResponse.prototype.accessToken = undefined;
 
 /**
+ * expires_in
  * @member {Number} expiresIn
  */
 GetAccessTokenResponse.prototype.expiresIn = undefined;
