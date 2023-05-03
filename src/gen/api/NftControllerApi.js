@@ -47,7 +47,7 @@ export class NftControllerApi {
      * @param {String} chainId Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114)
      * @param {String} contractAddresses NFT contract address
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
      * @param {String} opts.tokenId tokenId (default to <.>)
      * @param {module:api/NftControllerApi~getNftInfoUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}

@@ -45,11 +45,11 @@ export class ApproveControllerV2Api {
      */
 
     /**
-     * AuthorizationAuthorizedAddressListNFT1155
+     * Check risk of all erc1155 approvals under one EOA.
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
      * @param {module:api/ApproveControllerV2Api~addressNFT1155ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -98,11 +98,11 @@ export class ApproveControllerV2Api {
      */
 
     /**
-     * AuthorizationAuthorizedAddressListNFT721
+     * Check risk of all erc721 approvals under one EOA.
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
      * @param {module:api/ApproveControllerV2Api~addressNFT721ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -151,11 +151,11 @@ export class ApproveControllerV2Api {
      */
 
     /**
-     * AuthorizationERC20AuthorizedAddressList
+     * Check risk of all erc20 approvals under one EOA.
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
      * @param {module:api/ApproveControllerV2Api~addressTokenApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
