@@ -44,7 +44,7 @@ export class ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b
       if (data.hasOwnProperty('message'))
         obj.message = ApiClient.convertToType(data['message'], 'String');
       if (data.hasOwnProperty('result'))
-        obj.result = ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result.constructFromObject(data['result']);
+        obj.result = ApiClient.convertToType(data['result'], {'String': ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result});
     }
     return obj;
   }
@@ -63,7 +63,8 @@ ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.prototype
 ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.prototype.message = undefined;
 
 /**
- * @member {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result} result
+ * Response result
+ * @member {Object.<String, module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result>} result
  */
 ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.prototype.result = undefined;
 
