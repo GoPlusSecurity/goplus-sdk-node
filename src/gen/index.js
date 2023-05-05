@@ -55,10 +55,9 @@ import {ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult} fr
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
 import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849';
+import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex';
+import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders';
 import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddress} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddress';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressDex} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressDex';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressLpHolders} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressLpHolders';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
 import {ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39} from './model/ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39';
 import {ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result} from './model/ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result';
@@ -363,28 +362,22 @@ export {
     ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849,
 
     /**
+     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex}
+     */
+    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex,
+
+    /**
+     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders}
+     */
+    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders,
+
+    /**
      * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result model constructor.
      * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result}
      */
     ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result,
-
-    /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddress model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddress}
-     */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddress,
-
-    /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressDex model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressDex}
-     */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressDex,
-
-    /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressLpHolders model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressLpHolders}
-     */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849ResultContractAddressLpHolders,
 
     /**
      * The ResponseWrapperobject model constructor.
