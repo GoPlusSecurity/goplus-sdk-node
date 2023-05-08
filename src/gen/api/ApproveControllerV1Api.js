@@ -46,29 +46,25 @@ export class ApproveControllerV1Api {
     /**
      * Check if the address is malicious
      * @param {String} address address
-     * @param {String} chainId The chain_id of the blockchain. \&quot;1\&quot; means Ethereum;  \&quot;10\&quot; means Optimism; “25” means Cronos; \&quot;56\&quot; means BSC;  “66” means OKC; \&quot;100\&quot; means Gnosis; \&quot;128\&quot; means HECO;  \&quot;137\&quot; means Polygon;  \&quot;250\&quot; means Fantom; \&quot;321\&quot; means KCC; \&quot;324\&quot; means zkSync Era; \&quot;10001\&quot; means ETHW; \&quot;201022\&quot; means FON; \&quot;42161\&quot; means Arbitrum;  \&quot;43114\&quot; means Avalanche; \&quot;59140\&quot; means Linea; \&quot;1666600000\&quot; means Harmony; \&quot;tron\&quot; means Tron.
      * @param {Object} opts Optional parameters
      * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.chainId The chain_id of the blockchain. \&quot;1\&quot; means Ethereum;  \&quot;10\&quot; means Optimism; “25” means Cronos; \&quot;56\&quot; means BSC;  “66” means OKC; \&quot;100\&quot; means Gnosis; \&quot;128\&quot; means HECO;  \&quot;137\&quot; means Polygon;  \&quot;250\&quot; means Fantom; \&quot;321\&quot; means KCC; \&quot;324\&quot; means zkSync Era; \&quot;10001\&quot; means ETHW; \&quot;201022\&quot; means FON; \&quot;42161\&quot; means Arbitrum;  \&quot;43114\&quot; means Avalanche; \&quot;59140\&quot; means Linea; \&quot;1666600000\&quot; means Harmony; \&quot;tron\&quot; means Tron.
      * @param {module:api/ApproveControllerV1Api~addressContractUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    addressContractUsingGET1(address, chainId, opts, callback) {
+    addressContractUsingGET1(address, opts, callback) {
       opts = opts || {};
       let postBody = null;
       // verify the required parameter 'address' is set
       if (address === undefined || address === null) {
         throw new Error("Missing the required parameter 'address' when calling addressContractUsingGET1");
       }
-      // verify the required parameter 'chainId' is set
-      if (chainId === undefined || chainId === null) {
-        throw new Error("Missing the required parameter 'chainId' when calling addressContractUsingGET1");
-      }
 
       let pathParams = {
         'address': address
       };
       let queryParams = {
-        'chain_id': chainId
+        'chain_id': opts['chainId']
       };
       let headerParams = {
         'Authorization': opts['authorization']
