@@ -24,8 +24,8 @@ export class ParseAbiDataRequest {
    * Constructs a new <code>ParseAbiDataRequest</code>.
    * @alias module:model/ParseAbiDataRequest
    * @class
-   * @param chainId {String} chain_id
-   * @param data {String} data
+   * @param chainId {String} Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)
+   * @param data {String} Transaction input
    */
   constructor(chainId, data) {
     this.chainId = chainId;
@@ -50,32 +50,70 @@ export class ParseAbiDataRequest {
         obj.data = ApiClient.convertToType(data['data'], 'String');
       if (data.hasOwnProperty('signer'))
         obj.signer = ApiClient.convertToType(data['signer'], 'String');
+      if (data.hasOwnProperty('transcation_type'))
+        obj.transcationType = ApiClient.convertToType(data['transcation_type'], 'String');
     }
     return obj;
   }
 }
 
 /**
- * chain_id
+ * Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)
  * @member {String} chainId
  */
 ParseAbiDataRequest.prototype.chainId = undefined;
 
 /**
- * contract_address
+ * Carrying the signer and contract address will help to decode more information.
  * @member {String} contractAddress
  */
 ParseAbiDataRequest.prototype.contractAddress = undefined;
 
 /**
- * data
+ * Transaction input
  * @member {String} data
  */
 ParseAbiDataRequest.prototype.data = undefined;
 
 /**
- * signer
+ * Carrying the signer and contract address will help to decode more information.
  * @member {String} signer
  */
 ParseAbiDataRequest.prototype.signer = undefined;
+
+/**
+ * Allowed values for the <code>transcationType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+ParseAbiDataRequest.TranscationTypeEnum = {
+  /**
+   * value: "COMMON"
+   * @const
+   */
+  COMMON: "COMMON",
+
+  /**
+   * value: "ETH_SIGNTYPEDDATA_V4"
+   * @const
+   */
+  eTHSIGNTYPEDDATAV4: "ETH_SIGNTYPEDDATA_V4",
+
+  /**
+   * value: "PERSONAL_SIGN"
+   * @const
+   */
+  PERSONAL_SIGN: "PERSONAL_SIGN",
+
+  /**
+   * value: "ETH_SIGN"
+   * @const
+   */
+  ETH_SIGN: "ETH_SIGN"
+};
+/**
+ * Transaction type
+ * @member {module:model/ParseAbiDataRequest.TranscationTypeEnum} transcationType
+ */
+ParseAbiDataRequest.prototype.transcationType = undefined;
 

@@ -13,6 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
+import {GetAccessTokenRequest} from '../model/GetAccessTokenRequest';
 import {ResponseWrapperGetAccessTokenResponse} from '../model/ResponseWrapperGetAccessTokenResponse';
 
 /**
@@ -44,33 +45,20 @@ export class TokenControllerApi {
 
     /**
      * get token
-     * @param {String} appKey app_key
-     * @param {String} sign Concatenate app_key, time, app_secret in turn, and do sha1().app_key &#x3D; mBOMg20QW11BbtyH4Zh0 \\n\&quot; +             \&quot;time &#x3D; 1647847498 \\n\&quot; +             \&quot;app_secret &#x3D; V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh \\n\&quot; +             \&quot;sign &#x3D; sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)\\n\&quot; +             \&quot;        &#x3D; 7293d385b9225b3c3f232b76ba97255d0e21063e
-     * @param {Number} time Quest timestamp (Second)
+     * @param {Object} opts Optional parameters
+     * @param {module:model/GetAccessTokenRequest} opts.body request
      * @param {module:api/TokenControllerApi~getAccessTokenUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getAccessTokenUsingPOST(appKey, sign, time, callback) {
-      
-      let postBody = null;
-      // verify the required parameter 'appKey' is set
-      if (appKey === undefined || appKey === null) {
-        throw new Error("Missing the required parameter 'appKey' when calling getAccessTokenUsingPOST");
-      }
-      // verify the required parameter 'sign' is set
-      if (sign === undefined || sign === null) {
-        throw new Error("Missing the required parameter 'sign' when calling getAccessTokenUsingPOST");
-      }
-      // verify the required parameter 'time' is set
-      if (time === undefined || time === null) {
-        throw new Error("Missing the required parameter 'time' when calling getAccessTokenUsingPOST");
-      }
+    getAccessTokenUsingPOST(opts, callback) {
+      opts = opts || {};
+      let postBody = opts['body'];
 
       let pathParams = {
         
       };
       let queryParams = {
-        'appKey': appKey,'sign': sign,'time': time
+        
       };
       let headerParams = {
         
@@ -80,7 +68,7 @@ export class TokenControllerApi {
       };
 
       let authNames = [];
-      let contentTypes = [];
+      let contentTypes = ['application/json'];
       let accepts = ['*/*'];
       let returnType = ResponseWrapperGetAccessTokenResponse;
 

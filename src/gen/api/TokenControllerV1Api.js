@@ -13,8 +13,8 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73} from '../model/ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849} from '../model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849';
+import {ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3} from '../model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3';
+import {ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2} from '../model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2';
 
 /**
 * TokenControllerV1 service.
@@ -39,14 +39,14 @@ export class TokenControllerV1Api {
      * Callback function to receive the result of the getChainsListUsingGET operation.
      * @callback moduleapi/TokenControllerV1Api~getChainsListUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get the list of chains supported by different functions.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:model/String} opts.name API name.
      * @param {module:api/TokenControllerV1Api~getChainsListUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
@@ -71,7 +71,7 @@ export class TokenControllerV1Api {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73;
+      let returnType = ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3;
 
       return this.apiClient.callApi(
         '/api/v1/supported_chains', 'GET',
@@ -83,7 +83,7 @@ export class TokenControllerV1Api {
      * Callback function to receive the result of the tokenSecurityUsingGET1 operation.
      * @callback moduleapi/TokenControllerV1Api~tokenSecurityUsingGET1Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -92,7 +92,7 @@ export class TokenControllerV1Api {
      * @param {String} chainId The chain_id of the blockchain. \&quot;1\&quot; means Ethereum;  \&quot;10\&quot; means Optimism; “25” means Cronos; \&quot;56\&quot; means BSC;  “66” means OKC; \&quot;100\&quot; means Gnosis; \&quot;128\&quot; means HECO;  \&quot;137\&quot; means Polygon;  \&quot;250\&quot; means Fantom; \&quot;321\&quot; means KCC; \&quot;324\&quot; means zkSync Era; \&quot;10001\&quot; means ETHW; \&quot;201022\&quot; means FON; \&quot;42161\&quot; means Arbitrum;  \&quot;43114\&quot; means Avalanche; \&quot;59140\&quot; means Linea; \&quot;1666600000\&quot; means Harmony; \&quot;tron\&quot; means Tron.
      * @param {String} contractAddresses The contract address of tokens.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/TokenControllerV1Api~tokenSecurityUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -124,7 +124,7 @@ export class TokenControllerV1Api {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849;
+      let returnType = ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2;
 
       return this.apiClient.callApi(
         '/api/v1/token_security/{chain_id}', 'GET',
