@@ -27,6 +27,7 @@ import {ContractApproveResponse} from './model/ContractApproveResponse';
 import {Contracts} from './model/Contracts';
 import {ContractsSecurity} from './model/ContractsSecurity';
 import {DappContractSecurityResponse} from './model/DappContractSecurityResponse';
+import {GetAccessTokenRequest} from './model/GetAccessTokenRequest';
 import {GetAccessTokenResponse} from './model/GetAccessTokenResponse';
 import {JSONObject} from './model/JSONObject';
 import {Mapstringstring} from './model/Mapstringstring';
@@ -36,31 +37,31 @@ import {ResponseWrapperContractApproveResponse} from './model/ResponseWrapperCon
 import {ResponseWrapperDappContractSecurityResponse} from './model/ResponseWrapperDappContractSecurityResponse';
 import {ResponseWrapperGetAccessTokenResponse} from './model/ResponseWrapperGetAccessTokenResponse';
 import {ResponseWrapperJSONObject} from './model/ResponseWrapperJSONObject';
-import {ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b} from './model/ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResult} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResult';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedBurn} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedBurn';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedMinting} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedMinting';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSameNfts} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSameNfts';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSelfDestruct} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSelfDestruct';
-import {ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultTransferWithoutApproval} from './model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultTransferWithoutApproval';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval';
 import {ResponseWrapperListApproveNFT1155ListResponse} from './model/ResponseWrapperListApproveNFT1155ListResponse';
 import {ResponseWrapperListApproveNFTListResponse} from './model/ResponseWrapperListApproveNFTListResponse';
 import {ResponseWrapperListApproveTokenOutListResponse} from './model/ResponseWrapperListApproveTokenOutListResponse';
 import {ResponseWrapperListJSONObject} from './model/ResponseWrapperListJSONObject';
-import {ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73} from './model/ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73';
-import {ResponseWrapperListJSONObject4e98b9e2fbdb43329976a30066e02b73Result} from './model/ResponseWrapperListJSONObject4e98b9e2fbdb43329976a30066e02b73Result';
+import {ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3} from './model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3';
+import {ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result} from './model/ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result';
 import {ResponseWrapperMapstringstring} from './model/ResponseWrapperMapstringstring';
-import {ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e} from './model/ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e';
-import {ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult} from './model/ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult';
+import {ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8} from './model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8';
+import {ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result} from './model/ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result';
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders';
-import {ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result} from './model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result';
+import {ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2} from './model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2';
+import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex';
+import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders';
+import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
-import {ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39} from './model/ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39';
-import {ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result} from './model/ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result';
+import {ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255} from './model/ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255';
+import {ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result} from './model/ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result';
 import {TaTokenSecurityResponse} from './model/TaTokenSecurityResponse';
 import {ApproveControllerV1Api} from './api/ApproveControllerV1Api';
 import {ApproveControllerV2Api} from './api/ApproveControllerV2Api';
@@ -194,6 +195,12 @@ export {
     DappContractSecurityResponse,
 
     /**
+     * The GetAccessTokenRequest model constructor.
+     * @property {module:model/GetAccessTokenRequest}
+     */
+    GetAccessTokenRequest,
+
+    /**
      * The GetAccessTokenResponse model constructor.
      * @property {module:model/GetAccessTokenResponse}
      */
@@ -248,46 +255,46 @@ export {
     ResponseWrapperJSONObject,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c}
      */
-    ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResult model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResult}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResult,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedBurn model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedBurn}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedBurn,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedMinting model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedMinting}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultPrivilegedMinting,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSameNfts model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSameNfts}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSameNfts,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSelfDestruct model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSelfDestruct}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultSelfDestruct,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct,
 
     /**
-     * The ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultTransferWithoutApproval model constructor.
-     * @property {module:model/ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultTransferWithoutApproval}
+     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval model constructor.
+     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval}
      */
-    ResponseWrapperJSONObject59da6cfeb2f246e4936a6968cc97141bResultTransferWithoutApproval,
+    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval,
 
     /**
      * The ResponseWrapperListApproveNFT1155ListResponse model constructor.
@@ -314,16 +321,16 @@ export {
     ResponseWrapperListJSONObject,
 
     /**
-     * The ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73 model constructor.
-     * @property {module:model/ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73}
+     * The ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3 model constructor.
+     * @property {module:model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3}
      */
-    ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73,
+    ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3,
 
     /**
-     * The ResponseWrapperListJSONObject4e98b9e2fbdb43329976a30066e02b73Result model constructor.
-     * @property {module:model/ResponseWrapperListJSONObject4e98b9e2fbdb43329976a30066e02b73Result}
+     * The ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result model constructor.
+     * @property {module:model/ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result}
      */
-    ResponseWrapperListJSONObject4e98b9e2fbdb43329976a30066e02b73Result,
+    ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result,
 
     /**
      * The ResponseWrapperMapstringstring model constructor.
@@ -332,16 +339,16 @@ export {
     ResponseWrapperMapstringstring,
 
     /**
-     * The ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e model constructor.
-     * @property {module:model/ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e}
+     * The ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8 model constructor.
+     * @property {module:model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8}
      */
-    ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e,
+    ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8,
 
     /**
-     * The ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult model constructor.
-     * @property {module:model/ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult}
+     * The ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result model constructor.
+     * @property {module:model/ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result}
      */
-    ResponseWrapperMapstringstringa9a4024ae50a4a3aa475dba457d7c10eResult,
+    ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result,
 
     /**
      * The ResponseWrapperParseAbiDataResponse model constructor.
@@ -356,28 +363,28 @@ export {
     ResponseWrapperTaTokenSecurityResponse,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849 model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849}
+     * The ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2 model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2}
      */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849,
+    ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex}
+     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex}
      */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Dex,
+    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders}
+     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders}
      */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849LpHolders,
+    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result}
+     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result model constructor.
+     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result}
      */
-    ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result,
+    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result,
 
     /**
      * The ResponseWrapperobject model constructor.
@@ -386,16 +393,16 @@ export {
     ResponseWrapperobject,
 
     /**
-     * The ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39 model constructor.
-     * @property {module:model/ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39}
+     * The ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255 model constructor.
+     * @property {module:model/ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255}
      */
-    ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39,
+    ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255,
 
     /**
-     * The ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result model constructor.
-     * @property {module:model/ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result}
+     * The ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result model constructor.
+     * @property {module:model/ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result}
      */
-    ResponseWrapperobjectf7b82021fc934bb69009542c33e30a39Result,
+    ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result,
 
     /**
      * The TaTokenSecurityResponse model constructor.

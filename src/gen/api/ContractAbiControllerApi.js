@@ -47,7 +47,7 @@ export class ContractAbiControllerApi {
      * Get abi decode info
      * @param {module:model/ParseAbiDataRequest} body abiDataRequest
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/ContractAbiControllerApi~getAbiDataInfoUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */

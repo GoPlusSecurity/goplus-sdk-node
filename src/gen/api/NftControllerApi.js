@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b} from '../model/ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b';
+import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c} from '../model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c';
 
 /**
 * NftController service.
@@ -38,7 +38,7 @@ export class NftControllerApi {
      * Callback function to receive the result of the getNftInfoUsingGET1 operation.
      * @callback moduleapi/NftControllerApi~getNftInfoUsingGET1Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -47,7 +47,7 @@ export class NftControllerApi {
      * @param {String} chainId Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114)
      * @param {String} contractAddresses NFT contract address
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {String} opts.tokenId tokenId (default to <.>)
      * @param {module:api/NftControllerApi~getNftInfoUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
@@ -80,7 +80,7 @@ export class NftControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b;
+      let returnType = ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c;
 
       return this.apiClient.callApi(
         '/api/v1/nft_security/{chain_id}', 'GET',
