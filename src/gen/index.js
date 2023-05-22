@@ -33,35 +33,35 @@ import {JSONObject} from './model/JSONObject';
 import {Mapstringstring} from './model/Mapstringstring';
 import {ParseAbiDataRequest} from './model/ParseAbiDataRequest';
 import {ParseAbiDataResponse} from './model/ParseAbiDataResponse';
+import {ResponseWrapperAddressContract} from './model/ResponseWrapperAddressContract';
+import {ResponseWrapperAddressContractResult} from './model/ResponseWrapperAddressContractResult';
 import {ResponseWrapperContractApproveResponse} from './model/ResponseWrapperContractApproveResponse';
 import {ResponseWrapperDappContractSecurityResponse} from './model/ResponseWrapperDappContractSecurityResponse';
 import {ResponseWrapperGetAccessTokenResponse} from './model/ResponseWrapperGetAccessTokenResponse';
+import {ResponseWrapperGetNftInfo} from './model/ResponseWrapperGetNftInfo';
+import {ResponseWrapperGetNftInfoResult} from './model/ResponseWrapperGetNftInfoResult';
+import {ResponseWrapperGetNftInfoResultPrivilegedBurn} from './model/ResponseWrapperGetNftInfoResultPrivilegedBurn';
+import {ResponseWrapperGetNftInfoResultPrivilegedMinting} from './model/ResponseWrapperGetNftInfoResultPrivilegedMinting';
+import {ResponseWrapperGetNftInfoResultSameNfts} from './model/ResponseWrapperGetNftInfoResultSameNfts';
+import {ResponseWrapperGetNftInfoResultSelfDestruct} from './model/ResponseWrapperGetNftInfoResultSelfDestruct';
+import {ResponseWrapperGetNftInfoResultTransferWithoutApproval} from './model/ResponseWrapperGetNftInfoResultTransferWithoutApproval';
 import {ResponseWrapperJSONObject} from './model/ResponseWrapperJSONObject';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct';
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval} from './model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval';
 import {ResponseWrapperListApproveNFT1155ListResponse} from './model/ResponseWrapperListApproveNFT1155ListResponse';
 import {ResponseWrapperListApproveNFTListResponse} from './model/ResponseWrapperListApproveNFTListResponse';
 import {ResponseWrapperListApproveTokenOutListResponse} from './model/ResponseWrapperListApproveTokenOutListResponse';
 import {ResponseWrapperListJSONObject} from './model/ResponseWrapperListJSONObject';
-import {ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3} from './model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3';
-import {ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result} from './model/ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result';
+import {ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5} from './model/ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5';
+import {ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result} from './model/ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result';
 import {ResponseWrapperMapstringstring} from './model/ResponseWrapperMapstringstring';
-import {ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8} from './model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8';
-import {ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result} from './model/ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result';
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
+import {ResponseWrapperPhishingSite} from './model/ResponseWrapperPhishingSite';
+import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishingSiteResult';
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
-import {ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2} from './model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2';
-import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex';
-import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders';
-import {ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result} from './model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result';
+import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
+import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
+import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperTokenSecurityLpHolders';
+import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
-import {ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255} from './model/ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255';
-import {ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result} from './model/ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result';
 import {TaTokenSecurityResponse} from './model/TaTokenSecurityResponse';
 import {ApproveControllerV1Api} from './api/ApproveControllerV1Api';
 import {ApproveControllerV2Api} from './api/ApproveControllerV2Api';
@@ -231,6 +231,18 @@ export {
     ParseAbiDataResponse,
 
     /**
+     * The ResponseWrapperAddressContract model constructor.
+     * @property {module:model/ResponseWrapperAddressContract}
+     */
+    ResponseWrapperAddressContract,
+
+    /**
+     * The ResponseWrapperAddressContractResult model constructor.
+     * @property {module:model/ResponseWrapperAddressContractResult}
+     */
+    ResponseWrapperAddressContractResult,
+
+    /**
      * The ResponseWrapperContractApproveResponse model constructor.
      * @property {module:model/ResponseWrapperContractApproveResponse}
      */
@@ -249,52 +261,52 @@ export {
     ResponseWrapperGetAccessTokenResponse,
 
     /**
+     * The ResponseWrapperGetNftInfo model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfo}
+     */
+    ResponseWrapperGetNftInfo,
+
+    /**
+     * The ResponseWrapperGetNftInfoResult model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResult}
+     */
+    ResponseWrapperGetNftInfoResult,
+
+    /**
+     * The ResponseWrapperGetNftInfoResultPrivilegedBurn model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResultPrivilegedBurn}
+     */
+    ResponseWrapperGetNftInfoResultPrivilegedBurn,
+
+    /**
+     * The ResponseWrapperGetNftInfoResultPrivilegedMinting model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResultPrivilegedMinting}
+     */
+    ResponseWrapperGetNftInfoResultPrivilegedMinting,
+
+    /**
+     * The ResponseWrapperGetNftInfoResultSameNfts model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResultSameNfts}
+     */
+    ResponseWrapperGetNftInfoResultSameNfts,
+
+    /**
+     * The ResponseWrapperGetNftInfoResultSelfDestruct model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResultSelfDestruct}
+     */
+    ResponseWrapperGetNftInfoResultSelfDestruct,
+
+    /**
+     * The ResponseWrapperGetNftInfoResultTransferWithoutApproval model constructor.
+     * @property {module:model/ResponseWrapperGetNftInfoResultTransferWithoutApproval}
+     */
+    ResponseWrapperGetNftInfoResultTransferWithoutApproval,
+
+    /**
      * The ResponseWrapperJSONObject model constructor.
      * @property {module:model/ResponseWrapperJSONObject}
      */
     ResponseWrapperJSONObject,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct,
-
-    /**
-     * The ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval model constructor.
-     * @property {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval}
-     */
-    ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval,
 
     /**
      * The ResponseWrapperListApproveNFT1155ListResponse model constructor.
@@ -321,16 +333,16 @@ export {
     ResponseWrapperListJSONObject,
 
     /**
-     * The ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3 model constructor.
-     * @property {module:model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3}
+     * The ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5 model constructor.
+     * @property {module:model/ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5}
      */
-    ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3,
+    ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5,
 
     /**
-     * The ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result model constructor.
-     * @property {module:model/ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result}
+     * The ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result model constructor.
+     * @property {module:model/ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result}
      */
-    ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result,
+    ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result,
 
     /**
      * The ResponseWrapperMapstringstring model constructor.
@@ -339,22 +351,22 @@ export {
     ResponseWrapperMapstringstring,
 
     /**
-     * The ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8 model constructor.
-     * @property {module:model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8}
-     */
-    ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8,
-
-    /**
-     * The ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result model constructor.
-     * @property {module:model/ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result}
-     */
-    ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result,
-
-    /**
      * The ResponseWrapperParseAbiDataResponse model constructor.
      * @property {module:model/ResponseWrapperParseAbiDataResponse}
      */
     ResponseWrapperParseAbiDataResponse,
+
+    /**
+     * The ResponseWrapperPhishingSite model constructor.
+     * @property {module:model/ResponseWrapperPhishingSite}
+     */
+    ResponseWrapperPhishingSite,
+
+    /**
+     * The ResponseWrapperPhishingSiteResult model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResult}
+     */
+    ResponseWrapperPhishingSiteResult,
 
     /**
      * The ResponseWrapperTaTokenSecurityResponse model constructor.
@@ -363,46 +375,34 @@ export {
     ResponseWrapperTaTokenSecurityResponse,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2 model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2}
+     * The ResponseWrapperTokenSecurity model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurity}
      */
-    ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2,
+    ResponseWrapperTokenSecurity,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex}
+     * The ResponseWrapperTokenSecurityDex model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityDex}
      */
-    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex,
+    ResponseWrapperTokenSecurityDex,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders}
+     * The ResponseWrapperTokenSecurityLpHolders model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityLpHolders}
      */
-    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders,
+    ResponseWrapperTokenSecurityLpHolders,
 
     /**
-     * The ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result model constructor.
-     * @property {module:model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result}
+     * The ResponseWrapperTokenSecurityResult model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityResult}
      */
-    ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result,
+    ResponseWrapperTokenSecurityResult,
 
     /**
      * The ResponseWrapperobject model constructor.
      * @property {module:model/ResponseWrapperobject}
      */
     ResponseWrapperobject,
-
-    /**
-     * The ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255 model constructor.
-     * @property {module:model/ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255}
-     */
-    ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255,
-
-    /**
-     * The ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result model constructor.
-     * @property {module:model/ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result}
-     */
-    ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result,
 
     /**
      * The TaTokenSecurityResponse model constructor.

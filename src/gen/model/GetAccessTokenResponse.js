@@ -39,9 +39,9 @@ export class GetAccessTokenResponse {
     if (data) {
       obj = obj || new GetAccessTokenResponse();
       if (data.hasOwnProperty('access_token'))
-        obj.accessToken = ApiClient.convertToType(data['access_token'], 'String');
+        obj.access_token = ApiClient.convertToType(data['access_token'], 'String');
       if (data.hasOwnProperty('expires_in'))
-        obj.expiresIn = ApiClient.convertToType(data['expires_in'], 'Number');
+        obj.expires_in = ApiClient.convertToType(data['expires_in'], 'Number');
     }
     return obj;
   }
@@ -49,13 +49,13 @@ export class GetAccessTokenResponse {
 
 /**
  * access_token
- * @member {String} accessToken
+ * @member {String} access_token
  */
-GetAccessTokenResponse.prototype.accessToken = undefined;
+GetAccessTokenResponse.prototype.access_token = undefined;
 
 /**
  * expires_in
- * @member {Number} expiresIn
+ * @member {Number} expires_in
  */
-GetAccessTokenResponse.prototype.expiresIn = undefined;
+GetAccessTokenResponse.prototype.expires_in = undefined;
 

@@ -45,7 +45,7 @@ export class DappControllerApi {
     /**
      * Check risk of dapp through URL
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {String} opts.url Url or domain
      * @param {module:api/DappControllerApi~getDappInfoUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
@@ -61,7 +61,7 @@ export class DappControllerApi {
         'url': opts['url']
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         

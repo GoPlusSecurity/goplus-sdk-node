@@ -40,11 +40,11 @@ export class ParseAbiDataResponse {
     if (data) {
       obj = obj || new ParseAbiDataResponse();
       if (data.hasOwnProperty('contract_description'))
-        obj.contractDescription = ApiClient.convertToType(data['contract_description'], 'String');
+        obj.contract_description = ApiClient.convertToType(data['contract_description'], 'String');
       if (data.hasOwnProperty('contract_name'))
-        obj.contractName = ApiClient.convertToType(data['contract_name'], 'String');
+        obj.contract_name = ApiClient.convertToType(data['contract_name'], 'String');
       if (data.hasOwnProperty('malicious_contract'))
-        obj.maliciousContract = ApiClient.convertToType(data['malicious_contract'], 'Number');
+        obj.malicious_contract = ApiClient.convertToType(data['malicious_contract'], 'Number');
       if (data.hasOwnProperty('method'))
         obj.method = ApiClient.convertToType(data['method'], 'String');
       if (data.hasOwnProperty('params'))
@@ -52,9 +52,9 @@ export class ParseAbiDataResponse {
       if (data.hasOwnProperty('risk'))
         obj.risk = ApiClient.convertToType(data['risk'], 'String');
       if (data.hasOwnProperty('risky_signature'))
-        obj.riskySignature = ApiClient.convertToType(data['risky_signature'], 'Number');
+        obj.risky_signature = ApiClient.convertToType(data['risky_signature'], 'Number');
       if (data.hasOwnProperty('signature_detail'))
-        obj.signatureDetail = ApiClient.convertToType(data['signature_detail'], 'String');
+        obj.signature_detail = ApiClient.convertToType(data['signature_detail'], 'String');
     }
     return obj;
   }
@@ -62,21 +62,21 @@ export class ParseAbiDataResponse {
 
 /**
  * Description of the contract.
- * @member {String} contractDescription
+ * @member {String} contract_description
  */
-ParseAbiDataResponse.prototype.contractDescription = undefined;
+ParseAbiDataResponse.prototype.contract_description = undefined;
 
 /**
  * The name of the contract that the user is interacting with.
- * @member {String} contractName
+ * @member {String} contract_name
  */
-ParseAbiDataResponse.prototype.contractName = undefined;
+ParseAbiDataResponse.prototype.contract_name = undefined;
 
 /**
  * It tells if contract that the user is interacting with is malicious contract.
- * @member {Number} maliciousContract
+ * @member {Number} malicious_contract
  */
-ParseAbiDataResponse.prototype.maliciousContract = undefined;
+ParseAbiDataResponse.prototype.malicious_contract = undefined;
 
 /**
  * It describes the method name in ABI, for example \"transfer\".
@@ -98,13 +98,13 @@ ParseAbiDataResponse.prototype.risk = undefined;
 
 /**
  * It tells if the transaction that users are signing contains risk.(Notice:Even non-malicious, commonly used, well-known contracts can be highly risky if not used properly.)
- * @member {Number} riskySignature
+ * @member {Number} risky_signature
  */
-ParseAbiDataResponse.prototype.riskySignature = undefined;
+ParseAbiDataResponse.prototype.risky_signature = undefined;
 
 /**
  * It explain the function of the method
- * @member {String} signatureDetail
+ * @member {String} signature_detail
  */
-ParseAbiDataResponse.prototype.signatureDetail = undefined;
+ParseAbiDataResponse.prototype.signature_detail = undefined;
 

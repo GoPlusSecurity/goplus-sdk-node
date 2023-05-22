@@ -39,23 +39,23 @@ export class ApproveAddressInfo {
     if (data) {
       obj = obj || new ApproveAddressInfo();
       if (data.hasOwnProperty('contract_name'))
-        obj.contractName = ApiClient.convertToType(data['contract_name'], 'String');
+        obj.contract_name = ApiClient.convertToType(data['contract_name'], 'String');
       if (data.hasOwnProperty('creator_address'))
-        obj.creatorAddress = ApiClient.convertToType(data['creator_address'], 'String');
+        obj.creator_address = ApiClient.convertToType(data['creator_address'], 'String');
       if (data.hasOwnProperty('deployed_time'))
-        obj.deployedTime = ApiClient.convertToType(data['deployed_time'], 'Number');
+        obj.deployed_time = ApiClient.convertToType(data['deployed_time'], 'Number');
       if (data.hasOwnProperty('doubt_list'))
-        obj.doubtList = ApiClient.convertToType(data['doubt_list'], 'Number');
+        obj.doubt_list = ApiClient.convertToType(data['doubt_list'], 'Number');
       if (data.hasOwnProperty('is_contract'))
-        obj.isContract = ApiClient.convertToType(data['is_contract'], 'Number');
+        obj.is_contract = ApiClient.convertToType(data['is_contract'], 'Number');
       if (data.hasOwnProperty('is_open_source'))
-        obj.isOpenSource = ApiClient.convertToType(data['is_open_source'], 'Number');
+        obj.is_open_source = ApiClient.convertToType(data['is_open_source'], 'Number');
       if (data.hasOwnProperty('malicious_behavior'))
-        obj.maliciousBehavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
+        obj.malicious_behavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
       if (data.hasOwnProperty('tag'))
         obj.tag = ApiClient.convertToType(data['tag'], 'String');
       if (data.hasOwnProperty('trust_list'))
-        obj.trustList = ApiClient.convertToType(data['trust_list'], 'Number');
+        obj.trust_list = ApiClient.convertToType(data['trust_list'], 'Number');
     }
     return obj;
   }
@@ -63,45 +63,45 @@ export class ApproveAddressInfo {
 
 /**
  * Spender name
- * @member {String} contractName
+ * @member {String} contract_name
  */
-ApproveAddressInfo.prototype.contractName = undefined;
+ApproveAddressInfo.prototype.contract_name = undefined;
 
 /**
  * Spender's deployer
- * @member {String} creatorAddress
+ * @member {String} creator_address
  */
-ApproveAddressInfo.prototype.creatorAddress = undefined;
+ApproveAddressInfo.prototype.creator_address = undefined;
 
 /**
  * Spender's deployed time
- * @member {Number} deployedTime
+ * @member {Number} deployed_time
  */
-ApproveAddressInfo.prototype.deployedTime = undefined;
+ApproveAddressInfo.prototype.deployed_time = undefined;
 
 /**
  * Whether the spender has a history of malicious behavior or contains high risk.
- * @member {Number} doubtList
+ * @member {Number} doubt_list
  */
-ApproveAddressInfo.prototype.doubtList = undefined;
+ApproveAddressInfo.prototype.doubt_list = undefined;
 
 /**
  * Whether the spender is a contract.
- * @member {Number} isContract
+ * @member {Number} is_contract
  */
-ApproveAddressInfo.prototype.isContract = undefined;
+ApproveAddressInfo.prototype.is_contract = undefined;
 
 /**
  * Whether the spender is verified on blockchain explorer.
- * @member {Number} isOpenSource
+ * @member {Number} is_open_source
  */
-ApproveAddressInfo.prototype.isOpenSource = undefined;
+ApproveAddressInfo.prototype.is_open_source = undefined;
 
 /**
  * Specific malicious behaviors or risks of this spender.
- * @member {Array.<String>} maliciousBehavior
+ * @member {Array.<String>} malicious_behavior
  */
-ApproveAddressInfo.prototype.maliciousBehavior = undefined;
+ApproveAddressInfo.prototype.malicious_behavior = undefined;
 
 /**
  * Spender tag
@@ -111,7 +111,7 @@ ApproveAddressInfo.prototype.tag = undefined;
 
 /**
  * Whether the spender is on the whitelist, and can be trusted
- * @member {Number} trustList
+ * @member {Number} trust_list
  */
-ApproveAddressInfo.prototype.trustList = undefined;
+ApproveAddressInfo.prototype.trust_list = undefined;
 

@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8} from '../model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8';
+import {ResponseWrapperPhishingSite} from '../model/ResponseWrapperPhishingSite';
 
 /**
 * WebsiteController service.
@@ -38,7 +38,7 @@ export class WebsiteControllerApi {
      * Callback function to receive the result of the phishingSiteUsingGET operation.
      * @callback moduleapi/WebsiteControllerApi~phishingSiteUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperPhishingSite{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -46,7 +46,7 @@ export class WebsiteControllerApi {
      * Check if the the url is a phishing site
      * @param {String} url Url
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/WebsiteControllerApi~phishingSiteUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -65,7 +65,7 @@ export class WebsiteControllerApi {
         'url': url
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
@@ -74,7 +74,7 @@ export class WebsiteControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8;
+      let returnType = ResponseWrapperPhishingSite;
 
       return this.apiClient.callApi(
         '/api/v1/phishing_site', 'GET',

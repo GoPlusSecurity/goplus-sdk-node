@@ -40,7 +40,7 @@ export class ContractsSecurity {
     if (data) {
       obj = obj || new ContractsSecurity();
       if (data.hasOwnProperty('chain_id'))
-        obj.chainId = ApiClient.convertToType(data['chain_id'], 'String');
+        obj.chain_id = ApiClient.convertToType(data['chain_id'], 'String');
       if (data.hasOwnProperty('contracts'))
         obj.contracts = ApiClient.convertToType(data['contracts'], [Contracts]);
     }
@@ -50,9 +50,9 @@ export class ContractsSecurity {
 
 /**
  * It describes the chains that contracts are deployed on;\"1\" means Ethereum; \"25\" means Cronos; \"56\" means BSC; \"128\" means HECO; \"137\" means Polygon; \"250\" means Fantom; \"42161\" means Arbitrum; \"43114\" means Avalanche.
- * @member {String} chainId
+ * @member {String} chain_id
  */
-ContractsSecurity.prototype.chainId = undefined;
+ContractsSecurity.prototype.chain_id = undefined;
 
 /**
  * contract info

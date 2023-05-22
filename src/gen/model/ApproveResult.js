@@ -40,54 +40,54 @@ export class ApproveResult {
     if (data) {
       obj = obj || new ApproveResult();
       if (data.hasOwnProperty('address_info'))
-        obj.addressInfo = ApproveAddressInfo.constructFromObject(data['address_info']);
+        obj.address_info = ApproveAddressInfo.constructFromObject(data['address_info']);
       if (data.hasOwnProperty('approved_contract'))
-        obj.approvedContract = ApiClient.convertToType(data['approved_contract'], 'String');
+        obj.approved_contract = ApiClient.convertToType(data['approved_contract'], 'String');
       if (data.hasOwnProperty('approved_for_all'))
-        obj.approvedForAll = ApiClient.convertToType(data['approved_for_all'], 'Number');
+        obj.approved_for_all = ApiClient.convertToType(data['approved_for_all'], 'Number');
       if (data.hasOwnProperty('approved_time'))
-        obj.approvedTime = ApiClient.convertToType(data['approved_time'], 'Number');
+        obj.approved_time = ApiClient.convertToType(data['approved_time'], 'Number');
       if (data.hasOwnProperty('approved_token_id'))
-        obj.approvedTokenId = ApiClient.convertToType(data['approved_token_id'], 'String');
+        obj.approved_token_id = ApiClient.convertToType(data['approved_token_id'], 'String');
       if (data.hasOwnProperty('hash'))
         obj.hash = ApiClient.convertToType(data['hash'], 'String');
       if (data.hasOwnProperty('initial_approval_hash'))
-        obj.initialApprovalHash = ApiClient.convertToType(data['initial_approval_hash'], 'String');
+        obj.initial_approval_hash = ApiClient.convertToType(data['initial_approval_hash'], 'String');
       if (data.hasOwnProperty('initial_approval_time'))
-        obj.initialApprovalTime = ApiClient.convertToType(data['initial_approval_time'], 'Number');
+        obj.initial_approval_time = ApiClient.convertToType(data['initial_approval_time'], 'Number');
     }
     return obj;
   }
 }
 
 /**
- * @member {module:model/ApproveAddressInfo} addressInfo
+ * @member {module:model/ApproveAddressInfo} address_info
  */
-ApproveResult.prototype.addressInfo = undefined;
+ApproveResult.prototype.address_info = undefined;
 
 /**
  * Spender Address
- * @member {String} approvedContract
+ * @member {String} approved_contract
  */
-ApproveResult.prototype.approvedContract = undefined;
+ApproveResult.prototype.approved_contract = undefined;
 
 /**
  * Approval type: \"1\" means \"approved for all\"; \"0\" means \"approved for single NFT\"
- * @member {Number} approvedForAll
+ * @member {Number} approved_for_all
  */
-ApproveResult.prototype.approvedForAll = undefined;
+ApproveResult.prototype.approved_for_all = undefined;
 
 /**
  * Latest approval time
- * @member {Number} approvedTime
+ * @member {Number} approved_time
  */
-ApproveResult.prototype.approvedTime = undefined;
+ApproveResult.prototype.approved_time = undefined;
 
 /**
  * NFT token_id
- * @member {String} approvedTokenId
+ * @member {String} approved_token_id
  */
-ApproveResult.prototype.approvedTokenId = undefined;
+ApproveResult.prototype.approved_token_id = undefined;
 
 /**
  * Latest approval hash
@@ -97,13 +97,13 @@ ApproveResult.prototype.hash = undefined;
 
 /**
  * Initial approval hash
- * @member {String} initialApprovalHash
+ * @member {String} initial_approval_hash
  */
-ApproveResult.prototype.initialApprovalHash = undefined;
+ApproveResult.prototype.initial_approval_hash = undefined;
 
 /**
  * Initial approval time
- * @member {Number} initialApprovalTime
+ * @member {Number} initial_approval_time
  */
-ApproveResult.prototype.initialApprovalTime = undefined;
+ApproveResult.prototype.initial_approval_time = undefined;
 

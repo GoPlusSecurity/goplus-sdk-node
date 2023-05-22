@@ -40,78 +40,78 @@ export class ApproveNFT1155ListResponse {
     if (data) {
       obj = obj || new ApproveNFT1155ListResponse();
       if (data.hasOwnProperty('approved_list'))
-        obj.approvedList = ApiClient.convertToType(data['approved_list'], [ApproveErc1155Result]);
+        obj.approved_list = ApiClient.convertToType(data['approved_list'], [ApproveErc1155Result]);
       if (data.hasOwnProperty('chain_id'))
-        obj.chainId = ApiClient.convertToType(data['chain_id'], 'String');
+        obj.chain_id = ApiClient.convertToType(data['chain_id'], 'String');
       if (data.hasOwnProperty('is_open_source'))
-        obj.isOpenSource = ApiClient.convertToType(data['is_open_source'], 'Number');
+        obj.is_open_source = ApiClient.convertToType(data['is_open_source'], 'Number');
       if (data.hasOwnProperty('is_verified'))
-        obj.isVerified = ApiClient.convertToType(data['is_verified'], 'Number');
+        obj.is_verified = ApiClient.convertToType(data['is_verified'], 'Number');
       if (data.hasOwnProperty('malicious_address'))
-        obj.maliciousAddress = ApiClient.convertToType(data['malicious_address'], 'Number');
+        obj.malicious_address = ApiClient.convertToType(data['malicious_address'], 'Number');
       if (data.hasOwnProperty('malicious_behavior'))
-        obj.maliciousBehavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
+        obj.malicious_behavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
       if (data.hasOwnProperty('nft_address'))
-        obj.nftAddress = ApiClient.convertToType(data['nft_address'], 'String');
+        obj.nft_address = ApiClient.convertToType(data['nft_address'], 'String');
       if (data.hasOwnProperty('nft_name'))
-        obj.nftName = ApiClient.convertToType(data['nft_name'], 'String');
+        obj.nft_name = ApiClient.convertToType(data['nft_name'], 'String');
       if (data.hasOwnProperty('nft_symbol'))
-        obj.nftSymbol = ApiClient.convertToType(data['nft_symbol'], 'String');
+        obj.nft_symbol = ApiClient.convertToType(data['nft_symbol'], 'String');
     }
     return obj;
   }
 }
 
 /**
- * @member {Array.<module:model/ApproveErc1155Result>} approvedList
+ * @member {Array.<module:model/ApproveErc1155Result>} approved_list
  */
-ApproveNFT1155ListResponse.prototype.approvedList = undefined;
+ApproveNFT1155ListResponse.prototype.approved_list = undefined;
 
 /**
  * ChainID
- * @member {String} chainId
+ * @member {String} chain_id
  */
-ApproveNFT1155ListResponse.prototype.chainId = undefined;
+ApproveNFT1155ListResponse.prototype.chain_id = undefined;
 
 /**
  * Whether the contract is verified on blockchain explorer.
- * @member {Number} isOpenSource
+ * @member {Number} is_open_source
  */
-ApproveNFT1155ListResponse.prototype.isOpenSource = undefined;
+ApproveNFT1155ListResponse.prototype.is_open_source = undefined;
 
 /**
  * Whether NFT is certified on a reputable trading platform.
- * @member {Number} isVerified
+ * @member {Number} is_verified
  */
-ApproveNFT1155ListResponse.prototype.isVerified = undefined;
+ApproveNFT1155ListResponse.prototype.is_verified = undefined;
 
 /**
  * Whether the NFT is malicious or contains high risk.
- * @member {Number} maliciousAddress
+ * @member {Number} malicious_address
  */
-ApproveNFT1155ListResponse.prototype.maliciousAddress = undefined;
+ApproveNFT1155ListResponse.prototype.malicious_address = undefined;
 
 /**
  * Specific malicious behaviors or risks of this NFT.
- * @member {Array.<String>} maliciousBehavior
+ * @member {Array.<String>} malicious_behavior
  */
-ApproveNFT1155ListResponse.prototype.maliciousBehavior = undefined;
+ApproveNFT1155ListResponse.prototype.malicious_behavior = undefined;
 
 /**
  * NFT address
- * @member {String} nftAddress
+ * @member {String} nft_address
  */
-ApproveNFT1155ListResponse.prototype.nftAddress = undefined;
+ApproveNFT1155ListResponse.prototype.nft_address = undefined;
 
 /**
  * NFT name
- * @member {String} nftName
+ * @member {String} nft_name
  */
-ApproveNFT1155ListResponse.prototype.nftName = undefined;
+ApproveNFT1155ListResponse.prototype.nft_name = undefined;
 
 /**
  * NFT symbol
- * @member {String} nftSymbol
+ * @member {String} nft_symbol
  */
-ApproveNFT1155ListResponse.prototype.nftSymbol = undefined;
+ApproveNFT1155ListResponse.prototype.nft_symbol = undefined;
 

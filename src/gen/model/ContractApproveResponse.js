@@ -39,25 +39,25 @@ export class ContractApproveResponse {
     if (data) {
       obj = obj || new ContractApproveResponse();
       if (data.hasOwnProperty('contract_name'))
-        obj.contractName = ApiClient.convertToType(data['contract_name'], 'String');
+        obj.contract_name = ApiClient.convertToType(data['contract_name'], 'String');
       if (data.hasOwnProperty('creator_address'))
-        obj.creatorAddress = ApiClient.convertToType(data['creator_address'], 'String');
+        obj.creator_address = ApiClient.convertToType(data['creator_address'], 'String');
       if (data.hasOwnProperty('deployed_time'))
-        obj.deployedTime = ApiClient.convertToType(data['deployed_time'], 'Number');
+        obj.deployed_time = ApiClient.convertToType(data['deployed_time'], 'Number');
       if (data.hasOwnProperty('doubt_list'))
-        obj.doubtList = ApiClient.convertToType(data['doubt_list'], 'Number');
+        obj.doubt_list = ApiClient.convertToType(data['doubt_list'], 'Number');
       if (data.hasOwnProperty('is_contract'))
-        obj.isContract = ApiClient.convertToType(data['is_contract'], 'Number');
+        obj.is_contract = ApiClient.convertToType(data['is_contract'], 'Number');
       if (data.hasOwnProperty('is_open_source'))
-        obj.isOpenSource = ApiClient.convertToType(data['is_open_source'], 'Number');
+        obj.is_open_source = ApiClient.convertToType(data['is_open_source'], 'Number');
       if (data.hasOwnProperty('is_proxy'))
-        obj.isProxy = ApiClient.convertToType(data['is_proxy'], 'Number');
+        obj.is_proxy = ApiClient.convertToType(data['is_proxy'], 'Number');
       if (data.hasOwnProperty('malicious_behavior'))
-        obj.maliciousBehavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
+        obj.malicious_behavior = ApiClient.convertToType(data['malicious_behavior'], ['String']);
       if (data.hasOwnProperty('tag'))
         obj.tag = ApiClient.convertToType(data['tag'], 'String');
       if (data.hasOwnProperty('trust_list'))
-        obj.trustList = ApiClient.convertToType(data['trust_list'], 'Number');
+        obj.trust_list = ApiClient.convertToType(data['trust_list'], 'Number');
     }
     return obj;
   }
@@ -65,51 +65,51 @@ export class ContractApproveResponse {
 
 /**
  * It describes the approved contract name.
- * @member {String} contractName
+ * @member {String} contract_name
  */
-ContractApproveResponse.prototype.contractName = undefined;
+ContractApproveResponse.prototype.contract_name = undefined;
 
 /**
  * It describes the creator address of the contract.(Notice:When the address is not a contract (\"is_contract\"=0), it will return \"null\".)
- * @member {String} creatorAddress
+ * @member {String} creator_address
  */
-ContractApproveResponse.prototype.creatorAddress = undefined;
+ContractApproveResponse.prototype.creator_address = undefined;
 
 /**
  * It describes the deployed time of the contract. The value is presented as a timestamp. Example: \"deployed_time\": 1626578345(Notice:When the address is not a contract (\"is_contract\"=0), it will return \"null\".)
- * @member {Number} deployedTime
+ * @member {Number} deployed_time
  */
-ContractApproveResponse.prototype.deployedTime = undefined;
+ContractApproveResponse.prototype.deployed_time = undefined;
 
 /**
  * It describes whether the address is a suspected malicious contract. \"1\" means true; \"0\" means that we have not found malicious behavior of this address.(Notice:Return \"0\" does not mean it is safe. Maybe we just haven't found its malicious behavior.)
- * @member {Number} doubtList
+ * @member {Number} doubt_list
  */
-ContractApproveResponse.prototype.doubtList = undefined;
+ContractApproveResponse.prototype.doubt_list = undefined;
 
 /**
  * It describes whether the address is a contract. \"1\" means true; \"0\" means false.
- * @member {Number} isContract
+ * @member {Number} is_contract
  */
-ContractApproveResponse.prototype.isContract = undefined;
+ContractApproveResponse.prototype.is_contract = undefined;
 
 /**
  * It describes whether this contract is open source. \"1\" means true; \"0\" means false.(Notice:When the address is not a contract (\"is_contract\"=0), it will return \"null\".)
- * @member {Number} isOpenSource
+ * @member {Number} is_open_source
  */
-ContractApproveResponse.prototype.isOpenSource = undefined;
+ContractApproveResponse.prototype.is_open_source = undefined;
 
 /**
  * Whether the spender is a proxy contract.
- * @member {Number} isProxy
+ * @member {Number} is_proxy
  */
-ContractApproveResponse.prototype.isProxy = undefined;
+ContractApproveResponse.prototype.is_proxy = undefined;
 
 /**
  * It describes specific malicious behaviors. \"honeypot_related_address\" means that the address is related to honeypot tokens or has created scam tokens. \"phishing_activities\" means that this address has implemented phishing activities. \"blackmail_activities\" means that this address has implemented blackmail activities. \"stealing_attack\" means that this address has implemented stealing attacks. \"fake_kyc\" means that this address is involved in fake KYC. \"malicious_mining_activities\" means that this address is involved in malicious mining activities. \"darkweb_transactions\" means that this address is involved in darkweb transactions. \"cybercrime\" means that this address is involved in cybercrime. \"money_laundering\" means that this address is involved in money laundering. \"financial_crime\" means that this address is involved in financial crime. “blacklist_doubt” means that the address is suspected of malicious behavior and is therefore blacklisted.(Notice:Returning an empty array means that no malicious behavior was found at that address.)
- * @member {Array.<String>} maliciousBehavior
+ * @member {Array.<String>} malicious_behavior
  */
-ContractApproveResponse.prototype.maliciousBehavior = undefined;
+ContractApproveResponse.prototype.malicious_behavior = undefined;
 
 /**
  * It describes which dapp uses the contract. Example:\"tag\": \"Compound\"
@@ -119,7 +119,7 @@ ContractApproveResponse.prototype.tag = undefined;
 
 /**
  * It describes whether the address is a famous and trustworthy one. \"1\" means true; \"0\" means that we have not included this address in the trusted list;(Notice:Return \"0\" does not mean the address is not trustworthy. Maybe we just haven't included it yet.)
- * @member {Number} trustList
+ * @member {Number} trust_list
  */
-ContractApproveResponse.prototype.trustList = undefined;
+ContractApproveResponse.prototype.trust_list = undefined;
 

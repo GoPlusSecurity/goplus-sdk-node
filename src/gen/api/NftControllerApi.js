@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c} from '../model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c';
+import {ResponseWrapperGetNftInfo} from '../model/ResponseWrapperGetNftInfo';
 
 /**
 * NftController service.
@@ -38,40 +38,40 @@ export class NftControllerApi {
      * Callback function to receive the result of the getNftInfoUsingGET1 operation.
      * @callback moduleapi/NftControllerApi~getNftInfoUsingGET1Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperGetNftInfo{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get NFT&#x27;s security and risk data.
-     * @param {String} chainId Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114)
-     * @param {String} contractAddresses NFT contract address
+     * @param {String} chain_id Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114)
+     * @param {String} contract_addresses NFT contract address
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {String} opts.tokenId tokenId (default to <.>)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.token_id tokenId (default to <.>)
      * @param {module:api/NftControllerApi~getNftInfoUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getNftInfoUsingGET1(chainId, contractAddresses, opts, callback) {
+    getNftInfoUsingGET1(chain_id, contract_addresses, opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'chainId' is set
-      if (chainId === undefined || chainId === null) {
-        throw new Error("Missing the required parameter 'chainId' when calling getNftInfoUsingGET1");
+      // verify the required parameter 'chain_id' is set
+      if (chain_id === undefined || chain_id === null) {
+        throw new Error("Missing the required parameter 'chain_id' when calling getNftInfoUsingGET1");
       }
-      // verify the required parameter 'contractAddresses' is set
-      if (contractAddresses === undefined || contractAddresses === null) {
-        throw new Error("Missing the required parameter 'contractAddresses' when calling getNftInfoUsingGET1");
+      // verify the required parameter 'contract_addresses' is set
+      if (contract_addresses === undefined || contract_addresses === null) {
+        throw new Error("Missing the required parameter 'contract_addresses' when calling getNftInfoUsingGET1");
       }
 
       let pathParams = {
-        'chain_id': chainId
+        'chain_id': chain_id
       };
       let queryParams = {
-        'contract_addresses': contractAddresses,'token_id': opts['tokenId']
+        'contract_addresses': contract_addresses,'token_id': opts['token_id']
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
@@ -80,7 +80,7 @@ export class NftControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c;
+      let returnType = ResponseWrapperGetNftInfo;
 
       return this.apiClient.callApi(
         '/api/v1/nft_security/{chain_id}', 'GET',

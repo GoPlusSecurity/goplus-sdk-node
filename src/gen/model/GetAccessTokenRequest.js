@@ -24,12 +24,12 @@ export class GetAccessTokenRequest {
    * Constructs a new <code>GetAccessTokenRequest</code>.
    * @alias module:model/GetAccessTokenRequest
    * @class
-   * @param appKey {String} app_key
+   * @param app_key {String} app_key
    * @param sign {String} Concatenate app_key, time, app_secret in turn, and do sha1().app_key = mBOMg20QW11BbtyH4Zh0 \\n\" +             \"time = 1647847498 \\n\" +             \"app_secret = V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh \\n\" +             \"sign = sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)\\n\" +             \"        = 7293d385b9225b3c3f232b76ba97255d0e21063e
    * @param time {Number} Quest timestamp (Second)
    */
-  constructor(appKey, sign, time) {
-    this.appKey = appKey;
+  constructor(app_key, sign, time) {
+    this.app_key = app_key;
     this.sign = sign;
     this.time = time;
   }
@@ -45,7 +45,7 @@ export class GetAccessTokenRequest {
     if (data) {
       obj = obj || new GetAccessTokenRequest();
       if (data.hasOwnProperty('app_key'))
-        obj.appKey = ApiClient.convertToType(data['app_key'], 'String');
+        obj.app_key = ApiClient.convertToType(data['app_key'], 'String');
       if (data.hasOwnProperty('sign'))
         obj.sign = ApiClient.convertToType(data['sign'], 'String');
       if (data.hasOwnProperty('time'))
@@ -57,9 +57,9 @@ export class GetAccessTokenRequest {
 
 /**
  * app_key
- * @member {String} appKey
+ * @member {String} app_key
  */
-GetAccessTokenRequest.prototype.appKey = undefined;
+GetAccessTokenRequest.prototype.app_key = undefined;
 
 /**
  * Concatenate app_key, time, app_secret in turn, and do sha1().app_key = mBOMg20QW11BbtyH4Zh0 \\n\" +             \"time = 1647847498 \\n\" +             \"app_secret = V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh \\n\" +             \"sign = sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)\\n\" +             \"        = 7293d385b9225b3c3f232b76ba97255d0e21063e
