@@ -40,7 +40,7 @@ export class AbiParamInfo {
     if (data) {
       obj = obj || new AbiParamInfo();
       if (data.hasOwnProperty('address_info'))
-        obj.addressInfo = AbiAddressInfo.constructFromObject(data['address_info']);
+        obj.address_info = AbiAddressInfo.constructFromObject(data['address_info']);
       if (data.hasOwnProperty('input'))
         obj.input = ApiClient.convertToType(data['input'], Object);
       if (data.hasOwnProperty('name'))
@@ -53,9 +53,9 @@ export class AbiParamInfo {
 }
 
 /**
- * @member {module:model/AbiAddressInfo} addressInfo
+ * @member {module:model/AbiAddressInfo} address_info
  */
-AbiParamInfo.prototype.addressInfo = undefined;
+AbiParamInfo.prototype.address_info = undefined;
 
 /**
  * It describes the input data in ABI.

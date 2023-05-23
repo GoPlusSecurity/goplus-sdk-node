@@ -24,11 +24,11 @@ export class ParseAbiDataRequest {
    * Constructs a new <code>ParseAbiDataRequest</code>.
    * @alias module:model/ParseAbiDataRequest
    * @class
-   * @param chainId {String} Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)
+   * @param chain_id {String} Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)
    * @param data {String} Transaction input
    */
-  constructor(chainId, data) {
-    this.chainId = chainId;
+  constructor(chain_id, data) {
+    this.chain_id = chain_id;
     this.data = data;
   }
 
@@ -43,15 +43,17 @@ export class ParseAbiDataRequest {
     if (data) {
       obj = obj || new ParseAbiDataRequest();
       if (data.hasOwnProperty('chain_id'))
-        obj.chainId = ApiClient.convertToType(data['chain_id'], 'String');
+        obj.chain_id = ApiClient.convertToType(data['chain_id'], 'String');
       if (data.hasOwnProperty('contract_address'))
-        obj.contractAddress = ApiClient.convertToType(data['contract_address'], 'String');
+        obj.contract_address = ApiClient.convertToType(data['contract_address'], 'String');
       if (data.hasOwnProperty('data'))
         obj.data = ApiClient.convertToType(data['data'], 'String');
+      if (data.hasOwnProperty('input'))
+        obj.input = ApiClient.convertToType(data['input'], {'String': Object});
       if (data.hasOwnProperty('signer'))
         obj.signer = ApiClient.convertToType(data['signer'], 'String');
       if (data.hasOwnProperty('transcation_type'))
-        obj.transcationType = ApiClient.convertToType(data['transcation_type'], 'String');
+        obj.transcation_type = ApiClient.convertToType(data['transcation_type'], 'String');
     }
     return obj;
   }
@@ -59,15 +61,15 @@ export class ParseAbiDataRequest {
 
 /**
  * Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)
- * @member {String} chainId
+ * @member {String} chain_id
  */
-ParseAbiDataRequest.prototype.chainId = undefined;
+ParseAbiDataRequest.prototype.chain_id = undefined;
 
 /**
  * Carrying the signer and contract address will help to decode more information.
- * @member {String} contractAddress
+ * @member {String} contract_address
  */
-ParseAbiDataRequest.prototype.contractAddress = undefined;
+ParseAbiDataRequest.prototype.contract_address = undefined;
 
 /**
  * Transaction input
@@ -76,44 +78,50 @@ ParseAbiDataRequest.prototype.contractAddress = undefined;
 ParseAbiDataRequest.prototype.data = undefined;
 
 /**
+ * input info
+ * @member {Object.<String, Object>} input
+ */
+ParseAbiDataRequest.prototype.input = undefined;
+
+/**
  * Carrying the signer and contract address will help to decode more information.
  * @member {String} signer
  */
 ParseAbiDataRequest.prototype.signer = undefined;
 
 /**
- * Allowed values for the <code>transcationType</code> property.
+ * Allowed values for the <code>transcation_type</code> property.
  * @enum {String}
  * @readonly
  */
 ParseAbiDataRequest.TranscationTypeEnum = {
   /**
-   * value: "COMMON"
+   * value: "common"
    * @const
    */
-  COMMON: "COMMON",
+  common: "common",
 
   /**
-   * value: "ETH_SIGNTYPEDDATA_V4"
+   * value: "eth_signTypedData_v4"
    * @const
    */
-  eTHSIGNTYPEDDATAV4: "ETH_SIGNTYPEDDATA_V4",
+  eth_signTypedData_v4: "eth_signTypedData_v4",
 
   /**
-   * value: "PERSONAL_SIGN"
+   * value: "personal_sign"
    * @const
    */
-  PERSONAL_SIGN: "PERSONAL_SIGN",
+  personal_sign: "personal_sign",
 
   /**
-   * value: "ETH_SIGN"
+   * value: "eth_sign"
    * @const
    */
-  ETH_SIGN: "ETH_SIGN"
+  eth_sign: "eth_sign"
 };
 /**
  * Transaction type
- * @member {module:model/ParseAbiDataRequest.TranscationTypeEnum} transcationType
+ * @member {module:model/ParseAbiDataRequest.TranscationTypeEnum} transcation_type
  */
-ParseAbiDataRequest.prototype.transcationType = undefined;
+ParseAbiDataRequest.prototype.transcation_type = undefined;
 

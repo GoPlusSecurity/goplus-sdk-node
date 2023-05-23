@@ -49,7 +49,7 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/ApproveControllerV2Api~addressNFT1155ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -72,7 +72,7 @@ export class ApproveControllerV2Api {
         'addresses': addresses
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
@@ -102,7 +102,7 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/ApproveControllerV2Api~addressNFT721ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -125,7 +125,7 @@ export class ApproveControllerV2Api {
         'addresses': addresses
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
@@ -155,7 +155,7 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/ApproveControllerV2Api~addressTokenApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
@@ -178,7 +178,7 @@ export class ApproveControllerV2Api {
         'addresses': addresses
       };
       let headerParams = {
-        'Authorization': opts['authorization']
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         

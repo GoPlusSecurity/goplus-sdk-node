@@ -39,11 +39,11 @@ export class AbiAddressInfo {
     if (data) {
       obj = obj || new AbiAddressInfo();
       if (data.hasOwnProperty('contract_name'))
-        obj.contractName = ApiClient.convertToType(data['contract_name'], 'String');
+        obj.contract_name = ApiClient.convertToType(data['contract_name'], 'String');
       if (data.hasOwnProperty('is_contract'))
-        obj.isContract = ApiClient.convertToType(data['is_contract'], 'Number');
+        obj.is_contract = ApiClient.convertToType(data['is_contract'], 'Number');
       if (data.hasOwnProperty('malicious_address'))
-        obj.maliciousAddress = ApiClient.convertToType(data['malicious_address'], 'Number');
+        obj.malicious_address = ApiClient.convertToType(data['malicious_address'], 'Number');
       if (data.hasOwnProperty('name'))
         obj.name = ApiClient.convertToType(data['name'], 'String');
       if (data.hasOwnProperty('standard'))
@@ -57,21 +57,21 @@ export class AbiAddressInfo {
 
 /**
  * It describes the contract name if the address is a contract.
- * @member {String} contractName
+ * @member {String} contract_name
  */
-AbiAddressInfo.prototype.contractName = undefined;
+AbiAddressInfo.prototype.contract_name = undefined;
 
 /**
  * It describes whether the address is a contract. \"1\" means true; \"0\" means false.
- * @member {Number} isContract
+ * @member {Number} is_contract
  */
-AbiAddressInfo.prototype.isContract = undefined;
+AbiAddressInfo.prototype.is_contract = undefined;
 
 /**
  * It describes whether the address is a suspected malicious contract.\"1\" means true; \"0\" means that we have not found malicious behavior of this address.
- * @member {Number} maliciousAddress
+ * @member {Number} malicious_address
  */
-AbiAddressInfo.prototype.maliciousAddress = undefined;
+AbiAddressInfo.prototype.malicious_address = undefined;
 
 /**
  * It describes the token name if the address is an ERC20 contract.

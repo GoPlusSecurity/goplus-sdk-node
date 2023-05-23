@@ -40,46 +40,46 @@ export class ApproveTokenResult {
     if (data) {
       obj = obj || new ApproveTokenResult();
       if (data.hasOwnProperty('address_info'))
-        obj.addressInfo = ApproveAddressInfo.constructFromObject(data['address_info']);
+        obj.address_info = ApproveAddressInfo.constructFromObject(data['address_info']);
       if (data.hasOwnProperty('approved_amount'))
-        obj.approvedAmount = ApiClient.convertToType(data['approved_amount'], 'String');
+        obj.approved_amount = ApiClient.convertToType(data['approved_amount'], 'String');
       if (data.hasOwnProperty('approved_contract'))
-        obj.approvedContract = ApiClient.convertToType(data['approved_contract'], 'String');
+        obj.approved_contract = ApiClient.convertToType(data['approved_contract'], 'String');
       if (data.hasOwnProperty('approved_time'))
-        obj.approvedTime = ApiClient.convertToType(data['approved_time'], 'Number');
+        obj.approved_time = ApiClient.convertToType(data['approved_time'], 'Number');
       if (data.hasOwnProperty('hash'))
         obj.hash = ApiClient.convertToType(data['hash'], 'String');
       if (data.hasOwnProperty('initial_approval_hash'))
-        obj.initialApprovalHash = ApiClient.convertToType(data['initial_approval_hash'], 'String');
+        obj.initial_approval_hash = ApiClient.convertToType(data['initial_approval_hash'], 'String');
       if (data.hasOwnProperty('initial_approval_time'))
-        obj.initialApprovalTime = ApiClient.convertToType(data['initial_approval_time'], 'Number');
+        obj.initial_approval_time = ApiClient.convertToType(data['initial_approval_time'], 'Number');
     }
     return obj;
   }
 }
 
 /**
- * @member {module:model/ApproveAddressInfo} addressInfo
+ * @member {module:model/ApproveAddressInfo} address_info
  */
-ApproveTokenResult.prototype.addressInfo = undefined;
+ApproveTokenResult.prototype.address_info = undefined;
 
 /**
  * Allowance of the spender
- * @member {String} approvedAmount
+ * @member {String} approved_amount
  */
-ApproveTokenResult.prototype.approvedAmount = undefined;
+ApproveTokenResult.prototype.approved_amount = undefined;
 
 /**
  * Spender Address
- * @member {String} approvedContract
+ * @member {String} approved_contract
  */
-ApproveTokenResult.prototype.approvedContract = undefined;
+ApproveTokenResult.prototype.approved_contract = undefined;
 
 /**
  * Latest approval time
- * @member {Number} approvedTime
+ * @member {Number} approved_time
  */
-ApproveTokenResult.prototype.approvedTime = undefined;
+ApproveTokenResult.prototype.approved_time = undefined;
 
 /**
  * Latest approval hash
@@ -89,13 +89,13 @@ ApproveTokenResult.prototype.hash = undefined;
 
 /**
  * Initial approval hash
- * @member {String} initialApprovalHash
+ * @member {String} initial_approval_hash
  */
-ApproveTokenResult.prototype.initialApprovalHash = undefined;
+ApproveTokenResult.prototype.initial_approval_hash = undefined;
 
 /**
  * Initial approval time
- * @member {Number} initialApprovalTime
+ * @member {Number} initial_approval_time
  */
-ApproveTokenResult.prototype.initialApprovalTime = undefined;
+ApproveTokenResult.prototype.initial_approval_time = undefined;
 
