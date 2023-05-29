@@ -13,18 +13,18 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperPhishingSite} from '../model/ResponseWrapperPhishingSite';
+import {ResponseWrapperGetDefiInfo} from '../model/ResponseWrapperGetDefiInfo';
 
 /**
-* WebsiteController service.
-* @module api/WebsiteControllerApi
+* DefiController service.
+* @module api/DefiControllerApi
 * @version 1.0
 */
-export class WebsiteControllerApi {
+export class DefiControllerApi {
 
     /**
-    * Constructs a new WebsiteControllerApi. 
-    * @alias module:api/WebsiteControllerApi
+    * Constructs a new DefiControllerApi. 
+    * @alias module:api/DefiControllerApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instanc
@@ -35,34 +35,35 @@ export class WebsiteControllerApi {
     }
 
     /**
-     * Callback function to receive the result of the phishingSiteUsingGET operation.
-     * @callback moduleapi/WebsiteControllerApi~phishingSiteUsingGETCallback
+     * Callback function to receive the result of the getDefiInfoUsingGET operation.
+     * @callback moduleapi/DefiControllerApi~getDefiInfoUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperPhishingSite{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperGetDefiInfo{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Check if the the url is a phishing site
-     * @param {String} url Url
+     * Rug-pull Detection API Beta
+     * @param {String} chain_id Chain id, (eth: 1, bsc: 56)
      * @param {Object} opts Optional parameters
      * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {module:api/WebsiteControllerApi~phishingSiteUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} opts.Defi_protocol_address Defi protocol address
+     * @param {module:api/DefiControllerApi~getDefiInfoUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    phishingSiteUsingGET(url, opts, callback) {
+    getDefiInfoUsingGET(chain_id, opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'url' is set
-      if (url === undefined || url === null) {
-        throw new Error("Missing the required parameter 'url' when calling phishingSiteUsingGET");
+      // verify the required parameter 'chain_id' is set
+      if (chain_id === undefined || chain_id === null) {
+        throw new Error("Missing the required parameter 'chain_id' when calling getDefiInfoUsingGET");
       }
 
       let pathParams = {
-        
+        'chain_id': chain_id
       };
       let queryParams = {
-        'url': url
+        'Defi protocol address': opts['Defi_protocol_address']
       };
       let headerParams = {
         'Authorization': opts['Authorization']
@@ -74,10 +75,10 @@ export class WebsiteControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperPhishingSite;
+      let returnType = ResponseWrapperGetDefiInfo;
 
       return this.apiClient.callApi(
-        '/api/v1/phishing_site', 'GET',
+        '/api/v1/rugpull_detecting/{chain_id}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
