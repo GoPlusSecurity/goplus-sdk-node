@@ -117,6 +117,12 @@ Object.defineProperty(exports, "DappControllerApi", {
     return _DappControllerApi.DappControllerApi;
   }
 });
+Object.defineProperty(exports, "DefiControllerApi", {
+  enumerable: true,
+  get: function get() {
+    return _DefiControllerApi.DefiControllerApi;
+  }
+});
 Object.defineProperty(exports, "GetAccessTokenRequest", {
   enumerable: true,
   get: function get() {
@@ -189,6 +195,24 @@ Object.defineProperty(exports, "ResponseWrapperGetAccessTokenResponse", {
     return _ResponseWrapperGetAccessTokenResponse.ResponseWrapperGetAccessTokenResponse;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperGetDefiInfo", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetDefiInfo.ResponseWrapperGetDefiInfo;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetDefiInfoResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetDefiInfoResult.ResponseWrapperGetDefiInfoResult;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetDefiInfoResultOwner", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetDefiInfoResultOwner.ResponseWrapperGetDefiInfoResultOwner;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperGetNftInfo", {
   enumerable: true,
   get: function get() {
@@ -255,22 +279,22 @@ Object.defineProperty(exports, "ResponseWrapperListApproveTokenOutListResponse",
     return _ResponseWrapperListApproveTokenOutListResponse.ResponseWrapperListApproveTokenOutListResponse;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperListGetChainsList", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperListGetChainsList.ResponseWrapperListGetChainsList;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperListGetChainsListResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperListGetChainsListResult.ResponseWrapperListGetChainsListResult;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperListJSONObject", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperListJSONObject.ResponseWrapperListJSONObject;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b.ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result.ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperMapstringstring", {
@@ -383,6 +407,9 @@ var _ResponseWrapperAddressContractResult = require("./model/ResponseWrapperAddr
 var _ResponseWrapperContractApproveResponse = require("./model/ResponseWrapperContractApproveResponse");
 var _ResponseWrapperDappContractSecurityResponse = require("./model/ResponseWrapperDappContractSecurityResponse");
 var _ResponseWrapperGetAccessTokenResponse = require("./model/ResponseWrapperGetAccessTokenResponse");
+var _ResponseWrapperGetDefiInfo = require("./model/ResponseWrapperGetDefiInfo");
+var _ResponseWrapperGetDefiInfoResult = require("./model/ResponseWrapperGetDefiInfoResult");
+var _ResponseWrapperGetDefiInfoResultOwner = require("./model/ResponseWrapperGetDefiInfoResultOwner");
 var _ResponseWrapperGetNftInfo = require("./model/ResponseWrapperGetNftInfo");
 var _ResponseWrapperGetNftInfoResult = require("./model/ResponseWrapperGetNftInfoResult");
 var _ResponseWrapperGetNftInfoResultPrivilegedBurn = require("./model/ResponseWrapperGetNftInfoResultPrivilegedBurn");
@@ -394,9 +421,9 @@ var _ResponseWrapperJSONObject = require("./model/ResponseWrapperJSONObject");
 var _ResponseWrapperListApproveNFT1155ListResponse = require("./model/ResponseWrapperListApproveNFT1155ListResponse");
 var _ResponseWrapperListApproveNFTListResponse = require("./model/ResponseWrapperListApproveNFTListResponse");
 var _ResponseWrapperListApproveTokenOutListResponse = require("./model/ResponseWrapperListApproveTokenOutListResponse");
+var _ResponseWrapperListGetChainsList = require("./model/ResponseWrapperListGetChainsList");
+var _ResponseWrapperListGetChainsListResult = require("./model/ResponseWrapperListGetChainsListResult");
 var _ResponseWrapperListJSONObject = require("./model/ResponseWrapperListJSONObject");
-var _ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b = require("./model/ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5");
-var _ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result = require("./model/ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result");
 var _ResponseWrapperMapstringstring = require("./model/ResponseWrapperMapstringstring");
 var _ResponseWrapperParseAbiDataResponse = require("./model/ResponseWrapperParseAbiDataResponse");
 var _ResponseWrapperPhishingSite = require("./model/ResponseWrapperPhishingSite");
@@ -412,6 +439,7 @@ var _ApproveControllerV1Api = require("./api/ApproveControllerV1Api");
 var _ApproveControllerV2Api = require("./api/ApproveControllerV2Api");
 var _ContractAbiControllerApi = require("./api/ContractAbiControllerApi");
 var _DappControllerApi = require("./api/DappControllerApi");
+var _DefiControllerApi = require("./api/DefiControllerApi");
 var _NftControllerApi = require("./api/NftControllerApi");
 var _TokenControllerApi = require("./api/TokenControllerApi");
 var _TokenControllerV1Api = require("./api/TokenControllerV1Api");

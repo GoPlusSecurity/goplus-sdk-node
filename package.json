@@ -1,12 +1,12 @@
 {
   "name": "goplus-sdk-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "goplus api sdk for nodejs",
   "author": "GoplusSecurity",
   "license": "MIT",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "npm run build & node ./example/test.js",
+    "test": "npm run build && node ./example/test.js",
     "clean": "rm -rf lib/ dist/",
     "build": "yarn babel --out-dir dist src"
   },

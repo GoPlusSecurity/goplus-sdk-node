@@ -184,3 +184,17 @@ if (ret.code != ErrorCode.SUCCESS) {
 }
 	
 ```
+
+### Rugpull Detection
+
+```javascript
+let chainId = '1';
+let address = '0x0785ab399Ae207cE2c7A3eAC18eda16177fAD588';
+let rugpullRet = await GoPlus.rugpullDetection(chainId, address);
+
+if (rugpullRet.code != ErrorCode.SUCCESS&& ret.code != ErrorCode.DATA_PENDING_SYNC) {
+    console.error(rugpullRet.message);
+} else {
+    console.log(rugpullRet.result);
+}
+```
