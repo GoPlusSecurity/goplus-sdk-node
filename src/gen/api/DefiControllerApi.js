@@ -44,16 +44,20 @@ export class DefiControllerApi {
 
     /**
      * Rug-pull Detection API Beta
+     * @param {String} contract_addresses Defi protocol address
      * @param {String} chain_id Chain id, (eth: 1, bsc: 56)
      * @param {Object} opts Optional parameters
      * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {String} opts.Defi_protocol_address Defi protocol address
      * @param {module:api/DefiControllerApi~getDefiInfoUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getDefiInfoUsingGET(chain_id, opts, callback) {
+    getDefiInfoUsingGET(contract_addresses, chain_id, opts, callback) {
       opts = opts || {};
       let postBody = null;
+      // verify the required parameter 'contract_addresses' is set
+      if (contract_addresses === undefined || contract_addresses === null) {
+        throw new Error("Missing the required parameter 'contract_addresses' when calling getDefiInfoUsingGET");
+      }
       // verify the required parameter 'chain_id' is set
       if (chain_id === undefined || chain_id === null) {
         throw new Error("Missing the required parameter 'chain_id' when calling getDefiInfoUsingGET");
@@ -63,7 +67,7 @@ export class DefiControllerApi {
         'chain_id': chain_id
       };
       let queryParams = {
-        'Defi protocol address': opts['Defi_protocol_address']
+        'contract_addresses': contract_addresses
       };
       let headerParams = {
         'Authorization': opts['Authorization']
