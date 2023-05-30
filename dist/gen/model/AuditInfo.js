@@ -43,9 +43,9 @@ class AuditInfo {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new AuditInfo();
-      if (data.hasOwnProperty('audit_firm')) obj.auditFirm = _ApiClient.ApiClient.convertToType(data['audit_firm'], 'String');
-      if (data.hasOwnProperty('audit_link')) obj.auditLink = _ApiClient.ApiClient.convertToType(data['audit_link'], 'String');
-      if (data.hasOwnProperty('audit_time')) obj.auditTime = _ApiClient.ApiClient.convertToType(data['audit_time'], 'String');
+      if (data.hasOwnProperty('audit_firm')) obj.audit_firm = _ApiClient.ApiClient.convertToType(data['audit_firm'], 'String');
+      if (data.hasOwnProperty('audit_link')) obj.audit_link = _ApiClient.ApiClient.convertToType(data['audit_link'], 'String');
+      if (data.hasOwnProperty('audit_time')) obj.audit_time = _ApiClient.ApiClient.convertToType(data['audit_time'], 'String');
     }
     return obj;
   }
@@ -53,19 +53,19 @@ class AuditInfo {
 
 /**
  * It describes the firm that audited the dApp.
- * @member {String} auditFirm
+ * @member {String} audit_firm
  */
 exports.AuditInfo = AuditInfo;
-AuditInfo.prototype.auditFirm = undefined;
+AuditInfo.prototype.audit_firm = undefined;
 
 /**
  * It describes the website link of the audit report.
- * @member {String} auditLink
+ * @member {String} audit_link
  */
-AuditInfo.prototype.auditLink = undefined;
+AuditInfo.prototype.audit_link = undefined;
 
 /**
  * It describes the time shown in the latest audit report.
- * @member {String} auditTime
+ * @member {String} audit_time
  */
-AuditInfo.prototype.auditTime = undefined;
+AuditInfo.prototype.audit_time = undefined;

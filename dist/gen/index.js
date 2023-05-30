@@ -159,6 +159,18 @@ Object.defineProperty(exports, "ParseAbiDataResponse", {
     return _ParseAbiDataResponse.ParseAbiDataResponse;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperAddressContract", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperAddressContract.ResponseWrapperAddressContract;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperAddressContractResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperAddressContractResult.ResponseWrapperAddressContractResult;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperContractApproveResponse", {
   enumerable: true,
   get: function get() {
@@ -177,52 +189,52 @@ Object.defineProperty(exports, "ResponseWrapperGetAccessTokenResponse", {
     return _ResponseWrapperGetAccessTokenResponse.ResponseWrapperGetAccessTokenResponse;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperGetNftInfo", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfo.ResponseWrapperGetNftInfo;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResult.ResponseWrapperGetNftInfoResult;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResultPrivilegedBurn", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResultPrivilegedBurn.ResponseWrapperGetNftInfoResultPrivilegedBurn;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResultPrivilegedMinting", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResultPrivilegedMinting.ResponseWrapperGetNftInfoResultPrivilegedMinting;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResultSameNfts", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResultSameNfts.ResponseWrapperGetNftInfoResultSameNfts;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResultSelfDestruct", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResultSelfDestruct.ResponseWrapperGetNftInfoResultSelfDestruct;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperGetNftInfoResultTransferWithoutApproval", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperGetNftInfoResultTransferWithoutApproval.ResponseWrapperGetNftInfoResultTransferWithoutApproval;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperJSONObject", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperJSONObject.ResponseWrapperJSONObject;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval.ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperListApproveNFT1155ListResponse", {
@@ -249,16 +261,16 @@ Object.defineProperty(exports, "ResponseWrapperListJSONObject", {
     return _ResponseWrapperListJSONObject.ResponseWrapperListJSONObject;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3", {
+Object.defineProperty(exports, "ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f.ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3;
+    return _ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b.ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result", {
+Object.defineProperty(exports, "ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result.ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result;
+    return _ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result.ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperMapstringstring", {
@@ -267,22 +279,22 @@ Object.defineProperty(exports, "ResponseWrapperMapstringstring", {
     return _ResponseWrapperMapstringstring.ResponseWrapperMapstringstring;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf.ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result.ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result;
-  }
-});
 Object.defineProperty(exports, "ResponseWrapperParseAbiDataResponse", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperParseAbiDataResponse.ResponseWrapperParseAbiDataResponse;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSite", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSite.ResponseWrapperPhishingSite;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResult.ResponseWrapperPhishingSiteResult;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse", {
@@ -291,46 +303,34 @@ Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse", {
     return _ResponseWrapperTaTokenSecurityResponse.ResponseWrapperTaTokenSecurityResponse;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2", {
+Object.defineProperty(exports, "ResponseWrapperTokenSecurity", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe.ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2;
+    return _ResponseWrapperTokenSecurity.ResponseWrapperTokenSecurity;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex", {
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityDex", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex.ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex;
+    return _ResponseWrapperTokenSecurityDex.ResponseWrapperTokenSecurityDex;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders", {
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityLpHolders", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders.ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders;
+    return _ResponseWrapperTokenSecurityLpHolders.ResponseWrapperTokenSecurityLpHolders;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result", {
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityResult", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result.ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result;
+    return _ResponseWrapperTokenSecurityResult.ResponseWrapperTokenSecurityResult;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperobject", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperobject.ResponseWrapperobject;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df.ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result.ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result;
   }
 });
 Object.defineProperty(exports, "TaTokenSecurityResponse", {
@@ -378,35 +378,35 @@ var _JSONObject = require("./model/JSONObject");
 var _Mapstringstring = require("./model/Mapstringstring");
 var _ParseAbiDataRequest = require("./model/ParseAbiDataRequest");
 var _ParseAbiDataResponse = require("./model/ParseAbiDataResponse");
+var _ResponseWrapperAddressContract = require("./model/ResponseWrapperAddressContract");
+var _ResponseWrapperAddressContractResult = require("./model/ResponseWrapperAddressContractResult");
 var _ResponseWrapperContractApproveResponse = require("./model/ResponseWrapperContractApproveResponse");
 var _ResponseWrapperDappContractSecurityResponse = require("./model/ResponseWrapperDappContractSecurityResponse");
 var _ResponseWrapperGetAccessTokenResponse = require("./model/ResponseWrapperGetAccessTokenResponse");
+var _ResponseWrapperGetNftInfo = require("./model/ResponseWrapperGetNftInfo");
+var _ResponseWrapperGetNftInfoResult = require("./model/ResponseWrapperGetNftInfoResult");
+var _ResponseWrapperGetNftInfoResultPrivilegedBurn = require("./model/ResponseWrapperGetNftInfoResultPrivilegedBurn");
+var _ResponseWrapperGetNftInfoResultPrivilegedMinting = require("./model/ResponseWrapperGetNftInfoResultPrivilegedMinting");
+var _ResponseWrapperGetNftInfoResultSameNfts = require("./model/ResponseWrapperGetNftInfoResultSameNfts");
+var _ResponseWrapperGetNftInfoResultSelfDestruct = require("./model/ResponseWrapperGetNftInfoResultSelfDestruct");
+var _ResponseWrapperGetNftInfoResultTransferWithoutApproval = require("./model/ResponseWrapperGetNftInfoResultTransferWithoutApproval");
 var _ResponseWrapperJSONObject = require("./model/ResponseWrapperJSONObject");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResult");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedBurn");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultPrivilegedMinting");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSameNfts");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultSelfDestruct");
-var _ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval = require("./model/ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6cResultTransferWithoutApproval");
 var _ResponseWrapperListApproveNFT1155ListResponse = require("./model/ResponseWrapperListApproveNFT1155ListResponse");
 var _ResponseWrapperListApproveNFTListResponse = require("./model/ResponseWrapperListApproveNFTListResponse");
 var _ResponseWrapperListApproveTokenOutListResponse = require("./model/ResponseWrapperListApproveTokenOutListResponse");
 var _ResponseWrapperListJSONObject = require("./model/ResponseWrapperListJSONObject");
-var _ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f = require("./model/ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3");
-var _ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result = require("./model/ResponseWrapperListJSONObject9524a1c652c545bfb6c6898bfc3e93f3Result");
+var _ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b = require("./model/ResponseWrapperListJSONObject877c2b4f74b04546B8a06d6e416a60b5");
+var _ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result = require("./model/ResponseWrapperListJSONObject877c2b4f74b04546b8a06d6e416a60b5Result");
 var _ResponseWrapperMapstringstring = require("./model/ResponseWrapperMapstringstring");
-var _ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf = require("./model/ResponseWrapperMapstringstring2a740de0Be5a4eb3B6e4A2cf0a2d8bf8");
-var _ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result = require("./model/ResponseWrapperMapstringstring2a740de0be5a4eb3b6e4a2cf0a2d8bf8Result");
 var _ResponseWrapperParseAbiDataResponse = require("./model/ResponseWrapperParseAbiDataResponse");
+var _ResponseWrapperPhishingSite = require("./model/ResponseWrapperPhishingSite");
+var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishingSiteResult");
 var _ResponseWrapperTaTokenSecurityResponse = require("./model/ResponseWrapperTaTokenSecurityResponse");
-var _ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe = require("./model/ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2");
-var _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex = require("./model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Dex");
-var _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders = require("./model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2LpHolders");
-var _ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result = require("./model/ResponseWrapperTaTokenSecurityResponse205696bcfb354bc5ab26ddc7cd495fe2Result");
+var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurity");
+var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
+var _ResponseWrapperTokenSecurityLpHolders = require("./model/ResponseWrapperTokenSecurityLpHolders");
+var _ResponseWrapperTokenSecurityResult = require("./model/ResponseWrapperTokenSecurityResult");
 var _ResponseWrapperobject = require("./model/ResponseWrapperobject");
-var _ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df = require("./model/ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255");
-var _ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result = require("./model/ResponseWrapperobject545a2ceab58741b4aae7f3d73df91255Result");
 var _TaTokenSecurityResponse = require("./model/TaTokenSecurityResponse");
 var _ApproveControllerV1Api = require("./api/ApproveControllerV1Api");
 var _ApproveControllerV2Api = require("./api/ApproveControllerV2Api");

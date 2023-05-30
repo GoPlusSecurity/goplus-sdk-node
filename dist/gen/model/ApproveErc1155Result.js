@@ -44,34 +44,34 @@ class ApproveErc1155Result {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new ApproveErc1155Result();
-      if (data.hasOwnProperty('address_info')) obj.addressInfo = _ApproveAddressInfo.ApproveAddressInfo.constructFromObject(data['address_info']);
-      if (data.hasOwnProperty('approved_contract')) obj.approvedContract = _ApiClient.ApiClient.convertToType(data['approved_contract'], 'String');
-      if (data.hasOwnProperty('approved_time')) obj.approvedTime = _ApiClient.ApiClient.convertToType(data['approved_time'], 'Number');
+      if (data.hasOwnProperty('address_info')) obj.address_info = _ApproveAddressInfo.ApproveAddressInfo.constructFromObject(data['address_info']);
+      if (data.hasOwnProperty('approved_contract')) obj.approved_contract = _ApiClient.ApiClient.convertToType(data['approved_contract'], 'String');
+      if (data.hasOwnProperty('approved_time')) obj.approved_time = _ApiClient.ApiClient.convertToType(data['approved_time'], 'Number');
       if (data.hasOwnProperty('hash')) obj.hash = _ApiClient.ApiClient.convertToType(data['hash'], 'String');
-      if (data.hasOwnProperty('initial_approval_hash')) obj.initialApprovalHash = _ApiClient.ApiClient.convertToType(data['initial_approval_hash'], 'String');
-      if (data.hasOwnProperty('initial_approval_time')) obj.initialApprovalTime = _ApiClient.ApiClient.convertToType(data['initial_approval_time'], 'Number');
+      if (data.hasOwnProperty('initial_approval_hash')) obj.initial_approval_hash = _ApiClient.ApiClient.convertToType(data['initial_approval_hash'], 'String');
+      if (data.hasOwnProperty('initial_approval_time')) obj.initial_approval_time = _ApiClient.ApiClient.convertToType(data['initial_approval_time'], 'Number');
     }
     return obj;
   }
 }
 
 /**
- * @member {module:model/ApproveAddressInfo} addressInfo
+ * @member {module:model/ApproveAddressInfo} address_info
  */
 exports.ApproveErc1155Result = ApproveErc1155Result;
-ApproveErc1155Result.prototype.addressInfo = undefined;
+ApproveErc1155Result.prototype.address_info = undefined;
 
 /**
  * Spender Address
- * @member {String} approvedContract
+ * @member {String} approved_contract
  */
-ApproveErc1155Result.prototype.approvedContract = undefined;
+ApproveErc1155Result.prototype.approved_contract = undefined;
 
 /**
  * Latest approval time
- * @member {Number} approvedTime
+ * @member {Number} approved_time
  */
-ApproveErc1155Result.prototype.approvedTime = undefined;
+ApproveErc1155Result.prototype.approved_time = undefined;
 
 /**
  * Latest approval hash
@@ -81,12 +81,12 @@ ApproveErc1155Result.prototype.hash = undefined;
 
 /**
  * Initial approval hash
- * @member {String} initialApprovalHash
+ * @member {String} initial_approval_hash
  */
-ApproveErc1155Result.prototype.initialApprovalHash = undefined;
+ApproveErc1155Result.prototype.initial_approval_hash = undefined;
 
 /**
  * Initial approval time
- * @member {Number} initialApprovalTime
+ * @member {Number} initial_approval_time
  */
-ApproveErc1155Result.prototype.initialApprovalTime = undefined;
+ApproveErc1155Result.prototype.initial_approval_time = undefined;

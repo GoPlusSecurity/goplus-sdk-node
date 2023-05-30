@@ -44,7 +44,7 @@ class ContractsSecurity {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new ContractsSecurity();
-      if (data.hasOwnProperty('chain_id')) obj.chainId = _ApiClient.ApiClient.convertToType(data['chain_id'], 'String');
+      if (data.hasOwnProperty('chain_id')) obj.chain_id = _ApiClient.ApiClient.convertToType(data['chain_id'], 'String');
       if (data.hasOwnProperty('contracts')) obj.contracts = _ApiClient.ApiClient.convertToType(data['contracts'], [_Contracts.Contracts]);
     }
     return obj;
@@ -53,10 +53,10 @@ class ContractsSecurity {
 
 /**
  * It describes the chains that contracts are deployed on;\"1\" means Ethereum; \"25\" means Cronos; \"56\" means BSC; \"128\" means HECO; \"137\" means Polygon; \"250\" means Fantom; \"42161\" means Arbitrum; \"43114\" means Avalanche.
- * @member {String} chainId
+ * @member {String} chain_id
  */
 exports.ContractsSecurity = ContractsSecurity;
-ContractsSecurity.prototype.chainId = undefined;
+ContractsSecurity.prototype.chain_id = undefined;
 
 /**
  * contract info

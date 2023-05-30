@@ -43,8 +43,8 @@ class GetAccessTokenResponse {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new GetAccessTokenResponse();
-      if (data.hasOwnProperty('access_token')) obj.accessToken = _ApiClient.ApiClient.convertToType(data['access_token'], 'String');
-      if (data.hasOwnProperty('expires_in')) obj.expiresIn = _ApiClient.ApiClient.convertToType(data['expires_in'], 'Number');
+      if (data.hasOwnProperty('access_token')) obj.access_token = _ApiClient.ApiClient.convertToType(data['access_token'], 'String');
+      if (data.hasOwnProperty('expires_in')) obj.expires_in = _ApiClient.ApiClient.convertToType(data['expires_in'], 'Number');
     }
     return obj;
   }
@@ -52,13 +52,13 @@ class GetAccessTokenResponse {
 
 /**
  * access_token
- * @member {String} accessToken
+ * @member {String} access_token
  */
 exports.GetAccessTokenResponse = GetAccessTokenResponse;
-GetAccessTokenResponse.prototype.accessToken = undefined;
+GetAccessTokenResponse.prototype.access_token = undefined;
 
 /**
  * expires_in
- * @member {Number} expiresIn
+ * @member {Number} expires_in
  */
-GetAccessTokenResponse.prototype.expiresIn = undefined;
+GetAccessTokenResponse.prototype.expires_in = undefined;

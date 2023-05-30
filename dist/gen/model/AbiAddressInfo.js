@@ -43,9 +43,9 @@ class AbiAddressInfo {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new AbiAddressInfo();
-      if (data.hasOwnProperty('contract_name')) obj.contractName = _ApiClient.ApiClient.convertToType(data['contract_name'], 'String');
-      if (data.hasOwnProperty('is_contract')) obj.isContract = _ApiClient.ApiClient.convertToType(data['is_contract'], 'Number');
-      if (data.hasOwnProperty('malicious_address')) obj.maliciousAddress = _ApiClient.ApiClient.convertToType(data['malicious_address'], 'Number');
+      if (data.hasOwnProperty('contract_name')) obj.contract_name = _ApiClient.ApiClient.convertToType(data['contract_name'], 'String');
+      if (data.hasOwnProperty('is_contract')) obj.is_contract = _ApiClient.ApiClient.convertToType(data['is_contract'], 'Number');
+      if (data.hasOwnProperty('malicious_address')) obj.malicious_address = _ApiClient.ApiClient.convertToType(data['malicious_address'], 'Number');
       if (data.hasOwnProperty('name')) obj.name = _ApiClient.ApiClient.convertToType(data['name'], 'String');
       if (data.hasOwnProperty('standard')) obj.standard = _ApiClient.ApiClient.convertToType(data['standard'], 'String');
       if (data.hasOwnProperty('symbol')) obj.symbol = _ApiClient.ApiClient.convertToType(data['symbol'], 'String');
@@ -56,22 +56,22 @@ class AbiAddressInfo {
 
 /**
  * It describes the contract name if the address is a contract.
- * @member {String} contractName
+ * @member {String} contract_name
  */
 exports.AbiAddressInfo = AbiAddressInfo;
-AbiAddressInfo.prototype.contractName = undefined;
+AbiAddressInfo.prototype.contract_name = undefined;
 
 /**
  * It describes whether the address is a contract. \"1\" means true; \"0\" means false.
- * @member {Number} isContract
+ * @member {Number} is_contract
  */
-AbiAddressInfo.prototype.isContract = undefined;
+AbiAddressInfo.prototype.is_contract = undefined;
 
 /**
  * It describes whether the address is a suspected malicious contract.\"1\" means true; \"0\" means that we have not found malicious behavior of this address.
- * @member {Number} maliciousAddress
+ * @member {Number} malicious_address
  */
-AbiAddressInfo.prototype.maliciousAddress = undefined;
+AbiAddressInfo.prototype.malicious_address = undefined;
 
 /**
  * It describes the token name if the address is an ERC20 contract.
