@@ -4,7 +4,7 @@ async function test() {
     let app_key = '';
     let app_secret = '';
     let timeout = 30; // default timeout is 30s
-    GoPlus.config(app_key, app_secret, 30);
+    GoPlus.config(app_key, app_secret, timeout);
 
     // let accessTokenRet = await GoPlus.getAccessToken();
     // if (accessTokenRet.code != 1) {
@@ -78,7 +78,7 @@ async function test() {
     }
 
     // nft security
-    let nftRet = await GoPlus.nftSecurity('1', '0x11450058d796b02eb53e65374be59cff65d3fe7f');
+    let nftRet = await GoPlus.nftSecurity('1', '0x60e4d786628fea6478f785a6d7e704777c86a7c6', '25218');
     if (nftRet.code != ErrorCode.SUCCESS && nftRet.code != ErrorCode.DATA_PENDING_SYNC) {
         console.error(nftRet.message);
     } else {
@@ -99,6 +99,16 @@ async function test() {
         console.error(phishingRet.message);
     } else {
         console.log(phishingRet.result);
+    }
+
+    // rugpull detection
+    let chainId = '1';
+    let address = '0x0785ab399Ae207cE2c7A3eAC18eda16177fAD588';
+    let rugpullRet = await GoPlus.rugpullDetection(chainId, address);
+    if (rugpullRet.code != ErrorCode.SUCCESS && ret.code != ErrorCode.DATA_PENDING_SYNC) {
+        console.error(rugpullRet.message);
+    } else {
+        console.log(rugpullRet.result);
     }
     process.exit(0);
 }

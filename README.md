@@ -10,7 +10,7 @@ npm install goplus-sdk-js
 
 1.After the getAccessToken method is executed, the accessToken will be passed in for each function by default. When receiving error code 4022, you need to call getAccessToken again.  
 2.GoPlus.config can set the global request timeout. And each function can set its timeout by passed in the last parameter.  
-3.GoPlus.approvalSecurity and GoPlus.nftSecurity may return error code 2, it means partial data obtained, the complete data can be requested again in about 15 seconds.
+3.GoPlus.approvalSecurity、 GoPlus.nftSecurity and GoPlus.rugpullDetection may return error code 2, it means partial data obtained, the complete data can be requested again in about 15 seconds.
 
 ### Get AccessToken
 ```javascript
@@ -183,4 +183,18 @@ if (ret.code != ErrorCode.SUCCESS) {
     console.log(ret.result);
 }
 	
+```
+
+### Rugpull Detection
+
+```javascript
+let chainId = '1';
+let address = '0x0785ab399Ae207cE2c7A3eAC18eda16177fAD588';
+let rugpullRet = await GoPlus.rugpullDetection(chainId, address);
+
+if (rugpullRet.code != ErrorCode.SUCCESS&& ret.code != ErrorCode.DATA_PENDING_SYNC) {
+    console.error(rugpullRet.message);
+} else {
+    console.log(rugpullRet.result);
+}
 ```
