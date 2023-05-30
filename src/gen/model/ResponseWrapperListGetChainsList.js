@@ -13,38 +13,38 @@
  *
  */
 import {ApiClient} from '../ApiClient';
-import {ResponseWrapperGetNftInfoResult} from './ResponseWrapperGetNftInfoResult';
+import {ResponseWrapperListGetChainsListResult} from './ResponseWrapperListGetChainsListResult';
 
 /**
- * The ResponseWrapperGetNftInfo model module.
- * @module model/ResponseWrapperGetNftInfo
+ * The ResponseWrapperListGetChainsList model module.
+ * @module model/ResponseWrapperListGetChainsList
  * @version 1.0
  */
-export class ResponseWrapperGetNftInfo {
+export class ResponseWrapperListGetChainsList {
   /**
-   * Constructs a new <code>ResponseWrapperGetNftInfo</code>.
-   * @alias module:model/ResponseWrapperGetNftInfo
+   * Constructs a new <code>ResponseWrapperListGetChainsList</code>.
+   * @alias module:model/ResponseWrapperListGetChainsList
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>ResponseWrapperGetNftInfo</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ResponseWrapperListGetChainsList</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ResponseWrapperGetNftInfo} obj Optional instance to populate.
-   * @return {module:model/ResponseWrapperGetNftInfo} The populated <code>ResponseWrapperGetNftInfo</code> instance.
+   * @param {module:model/ResponseWrapperListGetChainsList} obj Optional instance to populate.
+   * @return {module:model/ResponseWrapperListGetChainsList} The populated <code>ResponseWrapperListGetChainsList</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new ResponseWrapperGetNftInfo();
+      obj = obj || new ResponseWrapperListGetChainsList();
       if (data.hasOwnProperty('code'))
         obj.code = ApiClient.convertToType(data['code'], 'Number');
       if (data.hasOwnProperty('message'))
         obj.message = ApiClient.convertToType(data['message'], 'String');
       if (data.hasOwnProperty('result'))
-        obj.result = ResponseWrapperGetNftInfoResult.constructFromObject(data['result']);
+        obj.result = ApiClient.convertToType(data['result'], [ResponseWrapperListGetChainsListResult]);
     }
     return obj;
   }
@@ -54,16 +54,17 @@ export class ResponseWrapperGetNftInfo {
  * Code 1：Success
  * @member {Number} code
  */
-ResponseWrapperGetNftInfo.prototype.code = undefined;
+ResponseWrapperListGetChainsList.prototype.code = undefined;
 
 /**
  * Response message
  * @member {String} message
  */
-ResponseWrapperGetNftInfo.prototype.message = undefined;
+ResponseWrapperListGetChainsList.prototype.message = undefined;
 
 /**
- * @member {module:model/ResponseWrapperGetNftInfoResult} result
+ * Response result
+ * @member {Array.<module:model/ResponseWrapperListGetChainsListResult>} result
  */
-ResponseWrapperGetNftInfo.prototype.result = undefined;
+ResponseWrapperListGetChainsList.prototype.result = undefined;
 
