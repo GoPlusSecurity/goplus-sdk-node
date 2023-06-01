@@ -94,6 +94,8 @@ export class ResponseWrapperGetNftInfoResult {
         obj.self_destruct = ResponseWrapperGetNftInfoResultSelfDestruct.constructFromObject(data['self_destruct']);
       if (data.hasOwnProperty('metadata_frozen'))
         obj.metadata_frozen = ApiClient.convertToType(data['metadata_frozen'], 'Number');
+      if (data.hasOwnProperty('token_owner'))
+        obj.token_owner = ApiClient.convertToType(data['token_owner'], 'String');
       if (data.hasOwnProperty('nft_verified'))
         obj.nft_verified = ApiClient.convertToType(data['nft_verified'], 'Number');
       if (data.hasOwnProperty('same_nfts'))
@@ -264,6 +266,12 @@ ResponseWrapperGetNftInfoResult.prototype.self_destruct = undefined;
  * @member {Number} metadata_frozen
  */
 ResponseWrapperGetNftInfoResult.prototype.metadata_frozen = undefined;
+
+/**
+ * token_owner
+ * @member {String} token_owner
+ */
+ResponseWrapperGetNftInfoResult.prototype.token_owner = undefined;
 
 /**
  * It describes whether the NFT is verified. \"1\" means that the NFT is verified; \"0\" means that we did not find any information about whether the NFT is verified.
