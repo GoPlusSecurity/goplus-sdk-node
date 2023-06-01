@@ -77,6 +77,19 @@ async function test() {
         console.log(decodeRet.result);
     }
 
+    // input decode with signer
+    let chainId = '56';
+    let contract_address = '0x10ED43C718714eb63d5aA57B78B54704E256024E';
+    let signer = '0x0000000000000000000000000000000000000000';
+    let data = '0x18cbafe500000000000000000000000000000000000000000000018d3f36640ede281bf40000000000000000000000000000000000000000000000001ea33680437e6bcd00000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000c3289e4bfb8868c242833479232ff0ee4efae7800000000000000000000000000000000000000000000000000000000638f084b000000000000000000000000000000000000000000000000000000000000000200000000000000000000000031a9975f71f53d5cdeb4bf4a48b3857e3827d487000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
+    // input decode
+    let decodeRet = await GoPlus.inputDecodeWithOpts(chainId, contract_address, data, {signer});
+    if (decodeRet.code != ErrorCode.SUCCESS) {
+        console.error(decodeRet.message);
+    } else {
+        console.log(decodeRet.result.risk);
+    }
+
     // nft security
     let nftRet = await GoPlus.nftSecurity('1', '0x60e4d786628fea6478f785a6d7e704777c86a7c6', '25218');
     if (nftRet.code != ErrorCode.SUCCESS && nftRet.code != ErrorCode.DATA_PENDING_SYNC) {
