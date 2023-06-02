@@ -1,6 +1,6 @@
 const { GoPlus, ErrorCode } = require('goplus-sdk-js');
 
-var delay = 10000;
+var delay = 3000;
 function delayTimes(times) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

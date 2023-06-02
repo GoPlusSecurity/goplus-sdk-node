@@ -51,7 +51,7 @@ class ResponseWrapperGetDefiInfoResult {
       if (data.hasOwnProperty('is_open_source')) obj.is_open_source = _ApiClient.ApiClient.convertToType(data['is_open_source'], 'Number');
       if (data.hasOwnProperty('blacklist')) obj.blacklist = _ApiClient.ApiClient.convertToType(data['blacklist'], 'Number');
       if (data.hasOwnProperty('contract_name')) obj.contract_name = _ApiClient.ApiClient.convertToType(data['contract_name'], 'String');
-      if (data.hasOwnProperty('selfdestruct')) obj.selfdestruct = _ApiClient.ApiClient.convertToType(data['selfdestruct'], 'String');
+      if (data.hasOwnProperty('selfdestruct')) obj.selfdestruct = _ApiClient.ApiClient.convertToType(data['selfdestruct'], 'Number');
       if (data.hasOwnProperty('is_proxy')) obj.is_proxy = _ApiClient.ApiClient.convertToType(data['is_proxy'], 'Number');
       if (data.hasOwnProperty('approval_abuse')) obj.approval_abuse = _ApiClient.ApiClient.convertToType(data['approval_abuse'], 'Number');
     }
@@ -97,7 +97,7 @@ ResponseWrapperGetDefiInfoResult.prototype.contract_name = undefined;
 
 /**
  * It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.
- * @member {String} selfdestruct
+ * @member {Number} selfdestruct
  */
 ResponseWrapperGetDefiInfoResult.prototype.selfdestruct = undefined;
 
