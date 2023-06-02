@@ -53,7 +53,7 @@ export class ResponseWrapperGetDefiInfoResult {
       if (data.hasOwnProperty('contract_name'))
         obj.contract_name = ApiClient.convertToType(data['contract_name'], 'String');
       if (data.hasOwnProperty('selfdestruct'))
-        obj.selfdestruct = ApiClient.convertToType(data['selfdestruct'], 'String');
+        obj.selfdestruct = ApiClient.convertToType(data['selfdestruct'], 'Number');
       if (data.hasOwnProperty('is_proxy'))
         obj.is_proxy = ApiClient.convertToType(data['is_proxy'], 'Number');
       if (data.hasOwnProperty('approval_abuse'))
@@ -100,7 +100,7 @@ ResponseWrapperGetDefiInfoResult.prototype.contract_name = undefined;
 
 /**
  * It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.
- * @member {String} selfdestruct
+ * @member {Number} selfdestruct
  */
 ResponseWrapperGetDefiInfoResult.prototype.selfdestruct = undefined;
 
