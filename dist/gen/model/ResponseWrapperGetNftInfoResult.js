@@ -74,6 +74,7 @@ class ResponseWrapperGetNftInfoResult {
       if (data.hasOwnProperty('nft_description')) obj.nft_description = _ApiClient.ApiClient.convertToType(data['nft_description'], 'String');
       if (data.hasOwnProperty('self_destruct')) obj.self_destruct = _ResponseWrapperGetNftInfoResultSelfDestruct.ResponseWrapperGetNftInfoResultSelfDestruct.constructFromObject(data['self_destruct']);
       if (data.hasOwnProperty('metadata_frozen')) obj.metadata_frozen = _ApiClient.ApiClient.convertToType(data['metadata_frozen'], 'Number');
+      if (data.hasOwnProperty('token_owner')) obj.token_owner = _ApiClient.ApiClient.convertToType(data['token_owner'], 'String');
       if (data.hasOwnProperty('nft_verified')) obj.nft_verified = _ApiClient.ApiClient.convertToType(data['nft_verified'], 'Number');
       if (data.hasOwnProperty('same_nfts')) obj.same_nfts = _ApiClient.ApiClient.convertToType(data['same_nfts'], [_ResponseWrapperGetNftInfoResultSameNfts.ResponseWrapperGetNftInfoResultSameNfts]);
       if (data.hasOwnProperty('nft_items')) obj.nft_items = _ApiClient.ApiClient.convertToType(data['nft_items'], 'Number');
@@ -235,6 +236,12 @@ ResponseWrapperGetNftInfoResult.prototype.self_destruct = undefined;
  * @member {Number} metadata_frozen
  */
 ResponseWrapperGetNftInfoResult.prototype.metadata_frozen = undefined;
+
+/**
+ * token_owner
+ * @member {String} token_owner
+ */
+ResponseWrapperGetNftInfoResult.prototype.token_owner = undefined;
 
 /**
  * It describes whether the NFT is verified. \"1\" means that the NFT is verified; \"0\" means that we did not find any information about whether the NFT is verified.

@@ -143,6 +143,8 @@ if (ret.code != ErrorCode.SUCCESS) {
 } else {
     console.log(ret.result);
 }
+// let signer = '0x0000000000000000000000000000000000000000'; // Optional param
+// let decodeRet = await GoPlus.inputDecodeWithOpts(chainId, contract_address, data, {signer});
 ```
 ### NFT Security
 
