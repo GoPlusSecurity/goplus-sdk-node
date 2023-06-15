@@ -29,8 +29,11 @@ import {ContractsSecurity} from './model/ContractsSecurity';
 import {DappContractSecurityResponse} from './model/DappContractSecurityResponse';
 import {GetAccessTokenRequest} from './model/GetAccessTokenRequest';
 import {GetAccessTokenResponse} from './model/GetAccessTokenResponse';
+import {GetDefiInfoResponse} from './model/GetDefiInfoResponse';
+import {GetDefiInfoResponseResult} from './model/GetDefiInfoResponseResult';
+import {GetDefiInfoResponseResultOwner} from './model/GetDefiInfoResponseResultOwner';
 import {JSONObject} from './model/JSONObject';
-import {Mapstringstring} from './model/Mapstringstring';
+import {MapStringString} from './model/MapStringString';
 import {ParseAbiDataRequest} from './model/ParseAbiDataRequest';
 import {ParseAbiDataResponse} from './model/ParseAbiDataResponse';
 import {ResponseWrapperAddressContract} from './model/ResponseWrapperAddressContract';
@@ -38,9 +41,6 @@ import {ResponseWrapperAddressContractResult} from './model/ResponseWrapperAddre
 import {ResponseWrapperContractApproveResponse} from './model/ResponseWrapperContractApproveResponse';
 import {ResponseWrapperDappContractSecurityResponse} from './model/ResponseWrapperDappContractSecurityResponse';
 import {ResponseWrapperGetAccessTokenResponse} from './model/ResponseWrapperGetAccessTokenResponse';
-import {ResponseWrapperGetDefiInfo} from './model/ResponseWrapperGetDefiInfo';
-import {ResponseWrapperGetDefiInfoResult} from './model/ResponseWrapperGetDefiInfoResult';
-import {ResponseWrapperGetDefiInfoResultOwner} from './model/ResponseWrapperGetDefiInfoResultOwner';
 import {ResponseWrapperGetNftInfo} from './model/ResponseWrapperGetNftInfo';
 import {ResponseWrapperGetNftInfoResult} from './model/ResponseWrapperGetNftInfoResult';
 import {ResponseWrapperGetNftInfoResultPrivilegedBurn} from './model/ResponseWrapperGetNftInfoResultPrivilegedBurn';
@@ -55,7 +55,7 @@ import {ResponseWrapperListApproveTokenOutListResponse} from './model/ResponseWr
 import {ResponseWrapperListGetChainsList} from './model/ResponseWrapperListGetChainsList';
 import {ResponseWrapperListGetChainsListResult} from './model/ResponseWrapperListGetChainsListResult';
 import {ResponseWrapperListJSONObject} from './model/ResponseWrapperListJSONObject';
-import {ResponseWrapperMapstringstring} from './model/ResponseWrapperMapstringstring';
+import {ResponseWrapperMapStringString} from './model/ResponseWrapperMapStringString';
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperPhishingSite} from './model/ResponseWrapperPhishingSite';
 import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishingSiteResult';
@@ -211,16 +211,34 @@ export {
     GetAccessTokenResponse,
 
     /**
+     * The GetDefiInfoResponse model constructor.
+     * @property {module:model/GetDefiInfoResponse}
+     */
+    GetDefiInfoResponse,
+
+    /**
+     * The GetDefiInfoResponseResult model constructor.
+     * @property {module:model/GetDefiInfoResponseResult}
+     */
+    GetDefiInfoResponseResult,
+
+    /**
+     * The GetDefiInfoResponseResultOwner model constructor.
+     * @property {module:model/GetDefiInfoResponseResultOwner}
+     */
+    GetDefiInfoResponseResultOwner,
+
+    /**
      * The JSONObject model constructor.
      * @property {module:model/JSONObject}
      */
     JSONObject,
 
     /**
-     * The Mapstringstring model constructor.
-     * @property {module:model/Mapstringstring}
+     * The MapStringString model constructor.
+     * @property {module:model/MapStringString}
      */
-    Mapstringstring,
+    MapStringString,
 
     /**
      * The ParseAbiDataRequest model constructor.
@@ -263,24 +281,6 @@ export {
      * @property {module:model/ResponseWrapperGetAccessTokenResponse}
      */
     ResponseWrapperGetAccessTokenResponse,
-
-    /**
-     * The ResponseWrapperGetDefiInfo model constructor.
-     * @property {module:model/ResponseWrapperGetDefiInfo}
-     */
-    ResponseWrapperGetDefiInfo,
-
-    /**
-     * The ResponseWrapperGetDefiInfoResult model constructor.
-     * @property {module:model/ResponseWrapperGetDefiInfoResult}
-     */
-    ResponseWrapperGetDefiInfoResult,
-
-    /**
-     * The ResponseWrapperGetDefiInfoResultOwner model constructor.
-     * @property {module:model/ResponseWrapperGetDefiInfoResultOwner}
-     */
-    ResponseWrapperGetDefiInfoResultOwner,
 
     /**
      * The ResponseWrapperGetNftInfo model constructor.
@@ -367,10 +367,10 @@ export {
     ResponseWrapperListJSONObject,
 
     /**
-     * The ResponseWrapperMapstringstring model constructor.
-     * @property {module:model/ResponseWrapperMapstringstring}
+     * The ResponseWrapperMapStringString model constructor.
+     * @property {module:model/ResponseWrapperMapStringString}
      */
-    ResponseWrapperMapstringstring,
+    ResponseWrapperMapStringString,
 
     /**
      * The ResponseWrapperParseAbiDataResponse model constructor.

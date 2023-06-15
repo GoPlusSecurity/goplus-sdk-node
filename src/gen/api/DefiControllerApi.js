@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperGetDefiInfo} from '../model/ResponseWrapperGetDefiInfo';
+import {GetDefiInfoResponse} from '../model/GetDefiInfoResponse';
 
 /**
 * DefiController service.
@@ -38,29 +38,29 @@ export class DefiControllerApi {
      * Callback function to receive the result of the getDefiInfoUsingGET operation.
      * @callback moduleapi/DefiControllerApi~getDefiInfoUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperGetDefiInfo{ data The data returned by the service call.
+     * @param {module:model/GetDefiInfoResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Rug-pull Detection API Beta
-     * @param {String} contract_addresses Defi protocol address
      * @param {String} chain_id Chain id, (eth: 1, bsc: 56)
+     * @param {String} contract_addresses Defi protocol address
      * @param {Object} opts Optional parameters
      * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/DefiControllerApi~getDefiInfoUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getDefiInfoUsingGET(contract_addresses, chain_id, opts, callback) {
+    getDefiInfoUsingGET(chain_id, contract_addresses, opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'contract_addresses' is set
-      if (contract_addresses === undefined || contract_addresses === null) {
-        throw new Error("Missing the required parameter 'contract_addresses' when calling getDefiInfoUsingGET");
-      }
       // verify the required parameter 'chain_id' is set
       if (chain_id === undefined || chain_id === null) {
         throw new Error("Missing the required parameter 'chain_id' when calling getDefiInfoUsingGET");
+      }
+      // verify the required parameter 'contract_addresses' is set
+      if (contract_addresses === undefined || contract_addresses === null) {
+        throw new Error("Missing the required parameter 'contract_addresses' when calling getDefiInfoUsingGET");
       }
 
       let pathParams = {
@@ -79,7 +79,7 @@ export class DefiControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperGetDefiInfo;
+      let returnType = GetDefiInfoResponse;
 
       return this.apiClient.callApi(
         '/api/v1/rugpull_detecting/{chain_id}', 'GET',
