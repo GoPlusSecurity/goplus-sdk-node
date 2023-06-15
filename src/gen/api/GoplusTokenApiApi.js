@@ -13,19 +13,19 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ParseAbiDataRequest} from '../model/ParseAbiDataRequest';
-import {ResponseWrapperParseAbiDataResponse} from '../model/ResponseWrapperParseAbiDataResponse';
+import {GetAccessTokenRequest} from '../model/GetAccessTokenRequest';
+import {ResponseWrapperGetAccessTokenResponse} from '../model/ResponseWrapperGetAccessTokenResponse';
 
 /**
-* ContractAbiController service.
-* @module api/ContractAbiControllerApi
+* GoplusTokenApi service.
+* @module api/GoplusTokenApiApi
 * @version 1.0
 */
-export class ContractAbiControllerApi {
+export class GoplusTokenApiApi {
 
     /**
-    * Constructs a new ContractAbiControllerApi. 
-    * @alias module:api/ContractAbiControllerApi
+    * Constructs a new GoplusTokenApiApi. 
+    * @alias module:api/GoplusTokenApiApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instanc
@@ -36,28 +36,23 @@ export class ContractAbiControllerApi {
     }
 
     /**
-     * Callback function to receive the result of the getAbiDataInfoUsingPOST operation.
-     * @callback moduleapi/ContractAbiControllerApi~getAbiDataInfoUsingPOSTCallback
+     * Callback function to receive the result of the getAccessTokenUsingPOST operation.
+     * @callback moduleapi/GoplusTokenApiApi~getAccessTokenUsingPOSTCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperParseAbiDataResponse{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperGetAccessTokenResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Get abi decode info
-     * @param {module:model/ParseAbiDataRequest} body abiDataRequest
+     * get token
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {module:api/ContractAbiControllerApi~getAbiDataInfoUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:model/GetAccessTokenRequest} opts.body request
+     * @param {module:api/GoplusTokenApiApi~getAccessTokenUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getAbiDataInfoUsingPOST(body, opts, callback) {
+    getAccessTokenUsingPOST(opts, callback) {
       opts = opts || {};
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling getAbiDataInfoUsingPOST");
-      }
+      let postBody = opts['body'];
 
       let pathParams = {
         
@@ -66,7 +61,7 @@ export class ContractAbiControllerApi {
         
       };
       let headerParams = {
-        'Authorization': opts['Authorization']
+        
       };
       let formParams = {
         
@@ -75,10 +70,10 @@ export class ContractAbiControllerApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperParseAbiDataResponse;
+      let returnType = ResponseWrapperGetAccessTokenResponse;
 
       return this.apiClient.callApi(
-        '/api/v1/abi/input_decode', 'POST',
+        '/api/v1/token', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
