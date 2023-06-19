@@ -135,16 +135,34 @@ Object.defineProperty(exports, "GetAccessTokenResponse", {
     return _GetAccessTokenResponse.GetAccessTokenResponse;
   }
 });
+Object.defineProperty(exports, "GetDefiInfoResponse", {
+  enumerable: true,
+  get: function get() {
+    return _GetDefiInfoResponse.GetDefiInfoResponse;
+  }
+});
+Object.defineProperty(exports, "GetDefiInfoResponseResult", {
+  enumerable: true,
+  get: function get() {
+    return _GetDefiInfoResponseResult.GetDefiInfoResponseResult;
+  }
+});
+Object.defineProperty(exports, "GetDefiInfoResponseResultOwner", {
+  enumerable: true,
+  get: function get() {
+    return _GetDefiInfoResponseResultOwner.GetDefiInfoResponseResultOwner;
+  }
+});
 Object.defineProperty(exports, "JSONObject", {
   enumerable: true,
   get: function get() {
     return _JSONObject.JSONObject;
   }
 });
-Object.defineProperty(exports, "Mapstringstring", {
+Object.defineProperty(exports, "MapStringString", {
   enumerable: true,
   get: function get() {
-    return _Mapstringstring.Mapstringstring;
+    return _MapStringString.MapStringString;
   }
 });
 Object.defineProperty(exports, "NftControllerApi", {
@@ -193,24 +211,6 @@ Object.defineProperty(exports, "ResponseWrapperGetAccessTokenResponse", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperGetAccessTokenResponse.ResponseWrapperGetAccessTokenResponse;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperGetDefiInfo", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperGetDefiInfo.ResponseWrapperGetDefiInfo;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperGetDefiInfoResult", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperGetDefiInfoResult.ResponseWrapperGetDefiInfoResult;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperGetDefiInfoResultOwner", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperGetDefiInfoResultOwner.ResponseWrapperGetDefiInfoResultOwner;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperGetNftInfo", {
@@ -297,10 +297,10 @@ Object.defineProperty(exports, "ResponseWrapperListJSONObject", {
     return _ResponseWrapperListJSONObject.ResponseWrapperListJSONObject;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperMapstringstring", {
+Object.defineProperty(exports, "ResponseWrapperMapStringString", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperMapstringstring.ResponseWrapperMapstringstring;
+    return _ResponseWrapperMapStringString.ResponseWrapperMapStringString;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperParseAbiDataResponse", {
@@ -398,8 +398,11 @@ var _ContractsSecurity = require("./model/ContractsSecurity");
 var _DappContractSecurityResponse = require("./model/DappContractSecurityResponse");
 var _GetAccessTokenRequest = require("./model/GetAccessTokenRequest");
 var _GetAccessTokenResponse = require("./model/GetAccessTokenResponse");
+var _GetDefiInfoResponse = require("./model/GetDefiInfoResponse");
+var _GetDefiInfoResponseResult = require("./model/GetDefiInfoResponseResult");
+var _GetDefiInfoResponseResultOwner = require("./model/GetDefiInfoResponseResultOwner");
 var _JSONObject = require("./model/JSONObject");
-var _Mapstringstring = require("./model/Mapstringstring");
+var _MapStringString = require("./model/MapStringString");
 var _ParseAbiDataRequest = require("./model/ParseAbiDataRequest");
 var _ParseAbiDataResponse = require("./model/ParseAbiDataResponse");
 var _ResponseWrapperAddressContract = require("./model/ResponseWrapperAddressContract");
@@ -407,9 +410,6 @@ var _ResponseWrapperAddressContractResult = require("./model/ResponseWrapperAddr
 var _ResponseWrapperContractApproveResponse = require("./model/ResponseWrapperContractApproveResponse");
 var _ResponseWrapperDappContractSecurityResponse = require("./model/ResponseWrapperDappContractSecurityResponse");
 var _ResponseWrapperGetAccessTokenResponse = require("./model/ResponseWrapperGetAccessTokenResponse");
-var _ResponseWrapperGetDefiInfo = require("./model/ResponseWrapperGetDefiInfo");
-var _ResponseWrapperGetDefiInfoResult = require("./model/ResponseWrapperGetDefiInfoResult");
-var _ResponseWrapperGetDefiInfoResultOwner = require("./model/ResponseWrapperGetDefiInfoResultOwner");
 var _ResponseWrapperGetNftInfo = require("./model/ResponseWrapperGetNftInfo");
 var _ResponseWrapperGetNftInfoResult = require("./model/ResponseWrapperGetNftInfoResult");
 var _ResponseWrapperGetNftInfoResultPrivilegedBurn = require("./model/ResponseWrapperGetNftInfoResultPrivilegedBurn");
@@ -424,7 +424,7 @@ var _ResponseWrapperListApproveTokenOutListResponse = require("./model/ResponseW
 var _ResponseWrapperListGetChainsList = require("./model/ResponseWrapperListGetChainsList");
 var _ResponseWrapperListGetChainsListResult = require("./model/ResponseWrapperListGetChainsListResult");
 var _ResponseWrapperListJSONObject = require("./model/ResponseWrapperListJSONObject");
-var _ResponseWrapperMapstringstring = require("./model/ResponseWrapperMapstringstring");
+var _ResponseWrapperMapStringString = require("./model/ResponseWrapperMapStringString");
 var _ResponseWrapperParseAbiDataResponse = require("./model/ResponseWrapperParseAbiDataResponse");
 var _ResponseWrapperPhishingSite = require("./model/ResponseWrapperPhishingSite");
 var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishingSiteResult");
