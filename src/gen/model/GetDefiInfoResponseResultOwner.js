@@ -15,30 +15,30 @@
 import {ApiClient} from '../ApiClient';
 
 /**
- * The ResponseWrapperGetDefiInfoResultOwner model module.
- * @module model/ResponseWrapperGetDefiInfoResultOwner
+ * The GetDefiInfoResponseResultOwner model module.
+ * @module model/GetDefiInfoResponseResultOwner
  * @version 1.0
  */
-export class ResponseWrapperGetDefiInfoResultOwner {
+export class GetDefiInfoResponseResultOwner {
   /**
-   * Constructs a new <code>ResponseWrapperGetDefiInfoResultOwner</code>.
+   * Constructs a new <code>GetDefiInfoResponseResultOwner</code>.
    * When there is no owner function, or the ownership is unreadable or private, it would return empty. \&quot;owner\&quot;: {  }
-   * @alias module:model/ResponseWrapperGetDefiInfoResultOwner
+   * @alias module:model/GetDefiInfoResponseResultOwner
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>ResponseWrapperGetDefiInfoResultOwner</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>GetDefiInfoResponseResultOwner</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ResponseWrapperGetDefiInfoResultOwner} obj Optional instance to populate.
-   * @return {module:model/ResponseWrapperGetDefiInfoResultOwner} The populated <code>ResponseWrapperGetDefiInfoResultOwner</code> instance.
+   * @param {module:model/GetDefiInfoResponseResultOwner} obj Optional instance to populate.
+   * @return {module:model/GetDefiInfoResponseResultOwner} The populated <code>GetDefiInfoResponseResultOwner</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new ResponseWrapperGetDefiInfoResultOwner();
+      obj = obj || new GetDefiInfoResponseResultOwner();
       if (data.hasOwnProperty('owner_name'))
         obj.owner_name = ApiClient.convertToType(data['owner_name'], 'String');
       if (data.hasOwnProperty('owner_address'))
@@ -54,17 +54,17 @@ export class ResponseWrapperGetDefiInfoResultOwner {
  * the function name of ownership.  If there is no return, means unknown.
  * @member {String} owner_name
  */
-ResponseWrapperGetDefiInfoResultOwner.prototype.owner_name = undefined;
+GetDefiInfoResponseResultOwner.prototype.owner_name = undefined;
 
 /**
  * owner address of the contract.  No return means unknown.
  * @member {String} owner_address
  */
-ResponseWrapperGetDefiInfoResultOwner.prototype.owner_address = undefined;
+GetDefiInfoResponseResultOwner.prototype.owner_address = undefined;
 
 /**
  * blackhole\" : the owner is a blackhole address. \"contract\" : the owner is a contract. \"eoa\" : the owner is a common address (eoa). \"multi-address\": the owner is an array/list. null: the address is not detected. No return means unknown.
  * @member {String} owner_type
  */
-ResponseWrapperGetDefiInfoResultOwner.prototype.owner_type = undefined;
+GetDefiInfoResponseResultOwner.prototype.owner_type = undefined;
 

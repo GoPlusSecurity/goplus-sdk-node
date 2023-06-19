@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperGetDefiInfo} from '../model/ResponseWrapperGetDefiInfo';
+import {GetDefiInfoResponse} from '../model/GetDefiInfoResponse';
 
 /**
 * DefiController service.
@@ -38,7 +38,7 @@ export class DefiControllerApi {
      * Callback function to receive the result of the getDefiInfoUsingGET operation.
      * @callback moduleapi/DefiControllerApi~getDefiInfoUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperGetDefiInfo{ data The data returned by the service call.
+     * @param {module:model/GetDefiInfoResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -79,7 +79,7 @@ export class DefiControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperGetDefiInfo;
+      let returnType = GetDefiInfoResponse;
 
       return this.apiClient.callApi(
         '/api/v1/rugpull_detecting/{chain_id}', 'GET',
