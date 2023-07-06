@@ -339,6 +339,12 @@ Object.defineProperty(exports, "ResponseWrapperTokenSecurityDex", {
     return _ResponseWrapperTokenSecurityDex.ResponseWrapperTokenSecurityDex;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityLockedDetail", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperTokenSecurityLockedDetail.ResponseWrapperTokenSecurityLockedDetail;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperTokenSecurityLpHolders", {
   enumerable: true,
   get: function get() {
@@ -431,6 +437,7 @@ var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishin
 var _ResponseWrapperTaTokenSecurityResponse = require("./model/ResponseWrapperTaTokenSecurityResponse");
 var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurity");
 var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
+var _ResponseWrapperTokenSecurityLockedDetail = require("./model/ResponseWrapperTokenSecurityLockedDetail");
 var _ResponseWrapperTokenSecurityLpHolders = require("./model/ResponseWrapperTokenSecurityLpHolders");
 var _ResponseWrapperTokenSecurityResult = require("./model/ResponseWrapperTokenSecurityResult");
 var _ResponseWrapperobject = require("./model/ResponseWrapperobject");
