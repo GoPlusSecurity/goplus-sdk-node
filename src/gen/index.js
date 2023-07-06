@@ -62,6 +62,7 @@ import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishing
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
 import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
+import {ResponseWrapperTokenSecurityLockedDetail} from './model/ResponseWrapperTokenSecurityLockedDetail';
 import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperTokenSecurityLpHolders';
 import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
@@ -407,6 +408,12 @@ export {
      * @property {module:model/ResponseWrapperTokenSecurityDex}
      */
     ResponseWrapperTokenSecurityDex,
+
+    /**
+     * The ResponseWrapperTokenSecurityLockedDetail model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityLockedDetail}
+     */
+    ResponseWrapperTokenSecurityLockedDetail,
 
     /**
      * The ResponseWrapperTokenSecurityLpHolders model constructor.
