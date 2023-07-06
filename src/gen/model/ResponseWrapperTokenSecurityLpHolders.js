@@ -13,6 +13,7 @@
  *
  */
 import {ApiClient} from '../ApiClient';
+import {ResponseWrapperTokenSecurityLockedDetail} from './ResponseWrapperTokenSecurityLockedDetail';
 
 /**
  * The ResponseWrapperTokenSecurityLpHolders model module.
@@ -47,7 +48,7 @@ export class ResponseWrapperTokenSecurityLpHolders {
       if (data.hasOwnProperty('balance'))
         obj.balance = ApiClient.convertToType(data['balance'], 'String');
       if (data.hasOwnProperty('locked_detail'))
-        obj.locked_detail = ApiClient.convertToType(data['locked_detail'], ['String']);
+        obj.locked_detail = ApiClient.convertToType(data['locked_detail'], [ResponseWrapperTokenSecurityLockedDetail]);
       if (data.hasOwnProperty('tag'))
         obj.tag = ApiClient.convertToType(data['tag'], 'String');
       if (data.hasOwnProperty('percent'))
@@ -82,8 +83,8 @@ ResponseWrapperTokenSecurityLpHolders.prototype.address = undefined;
 ResponseWrapperTokenSecurityLpHolders.prototype.balance = undefined;
 
 /**
- * It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. In every objetc, \"amount\" describes the number of token locked, \"end_time\" describes when the token will be unlocked, \"opt_time\" describes when the token was locked.(Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)
- * @member {Array.<String>} locked_detail
+ * It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)
+ * @member {Array.<module:model/ResponseWrapperTokenSecurityLockedDetail>} locked_detail
  */
 ResponseWrapperTokenSecurityLpHolders.prototype.locked_detail = undefined;
 
