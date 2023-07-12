@@ -51,7 +51,7 @@ export class GetDefiInfoResponse {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 GetDefiInfoResponse.prototype.code = undefined;

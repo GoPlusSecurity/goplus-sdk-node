@@ -59,7 +59,7 @@ export class ResponseWrapperTokenSecurityLpHolders {
 }
 
 /**
- * It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) “tag” describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )
+ * It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) \"tag\" describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )
  * @member {Number} is_locked
  */
 ResponseWrapperTokenSecurityLpHolders.prototype.is_locked = undefined;

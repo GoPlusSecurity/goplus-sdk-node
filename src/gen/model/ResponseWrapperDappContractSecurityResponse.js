@@ -51,7 +51,7 @@ export class ResponseWrapperDappContractSecurityResponse {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperDappContractSecurityResponse.prototype.code = undefined;
