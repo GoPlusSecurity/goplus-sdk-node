@@ -51,7 +51,7 @@ export class ResponseWrapperListApproveTokenOutListResponse {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperListApproveTokenOutListResponse.prototype.code = undefined;

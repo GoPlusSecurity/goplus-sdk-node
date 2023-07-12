@@ -51,7 +51,7 @@ export class ResponseWrapperTokenSecurity {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperTokenSecurity.prototype.code = undefined;

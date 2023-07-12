@@ -50,7 +50,7 @@ export class ResponseWrapperMapStringString {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperMapStringString.prototype.code = undefined;

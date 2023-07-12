@@ -51,7 +51,7 @@ export class ResponseWrapperPhishingSite {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperPhishingSite.prototype.code = undefined;

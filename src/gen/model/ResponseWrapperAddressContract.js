@@ -51,7 +51,7 @@ export class ResponseWrapperAddressContract {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperAddressContract.prototype.code = undefined;

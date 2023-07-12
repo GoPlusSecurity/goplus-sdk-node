@@ -51,7 +51,7 @@ export class ResponseWrapperGetNftInfo {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperGetNftInfo.prototype.code = undefined;
