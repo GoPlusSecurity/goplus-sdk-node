@@ -8,7 +8,7 @@
   "scripts": {
     "test": "npm run build && node ./example/testAll.js",
     "clean": "rm -rf lib/ dist/",
-    "build": "yarn babel --out-dir dist src"
+    "build": "npm run clean && yarn babel --out-dir dist src"
   },
   "exports": {
     "node": {
