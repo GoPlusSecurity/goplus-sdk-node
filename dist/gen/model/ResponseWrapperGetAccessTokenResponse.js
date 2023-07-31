@@ -59,7 +59,7 @@ exports.ResponseWrapperGetAccessTokenResponse = ResponseWrapperGetAccessTokenRes
 ResponseWrapperGetAccessTokenResponse.prototype.result = undefined;
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperGetAccessTokenResponse.prototype.code = undefined;

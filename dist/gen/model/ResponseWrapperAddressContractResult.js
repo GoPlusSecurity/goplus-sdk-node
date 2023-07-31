@@ -121,7 +121,7 @@ ResponseWrapperAddressContractResult.prototype.fake_kyc = undefined;
 ResponseWrapperAddressContractResult.prototype.blacklist_doubt = undefined;
 
 /**
- * It describes the data source for this address information. For example：GoPlus/SlowMist
+ * It describes the data source for this address information. For example: GoPlus/SlowMist
  * @member {String} data_source
  */
 ResponseWrapperAddressContractResult.prototype.data_source = undefined;

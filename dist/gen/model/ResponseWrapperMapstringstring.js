@@ -54,7 +54,7 @@ class ResponseWrapperMapStringString {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 exports.ResponseWrapperMapStringString = ResponseWrapperMapStringString;
