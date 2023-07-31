@@ -50,7 +50,7 @@ export class ResponseWrapperJSONObject {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperJSONObject.prototype.code = undefined;

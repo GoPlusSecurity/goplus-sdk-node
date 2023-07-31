@@ -51,7 +51,7 @@ export class ResponseWrapperListApproveNFT1155ListResponse {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 ResponseWrapperListApproveNFT1155ListResponse.prototype.code = undefined;

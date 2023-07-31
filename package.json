@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "goplus api sdk for nodejs",
   "author": "GoplusSecurity",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "./dist/index.js",
   "scripts": {
     "test": "npm run build && node ./example/test.js",

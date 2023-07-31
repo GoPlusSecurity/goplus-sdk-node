@@ -46,7 +46,7 @@ export class WebsiteControllerApi {
      * Check if the the url is a phishing site
      * @param {String} url Url
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
      * @param {module:api/WebsiteControllerApi~phishingSiteUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
