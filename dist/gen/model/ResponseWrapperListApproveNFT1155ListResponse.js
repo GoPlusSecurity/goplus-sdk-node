@@ -53,7 +53,7 @@ class ResponseWrapperListApproveNFT1155ListResponse {
 }
 
 /**
- * Code 1：Success
+ * Code 1: Success
  * @member {Number} code
  */
 exports.ResponseWrapperListApproveNFT1155ListResponse = ResponseWrapperListApproveNFT1155ListResponse;

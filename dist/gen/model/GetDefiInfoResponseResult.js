@@ -96,19 +96,19 @@ GetDefiInfoResponseResult.prototype.blacklist = undefined;
 GetDefiInfoResponseResult.prototype.contract_name = undefined;
 
 /**
- * It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.
+ * It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; \"-1\" means unknown.
  * @member {Number} selfdestruct
  */
 GetDefiInfoResponseResult.prototype.selfdestruct = undefined;
 
 /**
- * It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; “-1” means unknown.
+ * It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; \"-1\" means unknown.
  * @member {Number} is_proxy
  */
 GetDefiInfoResponseResult.prototype.is_proxy = undefined;
 
 /**
- * It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; “-1” means unknown.
+ * It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; \"-1\" means unknown.
  * @member {Number} approval_abuse
  */
 GetDefiInfoResponseResult.prototype.approval_abuse = undefined;

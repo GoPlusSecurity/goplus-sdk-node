@@ -133,7 +133,7 @@ ResponseWrapperGetNftInfoResult.prototype.highest_price = undefined;
 ResponseWrapperGetNftInfoResult.prototype.transfer_without_approval = undefined;
 
 /**
- * It describes the discord url of the NFT. Return “null” means there is no discord url or didn't find the discord url.
+ * It describes the discord url of the NFT. Return \"null\" means there is no discord url or didn't find the discord url.
  * @member {String} discord_url
  */
 ResponseWrapperGetNftInfoResult.prototype.discord_url = undefined;
@@ -186,13 +186,13 @@ ResponseWrapperGetNftInfoResult.prototype.average_price_24h = undefined;
 ResponseWrapperGetNftInfoResult.prototype.nft_erc = undefined;
 
 /**
- * It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return “null” means that we didn't find the creator address.
+ * It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return \"null\" means that we didn't find the creator address.
  * @member {String} creator_address
  */
 ResponseWrapperGetNftInfoResult.prototype.creator_address = undefined;
 
 /**
- * It describes the medium url of the NFT. Return “null” means there is no medium url or didn't find the medium url.
+ * It describes the medium url of the NFT. Return \"null\" means there is no medium url or didn't find the medium url.
  * @member {String} medium_url
  */
 ResponseWrapperGetNftInfoResult.prototype.medium_url = undefined;
@@ -209,7 +209,7 @@ ResponseWrapperGetNftInfoResult.prototype.malicious_nft_contract = undefined;
 ResponseWrapperGetNftInfoResult.prototype.privileged_burn = undefined;
 
 /**
- * It describes the twitter url of the NFT. Return “null” means there is no twitter url or didn't find the twitter url.
+ * It describes the twitter url of the NFT. Return \"null\" means there is no twitter url or didn't find the twitter url.
  * @member {String} twitter_url
  */
 ResponseWrapperGetNftInfoResult.prototype.twitter_url = undefined;
@@ -221,7 +221,7 @@ ResponseWrapperGetNftInfoResult.prototype.twitter_url = undefined;
 ResponseWrapperGetNftInfoResult.prototype.nft_symbol = undefined;
 
 /**
- * It describes the introduction of the NFT. Return “null” means there is no description of the NFT.
+ * It describes the introduction of the NFT. Return \"null\" means there is no description of the NFT.
  * @member {String} nft_description
  */
 ResponseWrapperGetNftInfoResult.prototype.nft_description = undefined;
@@ -262,7 +262,7 @@ ResponseWrapperGetNftInfoResult.prototype.same_nfts = undefined;
 ResponseWrapperGetNftInfoResult.prototype.nft_items = undefined;
 
 /**
- * It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract — the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)
+ * It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract - the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)
  * @member {Number} oversupply_minting
  */
 ResponseWrapperGetNftInfoResult.prototype.oversupply_minting = undefined;
@@ -274,19 +274,19 @@ ResponseWrapperGetNftInfoResult.prototype.oversupply_minting = undefined;
 ResponseWrapperGetNftInfoResult.prototype.nft_name = undefined;
 
 /**
- * It describes the website url of the NFT. Return “null” means there is no website url or didn't find the website url.
+ * It describes the website url of the NFT. Return \"null\" means there is no website url or didn't find the website url.
  * @member {String} website_url
  */
 ResponseWrapperGetNftInfoResult.prototype.website_url = undefined;
 
 /**
- * It describes the github url of the NFT. Return “null” means there is no github url or didn't find the github url.
+ * It describes the github url of the NFT. Return \"null\" means there is no github url or didn't find the github url.
  * @member {String} github_url
  */
 ResponseWrapperGetNftInfoResult.prototype.github_url = undefined;
 
 /**
- * It describes the telegram url of the NFT. Return “null” means there is no telegram url or didn't find the telegram url.
+ * It describes the telegram url of the NFT. Return \"null\" means there is no telegram url or didn't find the telegram url.
  * @member {String} telegram_url
  */
 ResponseWrapperGetNftInfoResult.prototype.telegram_url = undefined;
@@ -298,7 +298,7 @@ ResponseWrapperGetNftInfoResult.prototype.telegram_url = undefined;
 ResponseWrapperGetNftInfoResult.prototype.sales_24h = undefined;
 
 /**
- * It describes the number of blocks created for the NFT. Return “null” means that we didn't find the number of blocks created for the NFT.
+ * It describes the number of blocks created for the NFT. Return \"null\" means that we didn't find the number of blocks created for the NFT.
  * @member {Number} create_block_number
  */
 ResponseWrapperGetNftInfoResult.prototype.create_block_number = undefined;
