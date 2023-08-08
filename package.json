@@ -1,14 +1,16 @@
 {
-  "name": "goplus-sdk-js",
+  "name": "@goplus/sdk-node'",
   "version": "1.0.7",
-  "description": "goplus api sdk for nodejs",
+  "description": "GoPlus API SDK for Node.js",
   "author": "GoplusSecurity",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "npm run build && node ./example/testAll.js",
+    "test": "jest --config jestconfig.json",
     "clean": "rm -rf lib/ dist/",
-    "build": "npm run clean && yarn babel --out-dir dist src"
+    "build": "npm run clean && yarn babel --out-dir dist src",
+    "format": "prettier --write \"example/**/*.ts\" \"src/**/*.js\" --ignore-path .prettierignore",
+    "prepublishOnly": "npm run build && npm test"
   },
   "exports": {
     "node": {
@@ -35,6 +37,20 @@
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
     "@babel/node": "^7.20.7",
-    "@babel/preset-env": "^7.21.5"
-  }
+    "@babel/preset-env": "^7.21.5",
+    "jest": "^29.6.2",
+    "prettier": "^3.0.1"
+  },
+  "files": [
+    "dist/**/*",
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "types": "index.d.ts"
 }
