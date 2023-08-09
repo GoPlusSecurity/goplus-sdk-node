@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GoPlusSecurity/goplus-sdk-js.git"
+    "url": "https://github.com/GoPlusSecurity/goplus-sdk-node.git"
   },
   "bugs": {
-    "url": "https://github.com/GoPlusSecurity/goplus-sdk-js/issues"
+    "url": "https://github.com/GoPlusSecurity/goplus-sdk-node/issues"
   },
-  "homepage": "https://github.com/GoPlusSecurity/goplus-sdk-js#readme",
+  "homepage": "https://github.com/GoPlusSecurity/goplus-sdk-node#readme",
   "dependencies": {
     "core-js": "^3.30.2",
     "crypto-js": "^4.1.1",
