@@ -1,11 +1,11 @@
-# GoPlus Security Node.js SDK for JavaScript
+# GoPlus Security SDK for Node.js
 
-The official [GoPlus Security](https://gopluslabs.io/) Node.js SDK for JavaScript.
+The official [GoPlus Security](https://gopluslabs.io/) Node.js SDK
 
 ## Installation
 
 ```
-npm install goplus-sdk-js
+npm install @goplus/sdk-node
 ```
 
 ## Documentation
