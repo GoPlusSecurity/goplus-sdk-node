@@ -1,6 +1,6 @@
 # GoPlus Security SDK for Node.js
 
-The official [GoPlus Security](https://gopluslabs.io/) Node.js SDK, support JavaScirpt and TypeScript.
+The official [GoPlus Security](https://gopluslabs.io/) Node.js SDK, supports JavaScirpt and TypeScript.
 
 ## Installation
 
@@ -9,7 +9,7 @@ npm install @goplus/sdk-node
 ```
 The above npm package is compatible with JavaScript and TypeScript.
 
-For backward compatibility, you can still install the following npm package:
+For backward compatibility, you can still use the following npm package:
 
 ```
 npm install goplus-sdk-js
