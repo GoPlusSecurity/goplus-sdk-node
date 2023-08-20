@@ -69,6 +69,8 @@ export class ResponseWrapperTokenSecurityResult {
         obj.trust_list = ApiClient.convertToType(data['trust_list'], 'String');
       if (data.hasOwnProperty('is_honeypot'))
         obj.is_honeypot = ApiClient.convertToType(data['is_honeypot'], 'String');
+      if (data.hasOwnProperty('honeypot_with_same_creator'))
+        obj.honeypot_with_same_creator = ApiClient.convertToType(data['honeypot_with_same_creator'], 'String');
       if (data.hasOwnProperty('holders'))
         obj.holders = ApiClient.convertToType(data['holders'], [ResponseWrapperTokenSecurityLpHolders]);
       if (data.hasOwnProperty('dex'))
@@ -213,6 +215,12 @@ ResponseWrapperTokenSecurityResult.prototype.trust_list = undefined;
  * @member {String} is_honeypot
  */
 ResponseWrapperTokenSecurityResult.prototype.is_honeypot = undefined;
+
+/**
+ * It describes the number of honeypot tokens created by this creator.
+ * @member {String} honeypot_with_same_creator
+ */
+ResponseWrapperTokenSecurityResult.prototype.honeypot_with_same_creator = undefined;
 
 /**
  * Top10 holders info
