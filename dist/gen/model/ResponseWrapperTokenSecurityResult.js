@@ -60,6 +60,7 @@ class ResponseWrapperTokenSecurityResult {
       if (data.hasOwnProperty('holder_count')) obj.holder_count = _ApiClient.ApiClient.convertToType(data['holder_count'], 'String');
       if (data.hasOwnProperty('trust_list')) obj.trust_list = _ApiClient.ApiClient.convertToType(data['trust_list'], 'String');
       if (data.hasOwnProperty('is_honeypot')) obj.is_honeypot = _ApiClient.ApiClient.convertToType(data['is_honeypot'], 'String');
+      if (data.hasOwnProperty('honeypot_with_same_creator')) obj.honeypot_with_same_creator = _ApiClient.ApiClient.convertToType(data['honeypot_with_same_creator'], 'String');
       if (data.hasOwnProperty('holders')) obj.holders = _ApiClient.ApiClient.convertToType(data['holders'], [_ResponseWrapperTokenSecurityLpHolders.ResponseWrapperTokenSecurityLpHolders]);
       if (data.hasOwnProperty('dex')) obj.dex = _ApiClient.ApiClient.convertToType(data['dex'], [_ResponseWrapperTokenSecurityDex.ResponseWrapperTokenSecurityDex]);
       if (data.hasOwnProperty('is_open_source')) obj.is_open_source = _ApiClient.ApiClient.convertToType(data['is_open_source'], 'String');
@@ -177,6 +178,12 @@ ResponseWrapperTokenSecurityResult.prototype.trust_list = undefined;
  * @member {String} is_honeypot
  */
 ResponseWrapperTokenSecurityResult.prototype.is_honeypot = undefined;
+
+/**
+ * It describes the number of honeypot tokens created by this creator.
+ * @member {String} honeypot_with_same_creator
+ */
+ResponseWrapperTokenSecurityResult.prototype.honeypot_with_same_creator = undefined;
 
 /**
  * Top10 holders info
