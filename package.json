@@ -1,12 +1,12 @@
 {
   "name": "@goplus/sdk-node",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "GoPlus API SDK for Node.js",
   "author": "GoplusSecurity",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jestconfig.json --verbose",
     "clean": "rm -rf lib/ dist/",
     "build": "npm run clean && yarn babel --out-dir dist src",
     "format": "prettier --write \"example/**/*.ts\" \"src/**/*.js\" --ignore-path .prettierignore",

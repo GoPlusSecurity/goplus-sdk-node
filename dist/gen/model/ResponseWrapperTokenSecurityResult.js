@@ -6,6 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.ResponseWrapperTokenSecurityResult = void 0;
 var _ApiClient = require("../ApiClient");
 var _ResponseWrapperTokenSecurityDex = require("./ResponseWrapperTokenSecurityDex");
+var _ResponseWrapperTokenSecurityFakeToken = require("./ResponseWrapperTokenSecurityFakeToken");
+var _ResponseWrapperTokenSecurityHolders = require("./ResponseWrapperTokenSecurityHolders");
 var _ResponseWrapperTokenSecurityLpHolders = require("./ResponseWrapperTokenSecurityLpHolders");
 /*
  * GoPlus Security API Document
@@ -61,11 +63,12 @@ class ResponseWrapperTokenSecurityResult {
       if (data.hasOwnProperty('trust_list')) obj.trust_list = _ApiClient.ApiClient.convertToType(data['trust_list'], 'String');
       if (data.hasOwnProperty('is_honeypot')) obj.is_honeypot = _ApiClient.ApiClient.convertToType(data['is_honeypot'], 'String');
       if (data.hasOwnProperty('honeypot_with_same_creator')) obj.honeypot_with_same_creator = _ApiClient.ApiClient.convertToType(data['honeypot_with_same_creator'], 'String');
-      if (data.hasOwnProperty('holders')) obj.holders = _ApiClient.ApiClient.convertToType(data['holders'], [_ResponseWrapperTokenSecurityLpHolders.ResponseWrapperTokenSecurityLpHolders]);
+      if (data.hasOwnProperty('holders')) obj.holders = _ApiClient.ApiClient.convertToType(data['holders'], [_ResponseWrapperTokenSecurityHolders.ResponseWrapperTokenSecurityHolders]);
       if (data.hasOwnProperty('dex')) obj.dex = _ApiClient.ApiClient.convertToType(data['dex'], [_ResponseWrapperTokenSecurityDex.ResponseWrapperTokenSecurityDex]);
       if (data.hasOwnProperty('is_open_source')) obj.is_open_source = _ApiClient.ApiClient.convertToType(data['is_open_source'], 'String');
       if (data.hasOwnProperty('sell_tax')) obj.sell_tax = _ApiClient.ApiClient.convertToType(data['sell_tax'], 'String');
       if (data.hasOwnProperty('token_name')) obj.token_name = _ApiClient.ApiClient.convertToType(data['token_name'], 'String');
+      if (data.hasOwnProperty('fake_token')) obj.fake_token = _ResponseWrapperTokenSecurityFakeToken.ResponseWrapperTokenSecurityFakeToken.constructFromObject(data['fake_token']);
       if (data.hasOwnProperty('creator_address')) obj.creator_address = _ApiClient.ApiClient.convertToType(data['creator_address'], 'String');
       if (data.hasOwnProperty('creator_percent')) obj.creator_percent = _ApiClient.ApiClient.convertToType(data['creator_percent'], 'String');
       if (data.hasOwnProperty('is_proxy')) obj.is_proxy = _ApiClient.ApiClient.convertToType(data['is_proxy'], 'String');
@@ -187,7 +190,7 @@ ResponseWrapperTokenSecurityResult.prototype.honeypot_with_same_creator = undefi
 
 /**
  * Top10 holders info
- * @member {Array.<module:model/ResponseWrapperTokenSecurityLpHolders>} holders
+ * @member {Array.<module:model/ResponseWrapperTokenSecurityHolders>} holders
  */
 ResponseWrapperTokenSecurityResult.prototype.holders = undefined;
 
@@ -214,6 +217,11 @@ ResponseWrapperTokenSecurityResult.prototype.sell_tax = undefined;
  * @member {String} token_name
  */
 ResponseWrapperTokenSecurityResult.prototype.token_name = undefined;
+
+/**
+ * @member {module:model/ResponseWrapperTokenSecurityFakeToken} fake_token
+ */
+ResponseWrapperTokenSecurityResult.prototype.fake_token = undefined;
 
 /**
  * It describes this contract's owner address.  Example: \"creator_address\": \"0x744aF9cBb7606BB040f6FBf1c0a0B0dcBA6385E5\";

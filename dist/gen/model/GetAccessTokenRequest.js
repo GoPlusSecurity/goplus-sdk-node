@@ -32,7 +32,7 @@ class GetAccessTokenRequest {
    * @class
    * @param app_key {String} app_key
    * @param sign {String} Sign Method Concatenate app_key, time, app_secret in turn, and do sha1() . Example app_key = mBOMg20QW11BbtyH4Zh0 time = 1647847498 app_secret = V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh sign = sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)        = 7293d385b9225b3c3f232b76ba97255d0e21063e
-   * @param time {Number} Quest timestamp (Second)
+   * @param time {Number} Quest timestamp (Second), should be within +-1000s around current timestamp
    */
   constructor(app_key, sign, time) {
     this.app_key = app_key;
@@ -72,7 +72,7 @@ GetAccessTokenRequest.prototype.app_key = undefined;
 GetAccessTokenRequest.prototype.sign = undefined;
 
 /**
- * Quest timestamp (Second)
+ * Quest timestamp (Second), should be within +-1000s around current timestamp
  * @member {Number} time
  */
 GetAccessTokenRequest.prototype.time = undefined;

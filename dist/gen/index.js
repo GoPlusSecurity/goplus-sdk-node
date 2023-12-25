@@ -339,6 +339,18 @@ Object.defineProperty(exports, "ResponseWrapperTokenSecurityDex", {
     return _ResponseWrapperTokenSecurityDex.ResponseWrapperTokenSecurityDex;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityFakeToken", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperTokenSecurityFakeToken.ResponseWrapperTokenSecurityFakeToken;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityHolders", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperTokenSecurityHolders.ResponseWrapperTokenSecurityHolders;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperTokenSecurityLockedDetail", {
   enumerable: true,
   get: function get() {
@@ -349,6 +361,12 @@ Object.defineProperty(exports, "ResponseWrapperTokenSecurityLpHolders", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperTokenSecurityLpHolders.ResponseWrapperTokenSecurityLpHolders;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperTokenSecurityNFTList", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperTokenSecurityNFTList.ResponseWrapperTokenSecurityNFTList;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperTokenSecurityResult", {
@@ -437,8 +455,11 @@ var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishin
 var _ResponseWrapperTaTokenSecurityResponse = require("./model/ResponseWrapperTaTokenSecurityResponse");
 var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurity");
 var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
+var _ResponseWrapperTokenSecurityFakeToken = require("./model/ResponseWrapperTokenSecurityFakeToken");
+var _ResponseWrapperTokenSecurityHolders = require("./model/ResponseWrapperTokenSecurityHolders");
 var _ResponseWrapperTokenSecurityLockedDetail = require("./model/ResponseWrapperTokenSecurityLockedDetail");
 var _ResponseWrapperTokenSecurityLpHolders = require("./model/ResponseWrapperTokenSecurityLpHolders");
+var _ResponseWrapperTokenSecurityNFTList = require("./model/ResponseWrapperTokenSecurityNFTList");
 var _ResponseWrapperTokenSecurityResult = require("./model/ResponseWrapperTokenSecurityResult");
 var _ResponseWrapperobject = require("./model/ResponseWrapperobject");
 var _TaTokenSecurityResponse = require("./model/TaTokenSecurityResponse");
