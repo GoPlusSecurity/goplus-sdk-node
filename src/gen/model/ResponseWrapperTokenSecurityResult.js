@@ -14,6 +14,8 @@
  */
 import {ApiClient} from '../ApiClient';
 import {ResponseWrapperTokenSecurityDex} from './ResponseWrapperTokenSecurityDex';
+import {ResponseWrapperTokenSecurityFakeToken} from './ResponseWrapperTokenSecurityFakeToken';
+import {ResponseWrapperTokenSecurityHolders} from './ResponseWrapperTokenSecurityHolders';
 import {ResponseWrapperTokenSecurityLpHolders} from './ResponseWrapperTokenSecurityLpHolders';
 
 /**
@@ -72,7 +74,7 @@ export class ResponseWrapperTokenSecurityResult {
       if (data.hasOwnProperty('honeypot_with_same_creator'))
         obj.honeypot_with_same_creator = ApiClient.convertToType(data['honeypot_with_same_creator'], 'String');
       if (data.hasOwnProperty('holders'))
-        obj.holders = ApiClient.convertToType(data['holders'], [ResponseWrapperTokenSecurityLpHolders]);
+        obj.holders = ApiClient.convertToType(data['holders'], [ResponseWrapperTokenSecurityHolders]);
       if (data.hasOwnProperty('dex'))
         obj.dex = ApiClient.convertToType(data['dex'], [ResponseWrapperTokenSecurityDex]);
       if (data.hasOwnProperty('is_open_source'))
@@ -81,6 +83,8 @@ export class ResponseWrapperTokenSecurityResult {
         obj.sell_tax = ApiClient.convertToType(data['sell_tax'], 'String');
       if (data.hasOwnProperty('token_name'))
         obj.token_name = ApiClient.convertToType(data['token_name'], 'String');
+      if (data.hasOwnProperty('fake_token'))
+        obj.fake_token = ResponseWrapperTokenSecurityFakeToken.constructFromObject(data['fake_token']);
       if (data.hasOwnProperty('creator_address'))
         obj.creator_address = ApiClient.convertToType(data['creator_address'], 'String');
       if (data.hasOwnProperty('creator_percent'))
@@ -224,7 +228,7 @@ ResponseWrapperTokenSecurityResult.prototype.honeypot_with_same_creator = undefi
 
 /**
  * Top10 holders info
- * @member {Array.<module:model/ResponseWrapperTokenSecurityLpHolders>} holders
+ * @member {Array.<module:model/ResponseWrapperTokenSecurityHolders>} holders
  */
 ResponseWrapperTokenSecurityResult.prototype.holders = undefined;
 
@@ -251,6 +255,11 @@ ResponseWrapperTokenSecurityResult.prototype.sell_tax = undefined;
  * @member {String} token_name
  */
 ResponseWrapperTokenSecurityResult.prototype.token_name = undefined;
+
+/**
+ * @member {module:model/ResponseWrapperTokenSecurityFakeToken} fake_token
+ */
+ResponseWrapperTokenSecurityResult.prototype.fake_token = undefined;
 
 /**
  * It describes this contract's owner address.  Example: \"creator_address\": \"0x744aF9cBb7606BB040f6FBf1c0a0B0dcBA6385E5\";

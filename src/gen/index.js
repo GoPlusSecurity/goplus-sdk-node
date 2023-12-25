@@ -62,8 +62,11 @@ import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishing
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
 import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
+import {ResponseWrapperTokenSecurityFakeToken} from './model/ResponseWrapperTokenSecurityFakeToken';
+import {ResponseWrapperTokenSecurityHolders} from './model/ResponseWrapperTokenSecurityHolders';
 import {ResponseWrapperTokenSecurityLockedDetail} from './model/ResponseWrapperTokenSecurityLockedDetail';
 import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperTokenSecurityLpHolders';
+import {ResponseWrapperTokenSecurityNFTList} from './model/ResponseWrapperTokenSecurityNFTList';
 import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
 import {TaTokenSecurityResponse} from './model/TaTokenSecurityResponse';
@@ -410,6 +413,18 @@ export {
     ResponseWrapperTokenSecurityDex,
 
     /**
+     * The ResponseWrapperTokenSecurityFakeToken model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityFakeToken}
+     */
+    ResponseWrapperTokenSecurityFakeToken,
+
+    /**
+     * The ResponseWrapperTokenSecurityHolders model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityHolders}
+     */
+    ResponseWrapperTokenSecurityHolders,
+
+    /**
      * The ResponseWrapperTokenSecurityLockedDetail model constructor.
      * @property {module:model/ResponseWrapperTokenSecurityLockedDetail}
      */
@@ -420,6 +435,12 @@ export {
      * @property {module:model/ResponseWrapperTokenSecurityLpHolders}
      */
     ResponseWrapperTokenSecurityLpHolders,
+
+    /**
+     * The ResponseWrapperTokenSecurityNFTList model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityNFTList}
+     */
+    ResponseWrapperTokenSecurityNFTList,
 
     /**
      * The ResponseWrapperTokenSecurityResult model constructor.
