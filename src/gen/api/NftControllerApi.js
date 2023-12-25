@@ -44,7 +44,7 @@ export class NftControllerApi {
 
     /**
      * Get NFT&#x27;s security and risk data.
-     * @param {String} chain_id Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114)
+     * @param {String} chain_id The chain_id of the blockchain.\&quot;1\&quot; means Ethereum; \&quot;10\&quot; means Optimism;\&quot;25\&quot; means Cronos;\&quot;56\&quot; means BSC;  \&quot;100\&quot; means Gnosis;\&quot;128\&quot; means HECO; \&quot;137\&quot; means Polygon; \&quot;250\&quot; means Fantom;\&quot;321\&quot; means KCC;\&quot;324\&quot; means zkSync Era; \&quot;201022\&quot; means FON;\&quot;42161\&quot; means Arbitrum; \&quot;43114\&quot; means Avalanche;\&quot;59144\&quot; means Linea Mainnet;\&quot;8453\&quot; Base;\&quot;5000\&quot; Mantle;
      * @param {String} contract_addresses NFT contract address
      * @param {Object} opts Optional parameters
      * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
