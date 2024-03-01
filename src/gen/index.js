@@ -59,6 +59,12 @@ import {ResponseWrapperMapStringString} from './model/ResponseWrapperMapStringSt
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperPhishingSite} from './model/ResponseWrapperPhishingSite';
 import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishingSiteResult';
+import {ResponseWrapperPhishingSiteResultNftRisk} from './model/ResponseWrapperPhishingSiteResultNftRisk';
+import {ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn} from './model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn';
+import {ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting} from './model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting';
+import {ResponseWrapperPhishingSiteResultNftRiskSelfDestruct} from './model/ResponseWrapperPhishingSiteResultNftRiskSelfDestruct';
+import {ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval} from './model/ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval';
+import {ResponseWrapperPhishingSiteResultWebsiteContractSecurity} from './model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity';
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
 import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
@@ -393,6 +399,42 @@ export {
      * @property {module:model/ResponseWrapperPhishingSiteResult}
      */
     ResponseWrapperPhishingSiteResult,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultNftRisk model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultNftRisk}
+     */
+    ResponseWrapperPhishingSiteResultNftRisk,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn}
+     */
+    ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting}
+     */
+    ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultNftRiskSelfDestruct model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultNftRiskSelfDestruct}
+     */
+    ResponseWrapperPhishingSiteResultNftRiskSelfDestruct,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval}
+     */
+    ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval,
+
+    /**
+     * The ResponseWrapperPhishingSiteResultWebsiteContractSecurity model constructor.
+     * @property {module:model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity}
+     */
+    ResponseWrapperPhishingSiteResultWebsiteContractSecurity,
 
     /**
      * The ResponseWrapperTaTokenSecurityResponse model constructor.

@@ -13,6 +13,7 @@
  *
  */
 import {ApiClient} from '../ApiClient';
+import {ResponseWrapperPhishingSiteResultWebsiteContractSecurity} from './ResponseWrapperPhishingSiteResultWebsiteContractSecurity';
 
 /**
  * The ResponseWrapperPhishingSiteResult model module.
@@ -40,7 +41,7 @@ export class ResponseWrapperPhishingSiteResult {
     if (data) {
       obj = obj || new ResponseWrapperPhishingSiteResult();
       if (data.hasOwnProperty('website_contract_security'))
-        obj.website_contract_security = ApiClient.convertToType(data['website_contract_security'], ['String']);
+        obj.website_contract_security = ApiClient.convertToType(data['website_contract_security'], [ResponseWrapperPhishingSiteResultWebsiteContractSecurity]);
       if (data.hasOwnProperty('phishing_site'))
         obj.phishing_site = ApiClient.convertToType(data['phishing_site'], 'Number');
     }
@@ -49,7 +50,7 @@ export class ResponseWrapperPhishingSiteResult {
 }
 
 /**
- * @member {Array.<String>} website_contract_security
+ * @member {Array.<module:model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity>} website_contract_security
  */
 ResponseWrapperPhishingSiteResult.prototype.website_contract_security = undefined;
 
