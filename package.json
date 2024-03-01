@@ -1,6 +1,6 @@
 {
   "name": "@goplus/sdk-node",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "GoPlus API SDK for Node.js",
   "author": "GoplusSecurity",
   "license": "Apache-2.0",

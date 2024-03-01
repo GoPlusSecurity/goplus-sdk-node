@@ -321,6 +321,42 @@ Object.defineProperty(exports, "ResponseWrapperPhishingSiteResult", {
     return _ResponseWrapperPhishingSiteResult.ResponseWrapperPhishingSiteResult;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultNftRisk", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultNftRisk.ResponseWrapperPhishingSiteResultNftRisk;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn.ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting.ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultNftRiskSelfDestruct", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultNftRiskSelfDestruct.ResponseWrapperPhishingSiteResultNftRiskSelfDestruct;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval.ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultWebsiteContractSecurity", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperPhishingSiteResultWebsiteContractSecurity.ResponseWrapperPhishingSiteResultWebsiteContractSecurity;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse", {
   enumerable: true,
   get: function get() {
@@ -452,6 +488,12 @@ var _ResponseWrapperMapStringString = require("./model/ResponseWrapperMapStringS
 var _ResponseWrapperParseAbiDataResponse = require("./model/ResponseWrapperParseAbiDataResponse");
 var _ResponseWrapperPhishingSite = require("./model/ResponseWrapperPhishingSite");
 var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishingSiteResult");
+var _ResponseWrapperPhishingSiteResultNftRisk = require("./model/ResponseWrapperPhishingSiteResultNftRisk");
+var _ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn = require("./model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedBurn");
+var _ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting = require("./model/ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting");
+var _ResponseWrapperPhishingSiteResultNftRiskSelfDestruct = require("./model/ResponseWrapperPhishingSiteResultNftRiskSelfDestruct");
+var _ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval = require("./model/ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval");
+var _ResponseWrapperPhishingSiteResultWebsiteContractSecurity = require("./model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity");
 var _ResponseWrapperTaTokenSecurityResponse = require("./model/ResponseWrapperTaTokenSecurityResponse");
 var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurity");
 var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
