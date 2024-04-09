@@ -45,10 +45,14 @@ export class ResponseWrapperAddressContractResult {
         obj.money_laundering = ApiClient.convertToType(data['money_laundering'], 'String');
       if (data.hasOwnProperty('number_of_malicious_contracts_created'))
         obj.number_of_malicious_contracts_created = ApiClient.convertToType(data['number_of_malicious_contracts_created'], 'String');
+      if (data.hasOwnProperty('gas_abuse'))
+        obj.gas_abuse = ApiClient.convertToType(data['gas_abuse'], 'String');
       if (data.hasOwnProperty('financial_crime'))
         obj.financial_crime = ApiClient.convertToType(data['financial_crime'], 'String');
       if (data.hasOwnProperty('darkweb_transactions'))
         obj.darkweb_transactions = ApiClient.convertToType(data['darkweb_transactions'], 'String');
+      if (data.hasOwnProperty('reinit'))
+        obj.reinit = ApiClient.convertToType(data['reinit'], 'String');
       if (data.hasOwnProperty('phishing_activities'))
         obj.phishing_activities = ApiClient.convertToType(data['phishing_activities'], 'String');
       if (data.hasOwnProperty('contract_address'))
@@ -59,6 +63,8 @@ export class ResponseWrapperAddressContractResult {
         obj.blacklist_doubt = ApiClient.convertToType(data['blacklist_doubt'], 'String');
       if (data.hasOwnProperty('data_source'))
         obj.data_source = ApiClient.convertToType(data['data_source'], 'String');
+      if (data.hasOwnProperty('fake_standard_interface'))
+        obj.fake_standard_interface = ApiClient.convertToType(data['fake_standard_interface'], 'String');
       if (data.hasOwnProperty('stealing_attack'))
         obj.stealing_attack = ApiClient.convertToType(data['stealing_attack'], 'String');
       if (data.hasOwnProperty('blackmail_activities'))
@@ -69,6 +75,8 @@ export class ResponseWrapperAddressContractResult {
         obj.malicious_mining_activities = ApiClient.convertToType(data['malicious_mining_activities'], 'String');
       if (data.hasOwnProperty('mixer'))
         obj.mixer = ApiClient.convertToType(data['mixer'], 'String');
+      if (data.hasOwnProperty('fake_token'))
+        obj.fake_token = ApiClient.convertToType(data['fake_token'], 'String');
       if (data.hasOwnProperty('honeypot_related_address'))
         obj.honeypot_related_address = ApiClient.convertToType(data['honeypot_related_address'], 'String');
     }
@@ -95,6 +103,12 @@ ResponseWrapperAddressContractResult.prototype.money_laundering = undefined;
 ResponseWrapperAddressContractResult.prototype.number_of_malicious_contracts_created = undefined;
 
 /**
+ * It describes whether this address is cheating other user's gas fee to mint other assets.(Notice:Any interaction with such addresses may result in loss of property.)
+ * @member {String} gas_abuse
+ */
+ResponseWrapperAddressContractResult.prototype.gas_abuse = undefined;
+
+/**
  * It describes whether this address is involved in financial crime. \"1\" means true; \"0\" means false.
  * @member {String} financial_crime
  */
@@ -105,6 +119,12 @@ ResponseWrapperAddressContractResult.prototype.financial_crime = undefined;
  * @member {String} darkweb_transactions
  */
 ResponseWrapperAddressContractResult.prototype.darkweb_transactions = undefined;
+
+/**
+ * It describes whether this address/contract has been deployed more than onces, and can be deployed again.(Notice:If a contract can be reinited, the developer can change the contract code whenever he wants.)
+ * @member {String} reinit
+ */
+ResponseWrapperAddressContractResult.prototype.reinit = undefined;
 
 /**
  * It describes whether this address has implemented phishing activities. \"1\" means true; \"0\" means false.
@@ -137,6 +157,12 @@ ResponseWrapperAddressContractResult.prototype.blacklist_doubt = undefined;
 ResponseWrapperAddressContractResult.prototype.data_source = undefined;
 
 /**
+ * It describes whether this contract contains standard interfaces that do not conform the requirements of the standard protocol.(Notice:Fake Standard Interface is mostly seen in scam assets.)
+ * @member {String} fake_standard_interface
+ */
+ResponseWrapperAddressContractResult.prototype.fake_standard_interface = undefined;
+
+/**
  * It describes whether this address has implemented stealing attacks. \"1\" means true; \"0\" means false.
  * @member {String} stealing_attack
  */
@@ -165,6 +191,12 @@ ResponseWrapperAddressContractResult.prototype.malicious_mining_activities = und
  * @member {String} mixer
  */
 ResponseWrapperAddressContractResult.prototype.mixer = undefined;
+
+/**
+ * It indicates whether the token is a counterfeit of a mainstream asset.
+ * @member {String} fake_token
+ */
+ResponseWrapperAddressContractResult.prototype.fake_token = undefined;
 
 /**
  * It describes whether this address is related to honeypot tokens or has created scam tokens. \"1\" means true; \"0\" means false.(Notice:Addresses related to honeypot mean the creators or owners of the honeypot tokens. This is a dangerous address if the address is ralated to honeypot tokens.)
