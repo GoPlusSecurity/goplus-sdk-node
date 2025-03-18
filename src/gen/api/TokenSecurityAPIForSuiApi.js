@@ -13,18 +13,18 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ResponseWrapperPhishingSite} from '../model/ResponseWrapperPhishingSite';
+import {ResponseWrapperSuiTokenSecurity} from '../model/ResponseWrapperSuiTokenSecurity';
 
 /**
-* WebsiteController service.
-* @module api/WebsiteControllerApi
+* TokenSecurityAPIForSui service.
+* @module api/TokenSecurityAPIForSuiApi
 * @version 1.0
 */
-export class WebsiteControllerApi {
+export class TokenSecurityAPIForSuiApi {
 
     /**
-    * Constructs a new WebsiteControllerApi. 
-    * @alias module:api/WebsiteControllerApi
+    * Constructs a new TokenSecurityAPIForSuiApi. 
+    * @alias module:api/TokenSecurityAPIForSuiApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instanc
@@ -35,37 +35,32 @@ export class WebsiteControllerApi {
     }
 
     /**
-     * Callback function to receive the result of the phishingSiteUsingGET operation.
-     * @callback moduleapi/WebsiteControllerApi~phishingSiteUsingGETCallback
+     * Callback function to receive the result of the suiTokenSecurityUsingGET operation.
+     * @callback moduleapi/TokenSecurityAPIForSuiApi~suiTokenSecurityUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperPhishingSite{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperSuiTokenSecurity{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Check if the the url is a phishing site
-     * @param {String} url Url
+     * Get token&#x27;s security and risk data.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
-     * @param {module:api/WebsiteControllerApi~phishingSiteUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} opts.contract_addresses contract_addresses
+     * @param {module:api/TokenSecurityAPIForSuiApi~suiTokenSecurityUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    phishingSiteUsingGET(url, opts, callback) {
+    suiTokenSecurityUsingGET(opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'url' is set
-      if (url === undefined || url === null) {
-        throw new Error("Missing the required parameter 'url' when calling phishingSiteUsingGET");
-      }
 
       let pathParams = {
         
       };
       let queryParams = {
-        'url': url
+        'contract_addresses': opts['contract_addresses']
       };
       let headerParams = {
-        'Authorization': opts['Authorization']
+        
       };
       let formParams = {
         
@@ -74,10 +69,10 @@ export class WebsiteControllerApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperPhishingSite;
+      let returnType = ResponseWrapperSuiTokenSecurity;
 
       return this.apiClient.callApi(
-        '/api/v1/phishing_site', 'GET',
+        '/api/v1/sui/token_security', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

@@ -47,7 +47,7 @@ export class DefiControllerApi {
      * @param {String} contract_addresses Defi protocol address
      * @param {String} chain_id Chain id, (eth: 1, bsc: 56)
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/DefiControllerApi~getDefiInfoUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */

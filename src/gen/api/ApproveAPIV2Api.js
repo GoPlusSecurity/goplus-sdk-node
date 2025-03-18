@@ -18,15 +18,15 @@ import {ResponseWrapperListApproveNFTListResponse} from '../model/ResponseWrappe
 import {ResponseWrapperListApproveTokenOutListResponse} from '../model/ResponseWrapperListApproveTokenOutListResponse';
 
 /**
-* ApproveControllerV2 service.
-* @module api/ApproveControllerV2Api
+* ApproveAPIV2 service.
+* @module api/ApproveAPIV2Api
 * @version 1.0
 */
-export class ApproveControllerV2Api {
+export class ApproveAPIV2Api {
 
     /**
-    * Constructs a new ApproveControllerV2Api. 
-    * @alias module:api/ApproveControllerV2Api
+    * Constructs a new ApproveAPIV2Api. 
+    * @alias module:api/ApproveAPIV2Api
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instanc
@@ -38,7 +38,7 @@ export class ApproveControllerV2Api {
 
     /**
      * Callback function to receive the result of the addressNFT1155ApproveListUsingGET1 operation.
-     * @callback moduleapi/ApproveControllerV2Api~addressNFT1155ApproveListUsingGET1Callback
+     * @callback moduleapi/ApproveAPIV2Api~addressNFT1155ApproveListUsingGET1Callback
      * @param {String} error Error message, if any.
      * @param {module:model/ResponseWrapperListApproveNFT1155ListResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -50,8 +50,8 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {module:api/ApproveControllerV2Api~addressNFT1155ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
+     * @param {module:api/ApproveAPIV2Api~addressNFT1155ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
     addressNFT1155ApproveListUsingGET1(addresses, chainId, opts, callback) {
@@ -92,7 +92,7 @@ export class ApproveControllerV2Api {
     }
     /**
      * Callback function to receive the result of the addressNFT721ApproveListUsingGET1 operation.
-     * @callback moduleapi/ApproveControllerV2Api~addressNFT721ApproveListUsingGET1Callback
+     * @callback moduleapi/ApproveAPIV2Api~addressNFT721ApproveListUsingGET1Callback
      * @param {String} error Error message, if any.
      * @param {module:model/ResponseWrapperListApproveNFTListResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -104,8 +104,8 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {module:api/ApproveControllerV2Api~addressNFT721ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
+     * @param {module:api/ApproveAPIV2Api~addressNFT721ApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
     addressNFT721ApproveListUsingGET1(addresses, chainId, opts, callback) {
@@ -146,7 +146,7 @@ export class ApproveControllerV2Api {
     }
     /**
      * Callback function to receive the result of the addressTokenApproveListUsingGET1 operation.
-     * @callback moduleapi/ApproveControllerV2Api~addressTokenApproveListUsingGET1Callback
+     * @callback moduleapi/ApproveAPIV2Api~addressTokenApproveListUsingGET1Callback
      * @param {String} error Error message, if any.
      * @param {module:model/ResponseWrapperListApproveTokenOutListResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -158,8 +158,8 @@ export class ApproveControllerV2Api {
      * @param {String} addresses contract address
      * @param {String} chainId chain id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-     * @param {module:api/ApproveControllerV2Api~addressTokenApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
+     * @param {module:api/ApproveAPIV2Api~addressTokenApproveListUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
     addressTokenApproveListUsingGET1(addresses, chainId, opts, callback) {
