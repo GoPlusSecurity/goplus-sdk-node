@@ -49,11 +49,13 @@ export class LockControllerApi {
      * @param {Number} pageNum pageNum
      * @param {Number} pageSize pageSize
      * @param {String} poolAddress poolAddress
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/LockControllerApi~getNftLockersUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getNftLockersUsingGET(chainId, pageNum, pageSize, poolAddress, callback) {
-      
+    getNftLockersUsingGET(chainId, pageNum, pageSize, poolAddress, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'chainId' is set
       if (chainId === undefined || chainId === null) {
@@ -79,7 +81,7 @@ export class LockControllerApi {
         'chainId': chainId,'pageNum': pageNum,'pageSize': pageSize,'poolAddress': poolAddress
       };
       let headerParams = {
-        
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
@@ -110,11 +112,13 @@ export class LockControllerApi {
      * @param {Number} pageNum pageNum
      * @param {Number} pageSize pageSize
      * @param {String} tokenAddress tokenAddress
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/LockControllerApi~getTokenLockersUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getTokenLockersUsingGET(chainId, pageNum, pageSize, tokenAddress, callback) {
-      
+    getTokenLockersUsingGET(chainId, pageNum, pageSize, tokenAddress, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'chainId' is set
       if (chainId === undefined || chainId === null) {
@@ -140,7 +144,7 @@ export class LockControllerApi {
         'chainId': chainId,'pageNum': pageNum,'pageSize': pageSize,'tokenAddress': tokenAddress
       };
       let headerParams = {
-        
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         

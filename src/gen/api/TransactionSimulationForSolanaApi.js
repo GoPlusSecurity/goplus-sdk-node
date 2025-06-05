@@ -46,11 +46,13 @@ export class TransactionSimulationForSolanaApi {
     /**
      * Check for potential risks in the transaction
      * @param {module:model/SolanaPrerunTxRequest} body request
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/TransactionSimulationForSolanaApi~prerunTxUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    prerunTxUsingPOST(body, callback) {
-      
+    prerunTxUsingPOST(body, opts, callback) {
+      opts = opts || {};
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
@@ -64,7 +66,7 @@ export class TransactionSimulationForSolanaApi {
         
       };
       let headerParams = {
-        
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
