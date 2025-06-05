@@ -159,16 +159,34 @@ Object.defineProperty(exports, "JSONObject", {
     return _JSONObject.JSONObject;
   }
 });
+Object.defineProperty(exports, "LockControllerApi", {
+  enumerable: true,
+  get: function get() {
+    return _LockControllerApi.LockControllerApi;
+  }
+});
 Object.defineProperty(exports, "MapStringString", {
   enumerable: true,
   get: function get() {
     return _MapStringString.MapStringString;
   }
 });
+Object.defineProperty(exports, "NewAllowance", {
+  enumerable: true,
+  get: function get() {
+    return _NewAllowance.NewAllowance;
+  }
+});
 Object.defineProperty(exports, "NftControllerApi", {
   enumerable: true,
   get: function get() {
     return _NftControllerApi.NftControllerApi;
+  }
+});
+Object.defineProperty(exports, "NftLockerResponse", {
+  enumerable: true,
+  get: function get() {
+    return _NftLockerResponse.NftLockerResponse;
   }
 });
 Object.defineProperty(exports, "ParseAbiDataRequest", {
@@ -303,6 +321,12 @@ Object.defineProperty(exports, "ResponseWrapperMapStringString", {
     return _ResponseWrapperMapStringString.ResponseWrapperMapStringString;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperNftLockerResponse", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperNftLockerResponse.ResponseWrapperNftLockerResponse;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperParseAbiDataResponse", {
   enumerable: true,
   get: function get() {
@@ -357,10 +381,190 @@ Object.defineProperty(exports, "ResponseWrapperPhishingSiteResultWebsiteContract
     return _ResponseWrapperPhishingSiteResultWebsiteContractSecurity.ResponseWrapperPhishingSiteResultWebsiteContractSecurity;
   }
 });
+Object.defineProperty(exports, "ResponseWrapperSolanaPrerunTxResponse", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaPrerunTxResponse.ResponseWrapperSolanaPrerunTxResponse;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurity", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurity.ResponseWrapperSolanaTokenSecurity;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority.ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityClosable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityClosable.ResponseWrapperSolanaTokenSecurityClosable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityClosableAuthority", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityClosableAuthority.ResponseWrapperSolanaTokenSecurityClosableAuthority;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityCreator", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityCreator.ResponseWrapperSolanaTokenSecurityCreator;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityDay", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityDay.ResponseWrapperSolanaTokenSecurityDay;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable.ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityDex", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityDex.ResponseWrapperSolanaTokenSecurityDex;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityFreezable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityFreezable.ResponseWrapperSolanaTokenSecurityFreezable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityLpHolders", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityLpHolders.ResponseWrapperSolanaTokenSecurityLpHolders;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityMetadata", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityMetadata.ResponseWrapperSolanaTokenSecurityMetadata;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityMetadataMutable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityMetadataMutable.ResponseWrapperSolanaTokenSecurityMetadataMutable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityMintable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityMintable.ResponseWrapperSolanaTokenSecurityMintable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityMonth", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityMonth.ResponseWrapperSolanaTokenSecurityMonth;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityResult.ResponseWrapperSolanaTokenSecurityResult;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferFee", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferFee.ResponseWrapperSolanaTokenSecurityTransferFee;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate.ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate.ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable.ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferHook", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferHook.ResponseWrapperSolanaTokenSecurityTransferHook;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityTransferHookUpgradable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityTransferHookUpgradable.ResponseWrapperSolanaTokenSecurityTransferHookUpgradable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityWeek", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityWeek.ResponseWrapperSolanaTokenSecurityWeek;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurity", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurity.ResponseWrapperSuiTokenSecurity;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurityBlacklist", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurityBlacklist.ResponseWrapperSuiTokenSecurityBlacklist;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurityContractUpgradeable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurityContractUpgradeable.ResponseWrapperSuiTokenSecurityContractUpgradeable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurityMetadataModifiable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurityMetadataModifiable.ResponseWrapperSuiTokenSecurityMetadataModifiable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurityMintable", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurityMintable.ResponseWrapperSuiTokenSecurityMintable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSuiTokenSecurityResult", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSuiTokenSecurityResult.ResponseWrapperSuiTokenSecurityResult;
+  }
+});
 Object.defineProperty(exports, "ResponseWrapperTaTokenSecurityResponse", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperTaTokenSecurityResponse.ResponseWrapperTaTokenSecurityResponse;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperTokenLockerResponse", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperTokenLockerResponse.ResponseWrapperTokenLockerResponse;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperTokenSecurity", {
@@ -417,6 +621,66 @@ Object.defineProperty(exports, "ResponseWrapperobject", {
     return _ResponseWrapperobject.ResponseWrapperobject;
   }
 });
+Object.defineProperty(exports, "SolanaAllowanceUpgrade", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaAllowanceUpgrade.SolanaAllowanceUpgrade;
+  }
+});
+Object.defineProperty(exports, "SolanaOwnershipChange", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaOwnershipChange.SolanaOwnershipChange;
+  }
+});
+Object.defineProperty(exports, "SolanaPrerunTxRequest", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaPrerunTxRequest.SolanaPrerunTxRequest;
+  }
+});
+Object.defineProperty(exports, "SolanaPrerunTxResponse", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaPrerunTxResponse.SolanaPrerunTxResponse;
+  }
+});
+Object.defineProperty(exports, "SolanaTxAssetChange", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaTxAssetChange.SolanaTxAssetChange;
+  }
+});
+Object.defineProperty(exports, "SolanaTxAssetChanges", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaTxAssetChanges.SolanaTxAssetChanges;
+  }
+});
+Object.defineProperty(exports, "SolanaTxChangeDetail", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaTxChangeDetail.SolanaTxChangeDetail;
+  }
+});
+Object.defineProperty(exports, "SolanaTxSolChange", {
+  enumerable: true,
+  get: function get() {
+    return _SolanaTxSolChange.SolanaTxSolChange;
+  }
+});
+Object.defineProperty(exports, "TaNftLockerLockInfoobject", {
+  enumerable: true,
+  get: function get() {
+    return _TaNftLockerLockInfoobject.TaNftLockerLockInfoobject;
+  }
+});
+Object.defineProperty(exports, "TaTokenLockerLockInfoobject", {
+  enumerable: true,
+  get: function get() {
+    return _TaTokenLockerLockInfoobject.TaTokenLockerLockInfoobject;
+  }
+});
 Object.defineProperty(exports, "TaTokenSecurityResponse", {
   enumerable: true,
   get: function get() {
@@ -433,6 +697,30 @@ Object.defineProperty(exports, "TokenControllerV1Api", {
   enumerable: true,
   get: function get() {
     return _TokenControllerV1Api.TokenControllerV1Api;
+  }
+});
+Object.defineProperty(exports, "TokenLockerResponse", {
+  enumerable: true,
+  get: function get() {
+    return _TokenLockerResponse.TokenLockerResponse;
+  }
+});
+Object.defineProperty(exports, "TokenSecurityAPIForSolanaBetaApi", {
+  enumerable: true,
+  get: function get() {
+    return _TokenSecurityAPIForSolanaBetaApi.TokenSecurityAPIForSolanaBetaApi;
+  }
+});
+Object.defineProperty(exports, "TokenSecurityAPIForSuiApi", {
+  enumerable: true,
+  get: function get() {
+    return _TokenSecurityAPIForSuiApi.TokenSecurityAPIForSuiApi;
+  }
+});
+Object.defineProperty(exports, "TransactionSimulationForSolanaApi", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionSimulationForSolanaApi.TransactionSimulationForSolanaApi;
   }
 });
 Object.defineProperty(exports, "WebsiteControllerApi", {
@@ -463,6 +751,8 @@ var _GetDefiInfoResponseResult = require("./model/GetDefiInfoResponseResult");
 var _GetDefiInfoResponseResultOwner = require("./model/GetDefiInfoResponseResultOwner");
 var _JSONObject = require("./model/JSONObject");
 var _MapStringString = require("./model/MapStringString");
+var _NewAllowance = require("./model/NewAllowance");
+var _NftLockerResponse = require("./model/NftLockerResponse");
 var _ParseAbiDataRequest = require("./model/ParseAbiDataRequest");
 var _ParseAbiDataResponse = require("./model/ParseAbiDataResponse");
 var _ResponseWrapperAddressContract = require("./model/ResponseWrapperAddressContract");
@@ -485,6 +775,7 @@ var _ResponseWrapperListGetChainsList = require("./model/ResponseWrapperListGetC
 var _ResponseWrapperListGetChainsListResult = require("./model/ResponseWrapperListGetChainsListResult");
 var _ResponseWrapperListJSONObject = require("./model/ResponseWrapperListJSONObject");
 var _ResponseWrapperMapStringString = require("./model/ResponseWrapperMapStringString");
+var _ResponseWrapperNftLockerResponse = require("./model/ResponseWrapperNftLockerResponse");
 var _ResponseWrapperParseAbiDataResponse = require("./model/ResponseWrapperParseAbiDataResponse");
 var _ResponseWrapperPhishingSite = require("./model/ResponseWrapperPhishingSite");
 var _ResponseWrapperPhishingSiteResult = require("./model/ResponseWrapperPhishingSiteResult");
@@ -494,7 +785,37 @@ var _ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting = require("./mode
 var _ResponseWrapperPhishingSiteResultNftRiskSelfDestruct = require("./model/ResponseWrapperPhishingSiteResultNftRiskSelfDestruct");
 var _ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval = require("./model/ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval");
 var _ResponseWrapperPhishingSiteResultWebsiteContractSecurity = require("./model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity");
+var _ResponseWrapperSolanaPrerunTxResponse = require("./model/ResponseWrapperSolanaPrerunTxResponse");
+var _ResponseWrapperSolanaTokenSecurity = require("./model/ResponseWrapperSolanaTokenSecurity");
+var _ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority = require("./model/ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority");
+var _ResponseWrapperSolanaTokenSecurityClosable = require("./model/ResponseWrapperSolanaTokenSecurityClosable");
+var _ResponseWrapperSolanaTokenSecurityClosableAuthority = require("./model/ResponseWrapperSolanaTokenSecurityClosableAuthority");
+var _ResponseWrapperSolanaTokenSecurityCreator = require("./model/ResponseWrapperSolanaTokenSecurityCreator");
+var _ResponseWrapperSolanaTokenSecurityDay = require("./model/ResponseWrapperSolanaTokenSecurityDay");
+var _ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable = require("./model/ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable");
+var _ResponseWrapperSolanaTokenSecurityDex = require("./model/ResponseWrapperSolanaTokenSecurityDex");
+var _ResponseWrapperSolanaTokenSecurityFreezable = require("./model/ResponseWrapperSolanaTokenSecurityFreezable");
+var _ResponseWrapperSolanaTokenSecurityLpHolders = require("./model/ResponseWrapperSolanaTokenSecurityLpHolders");
+var _ResponseWrapperSolanaTokenSecurityMetadata = require("./model/ResponseWrapperSolanaTokenSecurityMetadata");
+var _ResponseWrapperSolanaTokenSecurityMetadataMutable = require("./model/ResponseWrapperSolanaTokenSecurityMetadataMutable");
+var _ResponseWrapperSolanaTokenSecurityMintable = require("./model/ResponseWrapperSolanaTokenSecurityMintable");
+var _ResponseWrapperSolanaTokenSecurityMonth = require("./model/ResponseWrapperSolanaTokenSecurityMonth");
+var _ResponseWrapperSolanaTokenSecurityResult = require("./model/ResponseWrapperSolanaTokenSecurityResult");
+var _ResponseWrapperSolanaTokenSecurityTransferFee = require("./model/ResponseWrapperSolanaTokenSecurityTransferFee");
+var _ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate = require("./model/ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate");
+var _ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate = require("./model/ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate");
+var _ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable = require("./model/ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable");
+var _ResponseWrapperSolanaTokenSecurityTransferHook = require("./model/ResponseWrapperSolanaTokenSecurityTransferHook");
+var _ResponseWrapperSolanaTokenSecurityTransferHookUpgradable = require("./model/ResponseWrapperSolanaTokenSecurityTransferHookUpgradable");
+var _ResponseWrapperSolanaTokenSecurityWeek = require("./model/ResponseWrapperSolanaTokenSecurityWeek");
+var _ResponseWrapperSuiTokenSecurity = require("./model/ResponseWrapperSuiTokenSecurity");
+var _ResponseWrapperSuiTokenSecurityBlacklist = require("./model/ResponseWrapperSuiTokenSecurityBlacklist");
+var _ResponseWrapperSuiTokenSecurityContractUpgradeable = require("./model/ResponseWrapperSuiTokenSecurityContractUpgradeable");
+var _ResponseWrapperSuiTokenSecurityMetadataModifiable = require("./model/ResponseWrapperSuiTokenSecurityMetadataModifiable");
+var _ResponseWrapperSuiTokenSecurityMintable = require("./model/ResponseWrapperSuiTokenSecurityMintable");
+var _ResponseWrapperSuiTokenSecurityResult = require("./model/ResponseWrapperSuiTokenSecurityResult");
 var _ResponseWrapperTaTokenSecurityResponse = require("./model/ResponseWrapperTaTokenSecurityResponse");
+var _ResponseWrapperTokenLockerResponse = require("./model/ResponseWrapperTokenLockerResponse");
 var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurity");
 var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
 var _ResponseWrapperTokenSecurityFakeToken = require("./model/ResponseWrapperTokenSecurityFakeToken");
@@ -504,13 +825,28 @@ var _ResponseWrapperTokenSecurityLpHolders = require("./model/ResponseWrapperTok
 var _ResponseWrapperTokenSecurityNFTList = require("./model/ResponseWrapperTokenSecurityNFTList");
 var _ResponseWrapperTokenSecurityResult = require("./model/ResponseWrapperTokenSecurityResult");
 var _ResponseWrapperobject = require("./model/ResponseWrapperobject");
+var _SolanaAllowanceUpgrade = require("./model/SolanaAllowanceUpgrade");
+var _SolanaOwnershipChange = require("./model/SolanaOwnershipChange");
+var _SolanaPrerunTxRequest = require("./model/SolanaPrerunTxRequest");
+var _SolanaPrerunTxResponse = require("./model/SolanaPrerunTxResponse");
+var _SolanaTxAssetChange = require("./model/SolanaTxAssetChange");
+var _SolanaTxAssetChanges = require("./model/SolanaTxAssetChanges");
+var _SolanaTxChangeDetail = require("./model/SolanaTxChangeDetail");
+var _SolanaTxSolChange = require("./model/SolanaTxSolChange");
+var _TaNftLockerLockInfoobject = require("./model/TaNftLockerLockInfoobject");
+var _TaTokenLockerLockInfoobject = require("./model/TaTokenLockerLockInfoobject");
 var _TaTokenSecurityResponse = require("./model/TaTokenSecurityResponse");
+var _TokenLockerResponse = require("./model/TokenLockerResponse");
 var _ApproveControllerV1Api = require("./api/ApproveControllerV1Api");
 var _ApproveControllerV2Api = require("./api/ApproveControllerV2Api");
 var _ContractAbiControllerApi = require("./api/ContractAbiControllerApi");
 var _DappControllerApi = require("./api/DappControllerApi");
 var _DefiControllerApi = require("./api/DefiControllerApi");
+var _LockControllerApi = require("./api/LockControllerApi");
 var _NftControllerApi = require("./api/NftControllerApi");
 var _TokenControllerApi = require("./api/TokenControllerApi");
 var _TokenControllerV1Api = require("./api/TokenControllerV1Api");
+var _TokenSecurityAPIForSolanaBetaApi = require("./api/TokenSecurityAPIForSolanaBetaApi");
+var _TokenSecurityAPIForSuiApi = require("./api/TokenSecurityAPIForSuiApi");
+var _TransactionSimulationForSolanaApi = require("./api/TransactionSimulationForSolanaApi");
 var _WebsiteControllerApi = require("./api/WebsiteControllerApi");
