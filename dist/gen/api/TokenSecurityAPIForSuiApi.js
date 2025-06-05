@@ -49,18 +49,22 @@ class TokenSecurityAPIForSuiApi {
 
   /**
    * Get token&#x27;s security and risk data.
+   * @param {String} contract_addresses The contract address of sui tokens.
    * @param {Object} opts Optional parameters
    * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
-   * @param {String} opts.contract_addresses contract_addresses
    * @param {module:api/TokenSecurityAPIForSuiApi~suiTokenSecurityUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
    * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
    */
-  suiTokenSecurityUsingGET(opts, callback) {
+  suiTokenSecurityUsingGET(contract_addresses, opts, callback) {
     opts = opts || {};
     let postBody = null;
+    // verify the required parameter 'contract_addresses' is set
+    if (contract_addresses === undefined || contract_addresses === null) {
+      throw new Error("Missing the required parameter 'contract_addresses' when calling suiTokenSecurityUsingGET");
+    }
     let pathParams = {};
     let queryParams = {
-      'contract_addresses': opts['contract_addresses']
+      'contract_addresses': contract_addresses
     };
     let headerParams = {
       'Authorization': opts['Authorization']

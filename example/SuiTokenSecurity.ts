@@ -1,8 +1,8 @@
 import { GoPlus, ErrorCode } from '@goplus/sdk-node';
 
 async function test() {
-  let address = "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3";
-  let res = await GoPlus.solanaTokenSecurity([address], 30);
+  let address = "0x40402a987c2f8a71b755561bfbd16c2cbb991e27e609ad148809491c32bacab9::kui::KUI";
+  let res = await GoPlus.suiTokenSecurity([address], 30);
   if (res.code != ErrorCode.SUCCESS) {
     console.error(res.message);
   } else {
