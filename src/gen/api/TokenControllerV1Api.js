@@ -46,7 +46,7 @@ export class TokenControllerV1Api {
     /**
      * Get the list of chains supported by different functions.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:model/String} opts.name API name.
      * @param {module:api/TokenControllerV1Api~getChainsListUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
@@ -89,10 +89,10 @@ export class TokenControllerV1Api {
 
     /**
      * Get token&#x27;s security and risk data.
-     * @param {String} chain_id The chain_id of the blockchain. \&quot;1\&quot; means Ethereum;  \&quot;10\&quot; means Optimism; \&quot;25\&quot; means Cronos; \&quot;56\&quot; means BSC;  \&quot;66\&quot; means OKC; \&quot;100\&quot; means Gnosis; \&quot;128\&quot; means HECO;  \&quot;137\&quot; means Polygon;  \&quot;250\&quot; means Fantom; \&quot;321\&quot; means KCC; \&quot;324\&quot; means zkSync Era; \&quot;10001\&quot; means ETHW; \&quot;201022\&quot; means FON; \&quot;42161\&quot; means Arbitrum;  \&quot;43114\&quot; means Avalanche; \&quot;59144\&quot; means Linea Mainnet; \&quot;8453\&quot; Base; \&quot;tron\&quot; means Tron; \&quot;534352\&quot; means Scroll; \&quot;204\&quot; means opBNB;
+     * @param {module:model/String} chain_id The chain_id of the blockchain. To check the corresponding blockchain name for a given chain_id, please visit: https://docs.gopluslabs.io/reference/response-details-9
      * @param {String} contract_addresses The contract address of tokens.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/TokenControllerV1Api~tokenSecurityUsingGET1Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */

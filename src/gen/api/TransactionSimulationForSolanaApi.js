@@ -13,19 +13,19 @@
  *
  */
 import {ApiClient} from "../ApiClient";
-import {ParseAbiDataRequest} from '../model/ParseAbiDataRequest';
-import {ResponseWrapperParseAbiDataResponse} from '../model/ResponseWrapperParseAbiDataResponse';
+import {ResponseWrapperSolanaPrerunTxResponse} from '../model/ResponseWrapperSolanaPrerunTxResponse';
+import {SolanaPrerunTxRequest} from '../model/SolanaPrerunTxRequest';
 
 /**
-* ContractAbiController service.
-* @module api/ContractAbiControllerApi
+* TransactionSimulationForSolana service.
+* @module api/TransactionSimulationForSolanaApi
 * @version 1.0
 */
-export class ContractAbiControllerApi {
+export class TransactionSimulationForSolanaApi {
 
     /**
-    * Constructs a new ContractAbiControllerApi. 
-    * @alias module:api/ContractAbiControllerApi
+    * Constructs a new TransactionSimulationForSolanaApi. 
+    * @alias module:api/TransactionSimulationForSolanaApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instanc
@@ -36,27 +36,25 @@ export class ContractAbiControllerApi {
     }
 
     /**
-     * Callback function to receive the result of the getAbiDataInfoUsingPOST operation.
-     * @callback moduleapi/ContractAbiControllerApi~getAbiDataInfoUsingPOSTCallback
+     * Callback function to receive the result of the prerunTxUsingPOST operation.
+     * @callback moduleapi/TransactionSimulationForSolanaApi~prerunTxUsingPOSTCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ResponseWrapperParseAbiDataResponse{ data The data returned by the service call.
+     * @param {module:model/ResponseWrapperSolanaPrerunTxResponse{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Get abi decode info
-     * @param {module:model/ParseAbiDataRequest} body abiDataRequest
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
-     * @param {module:api/ContractAbiControllerApi~getAbiDataInfoUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
+     * Check for potential risks in the transaction
+     * @param {module:model/SolanaPrerunTxRequest} body request
+     * @param {module:api/TransactionSimulationForSolanaApi~prerunTxUsingPOSTCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getAbiDataInfoUsingPOST(body, opts, callback) {
-      opts = opts || {};
+    prerunTxUsingPOST(body, callback) {
+      
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling getAbiDataInfoUsingPOST");
+        throw new Error("Missing the required parameter 'body' when calling prerunTxUsingPOST");
       }
 
       let pathParams = {
@@ -66,7 +64,7 @@ export class ContractAbiControllerApi {
         
       };
       let headerParams = {
-        'Authorization': opts['Authorization']
+        
       };
       let formParams = {
         
@@ -75,10 +73,10 @@ export class ContractAbiControllerApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['*/*'];
-      let returnType = ResponseWrapperParseAbiDataResponse;
+      let returnType = ResponseWrapperSolanaPrerunTxResponse;
 
       return this.apiClient.callApi(
-        '/api/v1/abi/input_decode', 'POST',
+        '/pis/api/v1/solana/pre_execution', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
