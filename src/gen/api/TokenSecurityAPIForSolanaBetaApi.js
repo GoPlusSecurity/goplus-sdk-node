@@ -45,11 +45,13 @@ export class TokenSecurityAPIForSolanaBetaApi {
     /**
      * Get token&#x27;s security and risk data.
      * @param {String} contract_addresses The contract address of solana tokens.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {module:api/TokenSecurityAPIForSolanaBetaApi~solanaTokenSecurityUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    solanaTokenSecurityUsingGET(contract_addresses, callback) {
-      
+    solanaTokenSecurityUsingGET(contract_addresses, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'contract_addresses' is set
       if (contract_addresses === undefined || contract_addresses === null) {
@@ -63,7 +65,7 @@ export class TokenSecurityAPIForSolanaBetaApi {
         'contract_addresses': contract_addresses
       };
       let headerParams = {
-        
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         

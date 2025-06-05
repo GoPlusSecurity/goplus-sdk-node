@@ -45,6 +45,7 @@ export class TokenSecurityAPIForSuiApi {
     /**
      * Get token&#x27;s security and risk data.
      * @param {Object} opts Optional parameters
+     * @param {String} opts.Authorization Authorization token in the format: Bearer &lt;token&gt; (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
      * @param {String} opts.contract_addresses contract_addresses
      * @param {module:api/TokenSecurityAPIForSuiApi~suiTokenSecurityUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
@@ -60,7 +61,7 @@ export class TokenSecurityAPIForSuiApi {
         'contract_addresses': opts['contract_addresses']
       };
       let headerParams = {
-        
+        'Authorization': opts['Authorization']
       };
       let formParams = {
         
