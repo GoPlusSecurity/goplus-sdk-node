@@ -34,6 +34,8 @@ import {GetDefiInfoResponseResult} from './model/GetDefiInfoResponseResult';
 import {GetDefiInfoResponseResultOwner} from './model/GetDefiInfoResponseResultOwner';
 import {JSONObject} from './model/JSONObject';
 import {MapStringString} from './model/MapStringString';
+import {NewAllowance} from './model/NewAllowance';
+import {NftLockerResponse} from './model/NftLockerResponse';
 import {ParseAbiDataRequest} from './model/ParseAbiDataRequest';
 import {ParseAbiDataResponse} from './model/ParseAbiDataResponse';
 import {ResponseWrapperAddressContract} from './model/ResponseWrapperAddressContract';
@@ -56,6 +58,7 @@ import {ResponseWrapperListGetChainsList} from './model/ResponseWrapperListGetCh
 import {ResponseWrapperListGetChainsListResult} from './model/ResponseWrapperListGetChainsListResult';
 import {ResponseWrapperListJSONObject} from './model/ResponseWrapperListJSONObject';
 import {ResponseWrapperMapStringString} from './model/ResponseWrapperMapStringString';
+import {ResponseWrapperNftLockerResponse} from './model/ResponseWrapperNftLockerResponse';
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperPhishingSite} from './model/ResponseWrapperPhishingSite';
 import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishingSiteResult';
@@ -65,7 +68,37 @@ import {ResponseWrapperPhishingSiteResultNftRiskPrivilegedMinting} from './model
 import {ResponseWrapperPhishingSiteResultNftRiskSelfDestruct} from './model/ResponseWrapperPhishingSiteResultNftRiskSelfDestruct';
 import {ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval} from './model/ResponseWrapperPhishingSiteResultNftRiskTransferWithoutApproval';
 import {ResponseWrapperPhishingSiteResultWebsiteContractSecurity} from './model/ResponseWrapperPhishingSiteResultWebsiteContractSecurity';
+import {ResponseWrapperSolanaPrerunTxResponse} from './model/ResponseWrapperSolanaPrerunTxResponse';
+import {ResponseWrapperSolanaTokenSecurity} from './model/ResponseWrapperSolanaTokenSecurity';
+import {ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority} from './model/ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority';
+import {ResponseWrapperSolanaTokenSecurityClosable} from './model/ResponseWrapperSolanaTokenSecurityClosable';
+import {ResponseWrapperSolanaTokenSecurityClosableAuthority} from './model/ResponseWrapperSolanaTokenSecurityClosableAuthority';
+import {ResponseWrapperSolanaTokenSecurityCreator} from './model/ResponseWrapperSolanaTokenSecurityCreator';
+import {ResponseWrapperSolanaTokenSecurityDay} from './model/ResponseWrapperSolanaTokenSecurityDay';
+import {ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable} from './model/ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable';
+import {ResponseWrapperSolanaTokenSecurityDex} from './model/ResponseWrapperSolanaTokenSecurityDex';
+import {ResponseWrapperSolanaTokenSecurityFreezable} from './model/ResponseWrapperSolanaTokenSecurityFreezable';
+import {ResponseWrapperSolanaTokenSecurityLpHolders} from './model/ResponseWrapperSolanaTokenSecurityLpHolders';
+import {ResponseWrapperSolanaTokenSecurityMetadata} from './model/ResponseWrapperSolanaTokenSecurityMetadata';
+import {ResponseWrapperSolanaTokenSecurityMetadataMutable} from './model/ResponseWrapperSolanaTokenSecurityMetadataMutable';
+import {ResponseWrapperSolanaTokenSecurityMintable} from './model/ResponseWrapperSolanaTokenSecurityMintable';
+import {ResponseWrapperSolanaTokenSecurityMonth} from './model/ResponseWrapperSolanaTokenSecurityMonth';
+import {ResponseWrapperSolanaTokenSecurityResult} from './model/ResponseWrapperSolanaTokenSecurityResult';
+import {ResponseWrapperSolanaTokenSecurityTransferFee} from './model/ResponseWrapperSolanaTokenSecurityTransferFee';
+import {ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate} from './model/ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate';
+import {ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate} from './model/ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate';
+import {ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable} from './model/ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable';
+import {ResponseWrapperSolanaTokenSecurityTransferHook} from './model/ResponseWrapperSolanaTokenSecurityTransferHook';
+import {ResponseWrapperSolanaTokenSecurityTransferHookUpgradable} from './model/ResponseWrapperSolanaTokenSecurityTransferHookUpgradable';
+import {ResponseWrapperSolanaTokenSecurityWeek} from './model/ResponseWrapperSolanaTokenSecurityWeek';
+import {ResponseWrapperSuiTokenSecurity} from './model/ResponseWrapperSuiTokenSecurity';
+import {ResponseWrapperSuiTokenSecurityBlacklist} from './model/ResponseWrapperSuiTokenSecurityBlacklist';
+import {ResponseWrapperSuiTokenSecurityContractUpgradeable} from './model/ResponseWrapperSuiTokenSecurityContractUpgradeable';
+import {ResponseWrapperSuiTokenSecurityMetadataModifiable} from './model/ResponseWrapperSuiTokenSecurityMetadataModifiable';
+import {ResponseWrapperSuiTokenSecurityMintable} from './model/ResponseWrapperSuiTokenSecurityMintable';
+import {ResponseWrapperSuiTokenSecurityResult} from './model/ResponseWrapperSuiTokenSecurityResult';
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
+import {ResponseWrapperTokenLockerResponse} from './model/ResponseWrapperTokenLockerResponse';
 import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
 import {ResponseWrapperTokenSecurityFakeToken} from './model/ResponseWrapperTokenSecurityFakeToken';
@@ -75,15 +108,30 @@ import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperToke
 import {ResponseWrapperTokenSecurityNFTList} from './model/ResponseWrapperTokenSecurityNFTList';
 import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
+import {SolanaAllowanceUpgrade} from './model/SolanaAllowanceUpgrade';
+import {SolanaOwnershipChange} from './model/SolanaOwnershipChange';
+import {SolanaPrerunTxRequest} from './model/SolanaPrerunTxRequest';
+import {SolanaPrerunTxResponse} from './model/SolanaPrerunTxResponse';
+import {SolanaTxAssetChange} from './model/SolanaTxAssetChange';
+import {SolanaTxAssetChanges} from './model/SolanaTxAssetChanges';
+import {SolanaTxChangeDetail} from './model/SolanaTxChangeDetail';
+import {SolanaTxSolChange} from './model/SolanaTxSolChange';
+import {TaNftLockerLockInfoobject} from './model/TaNftLockerLockInfoobject';
+import {TaTokenLockerLockInfoobject} from './model/TaTokenLockerLockInfoobject';
 import {TaTokenSecurityResponse} from './model/TaTokenSecurityResponse';
+import {TokenLockerResponse} from './model/TokenLockerResponse';
 import {ApproveControllerV1Api} from './api/ApproveControllerV1Api';
 import {ApproveControllerV2Api} from './api/ApproveControllerV2Api';
 import {ContractAbiControllerApi} from './api/ContractAbiControllerApi';
 import {DappControllerApi} from './api/DappControllerApi';
 import {DefiControllerApi} from './api/DefiControllerApi';
+import {LockControllerApi} from './api/LockControllerApi';
 import {NftControllerApi} from './api/NftControllerApi';
 import {TokenControllerApi} from './api/TokenControllerApi';
 import {TokenControllerV1Api} from './api/TokenControllerV1Api';
+import {TokenSecurityAPIForSolanaBetaApi} from './api/TokenSecurityAPIForSolanaBetaApi';
+import {TokenSecurityAPIForSuiApi} from './api/TokenSecurityAPIForSuiApi';
+import {TransactionSimulationForSolanaApi} from './api/TransactionSimulationForSolanaApi';
 import {WebsiteControllerApi} from './api/WebsiteControllerApi';
 
 /**
@@ -251,6 +299,18 @@ export {
     MapStringString,
 
     /**
+     * The NewAllowance model constructor.
+     * @property {module:model/NewAllowance}
+     */
+    NewAllowance,
+
+    /**
+     * The NftLockerResponse model constructor.
+     * @property {module:model/NftLockerResponse}
+     */
+    NftLockerResponse,
+
+    /**
      * The ParseAbiDataRequest model constructor.
      * @property {module:model/ParseAbiDataRequest}
      */
@@ -383,6 +443,12 @@ export {
     ResponseWrapperMapStringString,
 
     /**
+     * The ResponseWrapperNftLockerResponse model constructor.
+     * @property {module:model/ResponseWrapperNftLockerResponse}
+     */
+    ResponseWrapperNftLockerResponse,
+
+    /**
      * The ResponseWrapperParseAbiDataResponse model constructor.
      * @property {module:model/ResponseWrapperParseAbiDataResponse}
      */
@@ -437,10 +503,190 @@ export {
     ResponseWrapperPhishingSiteResultWebsiteContractSecurity,
 
     /**
+     * The ResponseWrapperSolanaPrerunTxResponse model constructor.
+     * @property {module:model/ResponseWrapperSolanaPrerunTxResponse}
+     */
+    ResponseWrapperSolanaPrerunTxResponse,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurity model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurity}
+     */
+    ResponseWrapperSolanaTokenSecurity,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority}
+     */
+    ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityClosable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityClosable}
+     */
+    ResponseWrapperSolanaTokenSecurityClosable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityClosableAuthority model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityClosableAuthority}
+     */
+    ResponseWrapperSolanaTokenSecurityClosableAuthority,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityCreator model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityCreator}
+     */
+    ResponseWrapperSolanaTokenSecurityCreator,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityDay model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityDay}
+     */
+    ResponseWrapperSolanaTokenSecurityDay,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable}
+     */
+    ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityDex model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityDex}
+     */
+    ResponseWrapperSolanaTokenSecurityDex,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityFreezable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityFreezable}
+     */
+    ResponseWrapperSolanaTokenSecurityFreezable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityLpHolders model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityLpHolders}
+     */
+    ResponseWrapperSolanaTokenSecurityLpHolders,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityMetadata model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityMetadata}
+     */
+    ResponseWrapperSolanaTokenSecurityMetadata,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityMetadataMutable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityMetadataMutable}
+     */
+    ResponseWrapperSolanaTokenSecurityMetadataMutable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityMintable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityMintable}
+     */
+    ResponseWrapperSolanaTokenSecurityMintable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityMonth model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityMonth}
+     */
+    ResponseWrapperSolanaTokenSecurityMonth,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityResult model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityResult}
+     */
+    ResponseWrapperSolanaTokenSecurityResult,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferFee model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferFee}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferFee,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferFeeCurrentFeeRate,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferFeeScheduledFeeRate,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferFeeUpgradable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferHook model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferHook}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferHook,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityTransferHookUpgradable model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityTransferHookUpgradable}
+     */
+    ResponseWrapperSolanaTokenSecurityTransferHookUpgradable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityWeek model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityWeek}
+     */
+    ResponseWrapperSolanaTokenSecurityWeek,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurity model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurity}
+     */
+    ResponseWrapperSuiTokenSecurity,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurityBlacklist model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurityBlacklist}
+     */
+    ResponseWrapperSuiTokenSecurityBlacklist,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurityContractUpgradeable model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurityContractUpgradeable}
+     */
+    ResponseWrapperSuiTokenSecurityContractUpgradeable,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurityMetadataModifiable model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurityMetadataModifiable}
+     */
+    ResponseWrapperSuiTokenSecurityMetadataModifiable,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurityMintable model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurityMintable}
+     */
+    ResponseWrapperSuiTokenSecurityMintable,
+
+    /**
+     * The ResponseWrapperSuiTokenSecurityResult model constructor.
+     * @property {module:model/ResponseWrapperSuiTokenSecurityResult}
+     */
+    ResponseWrapperSuiTokenSecurityResult,
+
+    /**
      * The ResponseWrapperTaTokenSecurityResponse model constructor.
      * @property {module:model/ResponseWrapperTaTokenSecurityResponse}
      */
     ResponseWrapperTaTokenSecurityResponse,
+
+    /**
+     * The ResponseWrapperTokenLockerResponse model constructor.
+     * @property {module:model/ResponseWrapperTokenLockerResponse}
+     */
+    ResponseWrapperTokenLockerResponse,
 
     /**
      * The ResponseWrapperTokenSecurity model constructor.
@@ -497,10 +743,76 @@ export {
     ResponseWrapperobject,
 
     /**
+     * The SolanaAllowanceUpgrade model constructor.
+     * @property {module:model/SolanaAllowanceUpgrade}
+     */
+    SolanaAllowanceUpgrade,
+
+    /**
+     * The SolanaOwnershipChange model constructor.
+     * @property {module:model/SolanaOwnershipChange}
+     */
+    SolanaOwnershipChange,
+
+    /**
+     * The SolanaPrerunTxRequest model constructor.
+     * @property {module:model/SolanaPrerunTxRequest}
+     */
+    SolanaPrerunTxRequest,
+
+    /**
+     * The SolanaPrerunTxResponse model constructor.
+     * @property {module:model/SolanaPrerunTxResponse}
+     */
+    SolanaPrerunTxResponse,
+
+    /**
+     * The SolanaTxAssetChange model constructor.
+     * @property {module:model/SolanaTxAssetChange}
+     */
+    SolanaTxAssetChange,
+
+    /**
+     * The SolanaTxAssetChanges model constructor.
+     * @property {module:model/SolanaTxAssetChanges}
+     */
+    SolanaTxAssetChanges,
+
+    /**
+     * The SolanaTxChangeDetail model constructor.
+     * @property {module:model/SolanaTxChangeDetail}
+     */
+    SolanaTxChangeDetail,
+
+    /**
+     * The SolanaTxSolChange model constructor.
+     * @property {module:model/SolanaTxSolChange}
+     */
+    SolanaTxSolChange,
+
+    /**
+     * The TaNftLockerLockInfoobject model constructor.
+     * @property {module:model/TaNftLockerLockInfoobject}
+     */
+    TaNftLockerLockInfoobject,
+
+    /**
+     * The TaTokenLockerLockInfoobject model constructor.
+     * @property {module:model/TaTokenLockerLockInfoobject}
+     */
+    TaTokenLockerLockInfoobject,
+
+    /**
      * The TaTokenSecurityResponse model constructor.
      * @property {module:model/TaTokenSecurityResponse}
      */
     TaTokenSecurityResponse,
+
+    /**
+     * The TokenLockerResponse model constructor.
+     * @property {module:model/TokenLockerResponse}
+     */
+    TokenLockerResponse,
 
     /**
     * The ApproveControllerV1Api service constructor.
@@ -533,6 +845,12 @@ export {
     DefiControllerApi,
 
     /**
+    * The LockControllerApi service constructor.
+    * @property {module:api/LockControllerApi}
+    */
+    LockControllerApi,
+
+    /**
     * The NftControllerApi service constructor.
     * @property {module:api/NftControllerApi}
     */
@@ -549,6 +867,24 @@ export {
     * @property {module:api/TokenControllerV1Api}
     */
     TokenControllerV1Api,
+
+    /**
+    * The TokenSecurityAPIForSolanaBetaApi service constructor.
+    * @property {module:api/TokenSecurityAPIForSolanaBetaApi}
+    */
+    TokenSecurityAPIForSolanaBetaApi,
+
+    /**
+    * The TokenSecurityAPIForSuiApi service constructor.
+    * @property {module:api/TokenSecurityAPIForSuiApi}
+    */
+    TokenSecurityAPIForSuiApi,
+
+    /**
+    * The TransactionSimulationForSolanaApi service constructor.
+    * @property {module:api/TransactionSimulationForSolanaApi}
+    */
+    TransactionSimulationForSolanaApi,
 
     /**
     * The WebsiteControllerApi service constructor.
