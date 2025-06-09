@@ -13,7 +13,7 @@
  *
  */
 import {ApiClient} from '../ApiClient';
-import {ResponseWrapperTokenSecurityLockedDetail} from './ResponseWrapperTokenSecurityLockedDetail';
+import {ResponseWrapperSolanaTokenSecurityLockedDetail} from './ResponseWrapperSolanaTokenSecurityLockedDetail';
 import {ResponseWrapperTokenSecurityNFTList} from './ResponseWrapperTokenSecurityNFTList';
 
 /**
@@ -51,7 +51,7 @@ export class ResponseWrapperTokenSecurityLpHolders {
       if (data.hasOwnProperty('NFT_list'))
         obj.NFT_list = ApiClient.convertToType(data['NFT_list'], [ResponseWrapperTokenSecurityNFTList]);
       if (data.hasOwnProperty('locked_detail'))
-        obj.locked_detail = ApiClient.convertToType(data['locked_detail'], [ResponseWrapperTokenSecurityLockedDetail]);
+        obj.locked_detail = ApiClient.convertToType(data['locked_detail'], [ResponseWrapperSolanaTokenSecurityLockedDetail]);
       if (data.hasOwnProperty('tag'))
         obj.tag = ApiClient.convertToType(data['tag'], 'String');
       if (data.hasOwnProperty('percent'))
@@ -93,7 +93,7 @@ ResponseWrapperTokenSecurityLpHolders.prototype.NFT_list = undefined;
 
 /**
  * It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)
- * @member {Array.<module:model/ResponseWrapperTokenSecurityLockedDetail>} locked_detail
+ * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityLockedDetail>} locked_detail
  */
 ResponseWrapperTokenSecurityLpHolders.prototype.locked_detail = undefined;
 

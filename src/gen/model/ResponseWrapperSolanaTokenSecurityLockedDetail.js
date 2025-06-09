@@ -15,29 +15,29 @@
 import {ApiClient} from '../ApiClient';
 
 /**
- * The ResponseWrapperTokenSecurityLockedDetail model module.
- * @module model/ResponseWrapperTokenSecurityLockedDetail
+ * The ResponseWrapperSolanaTokenSecurityLockedDetail model module.
+ * @module model/ResponseWrapperSolanaTokenSecurityLockedDetail
  * @version 1.0
  */
-export class ResponseWrapperTokenSecurityLockedDetail {
+export class ResponseWrapperSolanaTokenSecurityLockedDetail {
   /**
-   * Constructs a new <code>ResponseWrapperTokenSecurityLockedDetail</code>.
-   * @alias module:model/ResponseWrapperTokenSecurityLockedDetail
+   * Constructs a new <code>ResponseWrapperSolanaTokenSecurityLockedDetail</code>.
+   * @alias module:model/ResponseWrapperSolanaTokenSecurityLockedDetail
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>ResponseWrapperTokenSecurityLockedDetail</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ResponseWrapperSolanaTokenSecurityLockedDetail</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ResponseWrapperTokenSecurityLockedDetail} obj Optional instance to populate.
-   * @return {module:model/ResponseWrapperTokenSecurityLockedDetail} The populated <code>ResponseWrapperTokenSecurityLockedDetail</code> instance.
+   * @param {module:model/ResponseWrapperSolanaTokenSecurityLockedDetail} obj Optional instance to populate.
+   * @return {module:model/ResponseWrapperSolanaTokenSecurityLockedDetail} The populated <code>ResponseWrapperSolanaTokenSecurityLockedDetail</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new ResponseWrapperTokenSecurityLockedDetail();
+      obj = obj || new ResponseWrapperSolanaTokenSecurityLockedDetail();
       if (data.hasOwnProperty('amount'))
         obj.amount = ApiClient.convertToType(data['amount'], 'String');
       if (data.hasOwnProperty('opt_time'))
@@ -53,17 +53,17 @@ export class ResponseWrapperTokenSecurityLockedDetail {
  * \"amount\" describes the number of token locked
  * @member {String} amount
  */
-ResponseWrapperTokenSecurityLockedDetail.prototype.amount = undefined;
+ResponseWrapperSolanaTokenSecurityLockedDetail.prototype.amount = undefined;
 
 /**
  * \"opt_time\" describes when the token was locked
  * @member {String} opt_time
  */
-ResponseWrapperTokenSecurityLockedDetail.prototype.opt_time = undefined;
+ResponseWrapperSolanaTokenSecurityLockedDetail.prototype.opt_time = undefined;
 
 /**
  * \"end_time\" describes when the token will be unlocked
  * @member {String} end_time
  */
-ResponseWrapperTokenSecurityLockedDetail.prototype.end_time = undefined;
+ResponseWrapperSolanaTokenSecurityLockedDetail.prototype.end_time = undefined;
 
