@@ -73,11 +73,13 @@ import {ResponseWrapperSolanaTokenSecurity} from './model/ResponseWrapperSolanaT
 import {ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority} from './model/ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority';
 import {ResponseWrapperSolanaTokenSecurityClosable} from './model/ResponseWrapperSolanaTokenSecurityClosable';
 import {ResponseWrapperSolanaTokenSecurityClosableAuthority} from './model/ResponseWrapperSolanaTokenSecurityClosableAuthority';
-import {ResponseWrapperSolanaTokenSecurityCreator} from './model/ResponseWrapperSolanaTokenSecurityCreator';
+import {ResponseWrapperSolanaTokenSecurityCreators} from './model/ResponseWrapperSolanaTokenSecurityCreators';
 import {ResponseWrapperSolanaTokenSecurityDay} from './model/ResponseWrapperSolanaTokenSecurityDay';
 import {ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable} from './model/ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable';
 import {ResponseWrapperSolanaTokenSecurityDex} from './model/ResponseWrapperSolanaTokenSecurityDex';
 import {ResponseWrapperSolanaTokenSecurityFreezable} from './model/ResponseWrapperSolanaTokenSecurityFreezable';
+import {ResponseWrapperSolanaTokenSecurityHolders} from './model/ResponseWrapperSolanaTokenSecurityHolders';
+import {ResponseWrapperSolanaTokenSecurityLockedDetail} from './model/ResponseWrapperSolanaTokenSecurityLockedDetail';
 import {ResponseWrapperSolanaTokenSecurityLpHolders} from './model/ResponseWrapperSolanaTokenSecurityLpHolders';
 import {ResponseWrapperSolanaTokenSecurityMetadata} from './model/ResponseWrapperSolanaTokenSecurityMetadata';
 import {ResponseWrapperSolanaTokenSecurityMetadataMutable} from './model/ResponseWrapperSolanaTokenSecurityMetadataMutable';
@@ -103,7 +105,6 @@ import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
 import {ResponseWrapperTokenSecurityFakeToken} from './model/ResponseWrapperTokenSecurityFakeToken';
 import {ResponseWrapperTokenSecurityHolders} from './model/ResponseWrapperTokenSecurityHolders';
-import {ResponseWrapperTokenSecurityLockedDetail} from './model/ResponseWrapperTokenSecurityLockedDetail';
 import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperTokenSecurityLpHolders';
 import {ResponseWrapperTokenSecurityNFTList} from './model/ResponseWrapperTokenSecurityNFTList';
 import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
@@ -533,10 +534,10 @@ export {
     ResponseWrapperSolanaTokenSecurityClosableAuthority,
 
     /**
-     * The ResponseWrapperSolanaTokenSecurityCreator model constructor.
-     * @property {module:model/ResponseWrapperSolanaTokenSecurityCreator}
+     * The ResponseWrapperSolanaTokenSecurityCreators model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityCreators}
      */
-    ResponseWrapperSolanaTokenSecurityCreator,
+    ResponseWrapperSolanaTokenSecurityCreators,
 
     /**
      * The ResponseWrapperSolanaTokenSecurityDay model constructor.
@@ -561,6 +562,18 @@ export {
      * @property {module:model/ResponseWrapperSolanaTokenSecurityFreezable}
      */
     ResponseWrapperSolanaTokenSecurityFreezable,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityHolders model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityHolders}
+     */
+    ResponseWrapperSolanaTokenSecurityHolders,
+
+    /**
+     * The ResponseWrapperSolanaTokenSecurityLockedDetail model constructor.
+     * @property {module:model/ResponseWrapperSolanaTokenSecurityLockedDetail}
+     */
+    ResponseWrapperSolanaTokenSecurityLockedDetail,
 
     /**
      * The ResponseWrapperSolanaTokenSecurityLpHolders model constructor.
@@ -711,12 +724,6 @@ export {
      * @property {module:model/ResponseWrapperTokenSecurityHolders}
      */
     ResponseWrapperTokenSecurityHolders,
-
-    /**
-     * The ResponseWrapperTokenSecurityLockedDetail model constructor.
-     * @property {module:model/ResponseWrapperTokenSecurityLockedDetail}
-     */
-    ResponseWrapperTokenSecurityLockedDetail,
 
     /**
      * The ResponseWrapperTokenSecurityLpHolders model constructor.

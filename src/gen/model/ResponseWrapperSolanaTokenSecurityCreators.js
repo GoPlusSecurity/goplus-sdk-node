@@ -15,29 +15,29 @@
 import {ApiClient} from '../ApiClient';
 
 /**
- * The ResponseWrapperSolanaTokenSecurityCreator model module.
- * @module model/ResponseWrapperSolanaTokenSecurityCreator
+ * The ResponseWrapperSolanaTokenSecurityCreators model module.
+ * @module model/ResponseWrapperSolanaTokenSecurityCreators
  * @version 1.0
  */
-export class ResponseWrapperSolanaTokenSecurityCreator {
+export class ResponseWrapperSolanaTokenSecurityCreators {
   /**
-   * Constructs a new <code>ResponseWrapperSolanaTokenSecurityCreator</code>.
-   * @alias module:model/ResponseWrapperSolanaTokenSecurityCreator
+   * Constructs a new <code>ResponseWrapperSolanaTokenSecurityCreators</code>.
+   * @alias module:model/ResponseWrapperSolanaTokenSecurityCreators
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>ResponseWrapperSolanaTokenSecurityCreator</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ResponseWrapperSolanaTokenSecurityCreators</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ResponseWrapperSolanaTokenSecurityCreator} obj Optional instance to populate.
-   * @return {module:model/ResponseWrapperSolanaTokenSecurityCreator} The populated <code>ResponseWrapperSolanaTokenSecurityCreator</code> instance.
+   * @param {module:model/ResponseWrapperSolanaTokenSecurityCreators} obj Optional instance to populate.
+   * @return {module:model/ResponseWrapperSolanaTokenSecurityCreators} The populated <code>ResponseWrapperSolanaTokenSecurityCreators</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new ResponseWrapperSolanaTokenSecurityCreator();
+      obj = obj || new ResponseWrapperSolanaTokenSecurityCreators();
       if (data.hasOwnProperty('address'))
         obj.address = ApiClient.convertToType(data['address'], 'String');
       if (data.hasOwnProperty('malicious_address'))
@@ -51,11 +51,11 @@ export class ResponseWrapperSolanaTokenSecurityCreator {
  * Address of the creator.
  * @member {String} address
  */
-ResponseWrapperSolanaTokenSecurityCreator.prototype.address = undefined;
+ResponseWrapperSolanaTokenSecurityCreators.prototype.address = undefined;
 
 /**
  * Indicates whether the address is malicious, \"1\" means yes.
  * @member {Number} malicious_address
  */
-ResponseWrapperSolanaTokenSecurityCreator.prototype.malicious_address = undefined;
+ResponseWrapperSolanaTokenSecurityCreators.prototype.malicious_address = undefined;
 

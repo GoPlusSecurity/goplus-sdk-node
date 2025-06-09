@@ -15,10 +15,11 @@
 import {ApiClient} from '../ApiClient';
 import {ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority} from './ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority';
 import {ResponseWrapperSolanaTokenSecurityClosable} from './ResponseWrapperSolanaTokenSecurityClosable';
-import {ResponseWrapperSolanaTokenSecurityCreator} from './ResponseWrapperSolanaTokenSecurityCreator';
+import {ResponseWrapperSolanaTokenSecurityCreators} from './ResponseWrapperSolanaTokenSecurityCreators';
 import {ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable} from './ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable';
 import {ResponseWrapperSolanaTokenSecurityDex} from './ResponseWrapperSolanaTokenSecurityDex';
 import {ResponseWrapperSolanaTokenSecurityFreezable} from './ResponseWrapperSolanaTokenSecurityFreezable';
+import {ResponseWrapperSolanaTokenSecurityHolders} from './ResponseWrapperSolanaTokenSecurityHolders';
 import {ResponseWrapperSolanaTokenSecurityLpHolders} from './ResponseWrapperSolanaTokenSecurityLpHolders';
 import {ResponseWrapperSolanaTokenSecurityMetadata} from './ResponseWrapperSolanaTokenSecurityMetadata';
 import {ResponseWrapperSolanaTokenSecurityMetadataMutable} from './ResponseWrapperSolanaTokenSecurityMetadataMutable';
@@ -55,8 +56,8 @@ export class ResponseWrapperSolanaTokenSecurityResult {
       obj = obj || new ResponseWrapperSolanaTokenSecurityResult();
       if (data.hasOwnProperty('metadata'))
         obj.metadata = ResponseWrapperSolanaTokenSecurityMetadata.constructFromObject(data['metadata']);
-      if (data.hasOwnProperty('creator'))
-        obj.creator = ApiClient.convertToType(data['creator'], [ResponseWrapperSolanaTokenSecurityCreator]);
+      if (data.hasOwnProperty('creators'))
+        obj.creators = ApiClient.convertToType(data['creators'], [ResponseWrapperSolanaTokenSecurityCreators]);
       if (data.hasOwnProperty('lp_holders'))
         obj.lp_holders = ApiClient.convertToType(data['lp_holders'], [ResponseWrapperSolanaTokenSecurityLpHolders]);
       if (data.hasOwnProperty('closable'))
@@ -66,7 +67,7 @@ export class ResponseWrapperSolanaTokenSecurityResult {
       if (data.hasOwnProperty('transfer_hook_upgradable'))
         obj.transfer_hook_upgradable = ResponseWrapperSolanaTokenSecurityTransferHookUpgradable.constructFromObject(data['transfer_hook_upgradable']);
       if (data.hasOwnProperty('trusted_token'))
-        obj.trusted_token = ApiClient.convertToType(data['trusted_token'], 'String');
+        obj.trusted_token = ApiClient.convertToType(data['trusted_token'], 'Number');
       if (data.hasOwnProperty('default_account_state_upgradable'))
         obj.default_account_state_upgradable = ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable.constructFromObject(data['default_account_state_upgradable']);
       if (data.hasOwnProperty('none_transferable'))
@@ -80,7 +81,7 @@ export class ResponseWrapperSolanaTokenSecurityResult {
       if (data.hasOwnProperty('transfer_fee'))
         obj.transfer_fee = ResponseWrapperSolanaTokenSecurityTransferFee.constructFromObject(data['transfer_fee']);
       if (data.hasOwnProperty('holders'))
-        obj.holders = ApiClient.convertToType(data['holders'], [ResponseWrapperSolanaTokenSecurityLpHolders]);
+        obj.holders = ApiClient.convertToType(data['holders'], [ResponseWrapperSolanaTokenSecurityHolders]);
       if (data.hasOwnProperty('freezable'))
         obj.freezable = ResponseWrapperSolanaTokenSecurityFreezable.constructFromObject(data['freezable']);
       if (data.hasOwnProperty('metadata_mutable'))
@@ -101,9 +102,9 @@ ResponseWrapperSolanaTokenSecurityResult.prototype.metadata = undefined;
 
 /**
  * Contains information about the token creators.
- * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityCreator>} creator
+ * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityCreators>} creators
  */
-ResponseWrapperSolanaTokenSecurityResult.prototype.creator = undefined;
+ResponseWrapperSolanaTokenSecurityResult.prototype.creators = undefined;
 
 /**
  * List of top10 liquidity holders and their balances of the largest main token(SOL, USDC, USDT) liquidity pool.
@@ -129,7 +130,7 @@ ResponseWrapperSolanaTokenSecurityResult.prototype.transfer_hook_upgradable = un
 
 /**
  * If the token is a famous and trustworthy one. \"1\" means yes.
- * @member {String} trusted_token
+ * @member {Number} trusted_token
  */
 ResponseWrapperSolanaTokenSecurityResult.prototype.trusted_token = undefined;
 
@@ -167,7 +168,7 @@ ResponseWrapperSolanaTokenSecurityResult.prototype.transfer_fee = undefined;
 
 /**
  * List of top 10 addresses holding the token and their balances.
- * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityLpHolders>} holders
+ * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityHolders>} holders
  */
 ResponseWrapperSolanaTokenSecurityResult.prototype.holders = undefined;
 
