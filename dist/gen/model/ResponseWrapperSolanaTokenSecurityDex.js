@@ -55,6 +55,7 @@ class ResponseWrapperSolanaTokenSecurityDex {
       if (data.hasOwnProperty('type')) obj.type = _ApiClient.ApiClient.convertToType(data['type'], 'String');
       if (data.hasOwnProperty('dex_name')) obj.dex_name = _ApiClient.ApiClient.convertToType(data['dex_name'], 'String');
       if (data.hasOwnProperty('day')) obj.day = _ResponseWrapperSolanaTokenSecurityDay.ResponseWrapperSolanaTokenSecurityDay.constructFromObject(data['day']);
+      if (data.hasOwnProperty('burn_percent')) obj.burn_percent = _ApiClient.ApiClient.convertToType(data['burn_percent'], 'Number');
       if (data.hasOwnProperty('lp_amount')) obj.lp_amount = _ApiClient.ApiClient.convertToType(data['lp_amount'], 'String');
       if (data.hasOwnProperty('fee_rate')) obj.fee_rate = _ApiClient.ApiClient.convertToType(data['fee_rate'], 'String');
     }
@@ -113,6 +114,12 @@ ResponseWrapperSolanaTokenSecurityDex.prototype.dex_name = undefined;
  * @member {module:model/ResponseWrapperSolanaTokenSecurityDay} day
  */
 ResponseWrapperSolanaTokenSecurityDex.prototype.day = undefined;
+
+/**
+ * Percentage of burned LP
+ * @member {Number} burn_percent
+ */
+ResponseWrapperSolanaTokenSecurityDex.prototype.burn_percent = undefined;
 
 /**
  * Total amount of liquidity provider tokens, only shown when type is \"standard\"

@@ -411,10 +411,10 @@ Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityClosableAuthor
     return _ResponseWrapperSolanaTokenSecurityClosableAuthority.ResponseWrapperSolanaTokenSecurityClosableAuthority;
   }
 });
-Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityCreator", {
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityCreators", {
   enumerable: true,
   get: function get() {
-    return _ResponseWrapperSolanaTokenSecurityCreator.ResponseWrapperSolanaTokenSecurityCreator;
+    return _ResponseWrapperSolanaTokenSecurityCreators.ResponseWrapperSolanaTokenSecurityCreators;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityDay", {
@@ -439,6 +439,18 @@ Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityFreezable", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperSolanaTokenSecurityFreezable.ResponseWrapperSolanaTokenSecurityFreezable;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityHolders", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityHolders.ResponseWrapperSolanaTokenSecurityHolders;
+  }
+});
+Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityLockedDetail", {
+  enumerable: true,
+  get: function get() {
+    return _ResponseWrapperSolanaTokenSecurityLockedDetail.ResponseWrapperSolanaTokenSecurityLockedDetail;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperSolanaTokenSecurityLpHolders", {
@@ -589,12 +601,6 @@ Object.defineProperty(exports, "ResponseWrapperTokenSecurityHolders", {
   enumerable: true,
   get: function get() {
     return _ResponseWrapperTokenSecurityHolders.ResponseWrapperTokenSecurityHolders;
-  }
-});
-Object.defineProperty(exports, "ResponseWrapperTokenSecurityLockedDetail", {
-  enumerable: true,
-  get: function get() {
-    return _ResponseWrapperTokenSecurityLockedDetail.ResponseWrapperTokenSecurityLockedDetail;
   }
 });
 Object.defineProperty(exports, "ResponseWrapperTokenSecurityLpHolders", {
@@ -790,11 +796,13 @@ var _ResponseWrapperSolanaTokenSecurity = require("./model/ResponseWrapperSolana
 var _ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority = require("./model/ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority");
 var _ResponseWrapperSolanaTokenSecurityClosable = require("./model/ResponseWrapperSolanaTokenSecurityClosable");
 var _ResponseWrapperSolanaTokenSecurityClosableAuthority = require("./model/ResponseWrapperSolanaTokenSecurityClosableAuthority");
-var _ResponseWrapperSolanaTokenSecurityCreator = require("./model/ResponseWrapperSolanaTokenSecurityCreator");
+var _ResponseWrapperSolanaTokenSecurityCreators = require("./model/ResponseWrapperSolanaTokenSecurityCreators");
 var _ResponseWrapperSolanaTokenSecurityDay = require("./model/ResponseWrapperSolanaTokenSecurityDay");
 var _ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable = require("./model/ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable");
 var _ResponseWrapperSolanaTokenSecurityDex = require("./model/ResponseWrapperSolanaTokenSecurityDex");
 var _ResponseWrapperSolanaTokenSecurityFreezable = require("./model/ResponseWrapperSolanaTokenSecurityFreezable");
+var _ResponseWrapperSolanaTokenSecurityHolders = require("./model/ResponseWrapperSolanaTokenSecurityHolders");
+var _ResponseWrapperSolanaTokenSecurityLockedDetail = require("./model/ResponseWrapperSolanaTokenSecurityLockedDetail");
 var _ResponseWrapperSolanaTokenSecurityLpHolders = require("./model/ResponseWrapperSolanaTokenSecurityLpHolders");
 var _ResponseWrapperSolanaTokenSecurityMetadata = require("./model/ResponseWrapperSolanaTokenSecurityMetadata");
 var _ResponseWrapperSolanaTokenSecurityMetadataMutable = require("./model/ResponseWrapperSolanaTokenSecurityMetadataMutable");
@@ -820,7 +828,6 @@ var _ResponseWrapperTokenSecurity = require("./model/ResponseWrapperTokenSecurit
 var _ResponseWrapperTokenSecurityDex = require("./model/ResponseWrapperTokenSecurityDex");
 var _ResponseWrapperTokenSecurityFakeToken = require("./model/ResponseWrapperTokenSecurityFakeToken");
 var _ResponseWrapperTokenSecurityHolders = require("./model/ResponseWrapperTokenSecurityHolders");
-var _ResponseWrapperTokenSecurityLockedDetail = require("./model/ResponseWrapperTokenSecurityLockedDetail");
 var _ResponseWrapperTokenSecurityLpHolders = require("./model/ResponseWrapperTokenSecurityLpHolders");
 var _ResponseWrapperTokenSecurityNFTList = require("./model/ResponseWrapperTokenSecurityNFTList");
 var _ResponseWrapperTokenSecurityResult = require("./model/ResponseWrapperTokenSecurityResult");

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ResponseWrapperTokenSecurityLpHolders = void 0;
 var _ApiClient = require("../ApiClient");
-var _ResponseWrapperTokenSecurityLockedDetail = require("./ResponseWrapperTokenSecurityLockedDetail");
+var _ResponseWrapperSolanaTokenSecurityLockedDetail = require("./ResponseWrapperSolanaTokenSecurityLockedDetail");
 var _ResponseWrapperTokenSecurityNFTList = require("./ResponseWrapperTokenSecurityNFTList");
 /*
  * GoPlus Security API Document
@@ -50,7 +50,7 @@ class ResponseWrapperTokenSecurityLpHolders {
       if (data.hasOwnProperty('address')) obj.address = _ApiClient.ApiClient.convertToType(data['address'], 'String');
       if (data.hasOwnProperty('balance')) obj.balance = _ApiClient.ApiClient.convertToType(data['balance'], 'String');
       if (data.hasOwnProperty('NFT_list')) obj.NFT_list = _ApiClient.ApiClient.convertToType(data['NFT_list'], [_ResponseWrapperTokenSecurityNFTList.ResponseWrapperTokenSecurityNFTList]);
-      if (data.hasOwnProperty('locked_detail')) obj.locked_detail = _ApiClient.ApiClient.convertToType(data['locked_detail'], [_ResponseWrapperTokenSecurityLockedDetail.ResponseWrapperTokenSecurityLockedDetail]);
+      if (data.hasOwnProperty('locked_detail')) obj.locked_detail = _ApiClient.ApiClient.convertToType(data['locked_detail'], [_ResponseWrapperSolanaTokenSecurityLockedDetail.ResponseWrapperSolanaTokenSecurityLockedDetail]);
       if (data.hasOwnProperty('tag')) obj.tag = _ApiClient.ApiClient.convertToType(data['tag'], 'String');
       if (data.hasOwnProperty('percent')) obj.percent = _ApiClient.ApiClient.convertToType(data['percent'], 'String');
     }
@@ -91,7 +91,7 @@ ResponseWrapperTokenSecurityLpHolders.prototype.NFT_list = undefined;
 
 /**
  * It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)
- * @member {Array.<module:model/ResponseWrapperTokenSecurityLockedDetail>} locked_detail
+ * @member {Array.<module:model/ResponseWrapperSolanaTokenSecurityLockedDetail>} locked_detail
  */
 ResponseWrapperTokenSecurityLpHolders.prototype.locked_detail = undefined;
 
