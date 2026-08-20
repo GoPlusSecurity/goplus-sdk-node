@@ -15,6 +15,8 @@
 import {ApiClient} from './ApiClient';
 import {AbiAddressInfo} from './model/AbiAddressInfo';
 import {AbiParamInfo} from './model/AbiParamInfo';
+import {AddressInfo} from './model/AddressInfo';
+import {AllowanceChange} from './model/AllowanceChange';
 import {ApproveAddressInfo} from './model/ApproveAddressInfo';
 import {ApproveErc1155Result} from './model/ApproveErc1155Result';
 import {ApproveNFT1155ListResponse} from './model/ApproveNFT1155ListResponse';
@@ -27,21 +29,36 @@ import {ContractApproveResponse} from './model/ContractApproveResponse';
 import {Contracts} from './model/Contracts';
 import {ContractsSecurity} from './model/ContractsSecurity';
 import {DappContractSecurityResponse} from './model/DappContractSecurityResponse';
+import {DustAttackDetectionReq} from './model/DustAttackDetectionReq';
+import {ERC20BalanceChange} from './model/ERC20BalanceChange';
+import {ERC20Change} from './model/ERC20Change';
+import {ERC721BalanceChange} from './model/ERC721BalanceChange';
+import {ERC721Change} from './model/ERC721Change';
+import {Flag} from './model/Flag';
 import {GetAccessTokenRequest} from './model/GetAccessTokenRequest';
 import {GetAccessTokenResponse} from './model/GetAccessTokenResponse';
 import {GetDefiInfoResponse} from './model/GetDefiInfoResponse';
 import {GetDefiInfoResponseResult} from './model/GetDefiInfoResponseResult';
 import {GetDefiInfoResponseResultOwner} from './model/GetDefiInfoResponseResultOwner';
 import {JSONObject} from './model/JSONObject';
+import {LogEntry} from './model/LogEntry';
 import {MapStringString} from './model/MapStringString';
+import {NativeBalanceChange} from './model/NativeBalanceChange';
+import {NativeChange} from './model/NativeChange';
 import {NewAllowance} from './model/NewAllowance';
 import {NftLockerResponse} from './model/NftLockerResponse';
+import {OpenScanAddressResp} from './model/OpenScanAddressResp';
+import {PageResponseTaNftLockerLockInfo} from './model/PageResponseTaNftLockerLockInfo';
+import {PageResponseTaTokenLockerLockInfo} from './model/PageResponseTaTokenLockerLockInfo';
+import {PageResponseV4NftLockerLockInfos} from './model/PageResponseV4NftLockerLockInfos';
 import {ParseAbiDataRequest} from './model/ParseAbiDataRequest';
 import {ParseAbiDataResponse} from './model/ParseAbiDataResponse';
 import {ResponseWrapperAddressContract} from './model/ResponseWrapperAddressContract';
 import {ResponseWrapperAddressContractResult} from './model/ResponseWrapperAddressContractResult';
 import {ResponseWrapperContractApproveResponse} from './model/ResponseWrapperContractApproveResponse';
 import {ResponseWrapperDappContractSecurityResponse} from './model/ResponseWrapperDappContractSecurityResponse';
+import {ResponseWrapperDustAttackDetection} from './model/ResponseWrapperDustAttackDetection';
+import {ResponseWrapperDustAttackDetectionResult} from './model/ResponseWrapperDustAttackDetectionResult';
 import {ResponseWrapperGetAccessTokenResponse} from './model/ResponseWrapperGetAccessTokenResponse';
 import {ResponseWrapperGetNftInfo} from './model/ResponseWrapperGetNftInfo';
 import {ResponseWrapperGetNftInfoResult} from './model/ResponseWrapperGetNftInfoResult';
@@ -50,6 +67,17 @@ import {ResponseWrapperGetNftInfoResultPrivilegedMinting} from './model/Response
 import {ResponseWrapperGetNftInfoResultSameNfts} from './model/ResponseWrapperGetNftInfoResultSameNfts';
 import {ResponseWrapperGetNftInfoResultSelfDestruct} from './model/ResponseWrapperGetNftInfoResultSelfDestruct';
 import {ResponseWrapperGetNftInfoResultTransferWithoutApproval} from './model/ResponseWrapperGetNftInfoResultTransferWithoutApproval';
+import {ResponseWrapperGetScanResult} from './model/ResponseWrapperGetScanResult';
+import {ResponseWrapperGetScanResultResult} from './model/ResponseWrapperGetScanResultResult';
+import {ResponseWrapperGetScanResultResultAddressPoisoned} from './model/ResponseWrapperGetScanResultResultAddressPoisoned';
+import {ResponseWrapperGetScanResultResultAddressPoisonedRiskDetail} from './model/ResponseWrapperGetScanResultResultAddressPoisonedRiskDetail';
+import {ResponseWrapperGetScanResultResultApprovalRisk} from './model/ResponseWrapperGetScanResultResultApprovalRisk';
+import {ResponseWrapperGetScanResultResultApprovalRiskErc20Risk} from './model/ResponseWrapperGetScanResultResultApprovalRiskErc20Risk';
+import {ResponseWrapperGetScanResultResultApprovalRiskRiskDetail} from './model/ResponseWrapperGetScanResultResultApprovalRiskRiskDetail';
+import {ResponseWrapperGetScanResultResultStablecoinDepeg} from './model/ResponseWrapperGetScanResultResultStablecoinDepeg';
+import {ResponseWrapperGetScanResultResultStablecoinDepegRiskDetail} from './model/ResponseWrapperGetScanResultResultStablecoinDepegRiskDetail';
+import {ResponseWrapperGetScanResultResultTokenAttention} from './model/ResponseWrapperGetScanResultResultTokenAttention';
+import {ResponseWrapperGetScanResultResultTokenAttentionRiskDetail} from './model/ResponseWrapperGetScanResultResultTokenAttentionRiskDetail';
 import {ResponseWrapperJSONObject} from './model/ResponseWrapperJSONObject';
 import {ResponseWrapperListApproveNFT1155ListResponse} from './model/ResponseWrapperListApproveNFT1155ListResponse';
 import {ResponseWrapperListApproveNFTListResponse} from './model/ResponseWrapperListApproveNFTListResponse';
@@ -59,6 +87,10 @@ import {ResponseWrapperListGetChainsListResult} from './model/ResponseWrapperLis
 import {ResponseWrapperListJSONObject} from './model/ResponseWrapperListJSONObject';
 import {ResponseWrapperMapStringString} from './model/ResponseWrapperMapStringString';
 import {ResponseWrapperNftLockerResponse} from './model/ResponseWrapperNftLockerResponse';
+import {ResponseWrapperOpenScanAddressResp} from './model/ResponseWrapperOpenScanAddressResp';
+import {ResponseWrapperPageResponseTaNftLockerLockInfo} from './model/ResponseWrapperPageResponseTaNftLockerLockInfo';
+import {ResponseWrapperPageResponseTaTokenLockerLockInfo} from './model/ResponseWrapperPageResponseTaTokenLockerLockInfo';
+import {ResponseWrapperPageResponseV4NftLockerLockInfos} from './model/ResponseWrapperPageResponseV4NftLockerLockInfos';
 import {ResponseWrapperParseAbiDataResponse} from './model/ResponseWrapperParseAbiDataResponse';
 import {ResponseWrapperPhishingSite} from './model/ResponseWrapperPhishingSite';
 import {ResponseWrapperPhishingSiteResult} from './model/ResponseWrapperPhishingSiteResult';
@@ -102,13 +134,26 @@ import {ResponseWrapperSuiTokenSecurityResult} from './model/ResponseWrapperSuiT
 import {ResponseWrapperTaTokenSecurityResponse} from './model/ResponseWrapperTaTokenSecurityResponse';
 import {ResponseWrapperTokenLockerResponse} from './model/ResponseWrapperTokenLockerResponse';
 import {ResponseWrapperTokenSecurity} from './model/ResponseWrapperTokenSecurity';
+import {ResponseWrapperTokenSecurityB20Token} from './model/ResponseWrapperTokenSecurityB20Token';
+import {ResponseWrapperTokenSecurityB20TokenB20Info} from './model/ResponseWrapperTokenSecurityB20TokenB20Info';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoBlacklist} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoBlacklist';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoCannotBuy} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoCannotBuy';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoCannotSell} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoCannotSell';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoMetadataModifiable} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoMetadataModifiable';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoMintable} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoMintable';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoOwnerChangeBalance} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoOwnerChangeBalance';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoTransferPausable} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoTransferPausable';
+import {ResponseWrapperTokenSecurityB20TokenB20InfoWhitelist} from './model/ResponseWrapperTokenSecurityB20TokenB20InfoWhitelist';
 import {ResponseWrapperTokenSecurityDex} from './model/ResponseWrapperTokenSecurityDex';
 import {ResponseWrapperTokenSecurityFakeToken} from './model/ResponseWrapperTokenSecurityFakeToken';
 import {ResponseWrapperTokenSecurityHolders} from './model/ResponseWrapperTokenSecurityHolders';
 import {ResponseWrapperTokenSecurityLpHolders} from './model/ResponseWrapperTokenSecurityLpHolders';
 import {ResponseWrapperTokenSecurityNFTList} from './model/ResponseWrapperTokenSecurityNFTList';
 import {ResponseWrapperTokenSecurityResult} from './model/ResponseWrapperTokenSecurityResult';
+import {ResponseWrapperTransactionSecurityResponse} from './model/ResponseWrapperTransactionSecurityResponse';
+import {ResponseWrapperV4LpLockerLockInfoResp} from './model/ResponseWrapperV4LpLockerLockInfoResp';
 import {ResponseWrapperobject} from './model/ResponseWrapperobject';
+import {ResponseWrapperstring} from './model/ResponseWrapperstring';
 import {SolanaAllowanceUpgrade} from './model/SolanaAllowanceUpgrade';
 import {SolanaOwnershipChange} from './model/SolanaOwnershipChange';
 import {SolanaPrerunTxRequest} from './model/SolanaPrerunTxRequest';
@@ -117,10 +162,16 @@ import {SolanaTxAssetChange} from './model/SolanaTxAssetChange';
 import {SolanaTxAssetChanges} from './model/SolanaTxAssetChanges';
 import {SolanaTxChangeDetail} from './model/SolanaTxChangeDetail';
 import {SolanaTxSolChange} from './model/SolanaTxSolChange';
+import {TaNftLockerLockInfo} from './model/TaNftLockerLockInfo';
 import {TaNftLockerLockInfoobject} from './model/TaNftLockerLockInfoobject';
+import {TaTokenLockerLockInfo} from './model/TaTokenLockerLockInfo';
 import {TaTokenLockerLockInfoobject} from './model/TaTokenLockerLockInfoobject';
 import {TaTokenSecurityResponse} from './model/TaTokenSecurityResponse';
 import {TokenLockerResponse} from './model/TokenLockerResponse';
+import {TransactionSecurityRequest} from './model/TransactionSecurityRequest';
+import {TransactionSecurityResponse} from './model/TransactionSecurityResponse';
+import {V4LpLockerLockInfoResp} from './model/V4LpLockerLockInfoResp';
+import {V4NftLockerLockInfos} from './model/V4NftLockerLockInfos';
 import {ApproveControllerV1Api} from './api/ApproveControllerV1Api';
 import {ApproveControllerV2Api} from './api/ApproveControllerV2Api';
 import {ContractAbiControllerApi} from './api/ContractAbiControllerApi';
@@ -128,10 +179,13 @@ import {DappControllerApi} from './api/DappControllerApi';
 import {DefiControllerApi} from './api/DefiControllerApi';
 import {LockControllerApi} from './api/LockControllerApi';
 import {NftControllerApi} from './api/NftControllerApi';
+import {PublicControllerApi} from './api/PublicControllerApi';
+import {SecWareOpenControllerApi} from './api/SecWareOpenControllerApi';
 import {TokenControllerApi} from './api/TokenControllerApi';
 import {TokenControllerV1Api} from './api/TokenControllerV1Api';
 import {TokenSecurityAPIForSolanaBetaApi} from './api/TokenSecurityAPIForSolanaBetaApi';
 import {TokenSecurityAPIForSuiApi} from './api/TokenSecurityAPIForSuiApi';
+import {TransactionSecurityControllerApi} from './api/TransactionSecurityControllerApi';
 import {TransactionSimulationForSolanaApi} from './api/TransactionSimulationForSolanaApi';
 import {WebsiteControllerApi} from './api/WebsiteControllerApi';
 
@@ -184,6 +238,18 @@ export {
      * @property {module:model/AbiParamInfo}
      */
     AbiParamInfo,
+
+    /**
+     * The AddressInfo model constructor.
+     * @property {module:model/AddressInfo}
+     */
+    AddressInfo,
+
+    /**
+     * The AllowanceChange model constructor.
+     * @property {module:model/AllowanceChange}
+     */
+    AllowanceChange,
 
     /**
      * The ApproveAddressInfo model constructor.
@@ -258,6 +324,42 @@ export {
     DappContractSecurityResponse,
 
     /**
+     * The DustAttackDetectionReq model constructor.
+     * @property {module:model/DustAttackDetectionReq}
+     */
+    DustAttackDetectionReq,
+
+    /**
+     * The ERC20BalanceChange model constructor.
+     * @property {module:model/ERC20BalanceChange}
+     */
+    ERC20BalanceChange,
+
+    /**
+     * The ERC20Change model constructor.
+     * @property {module:model/ERC20Change}
+     */
+    ERC20Change,
+
+    /**
+     * The ERC721BalanceChange model constructor.
+     * @property {module:model/ERC721BalanceChange}
+     */
+    ERC721BalanceChange,
+
+    /**
+     * The ERC721Change model constructor.
+     * @property {module:model/ERC721Change}
+     */
+    ERC721Change,
+
+    /**
+     * The Flag model constructor.
+     * @property {module:model/Flag}
+     */
+    Flag,
+
+    /**
      * The GetAccessTokenRequest model constructor.
      * @property {module:model/GetAccessTokenRequest}
      */
@@ -294,10 +396,28 @@ export {
     JSONObject,
 
     /**
+     * The LogEntry model constructor.
+     * @property {module:model/LogEntry}
+     */
+    LogEntry,
+
+    /**
      * The MapStringString model constructor.
      * @property {module:model/MapStringString}
      */
     MapStringString,
+
+    /**
+     * The NativeBalanceChange model constructor.
+     * @property {module:model/NativeBalanceChange}
+     */
+    NativeBalanceChange,
+
+    /**
+     * The NativeChange model constructor.
+     * @property {module:model/NativeChange}
+     */
+    NativeChange,
 
     /**
      * The NewAllowance model constructor.
@@ -310,6 +430,30 @@ export {
      * @property {module:model/NftLockerResponse}
      */
     NftLockerResponse,
+
+    /**
+     * The OpenScanAddressResp model constructor.
+     * @property {module:model/OpenScanAddressResp}
+     */
+    OpenScanAddressResp,
+
+    /**
+     * The PageResponseTaNftLockerLockInfo model constructor.
+     * @property {module:model/PageResponseTaNftLockerLockInfo}
+     */
+    PageResponseTaNftLockerLockInfo,
+
+    /**
+     * The PageResponseTaTokenLockerLockInfo model constructor.
+     * @property {module:model/PageResponseTaTokenLockerLockInfo}
+     */
+    PageResponseTaTokenLockerLockInfo,
+
+    /**
+     * The PageResponseV4NftLockerLockInfos model constructor.
+     * @property {module:model/PageResponseV4NftLockerLockInfos}
+     */
+    PageResponseV4NftLockerLockInfos,
 
     /**
      * The ParseAbiDataRequest model constructor.
@@ -346,6 +490,18 @@ export {
      * @property {module:model/ResponseWrapperDappContractSecurityResponse}
      */
     ResponseWrapperDappContractSecurityResponse,
+
+    /**
+     * The ResponseWrapperDustAttackDetection model constructor.
+     * @property {module:model/ResponseWrapperDustAttackDetection}
+     */
+    ResponseWrapperDustAttackDetection,
+
+    /**
+     * The ResponseWrapperDustAttackDetectionResult model constructor.
+     * @property {module:model/ResponseWrapperDustAttackDetectionResult}
+     */
+    ResponseWrapperDustAttackDetectionResult,
 
     /**
      * The ResponseWrapperGetAccessTokenResponse model constructor.
@@ -394,6 +550,72 @@ export {
      * @property {module:model/ResponseWrapperGetNftInfoResultTransferWithoutApproval}
      */
     ResponseWrapperGetNftInfoResultTransferWithoutApproval,
+
+    /**
+     * The ResponseWrapperGetScanResult model constructor.
+     * @property {module:model/ResponseWrapperGetScanResult}
+     */
+    ResponseWrapperGetScanResult,
+
+    /**
+     * The ResponseWrapperGetScanResultResult model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResult}
+     */
+    ResponseWrapperGetScanResultResult,
+
+    /**
+     * The ResponseWrapperGetScanResultResultAddressPoisoned model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultAddressPoisoned}
+     */
+    ResponseWrapperGetScanResultResultAddressPoisoned,
+
+    /**
+     * The ResponseWrapperGetScanResultResultAddressPoisonedRiskDetail model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultAddressPoisonedRiskDetail}
+     */
+    ResponseWrapperGetScanResultResultAddressPoisonedRiskDetail,
+
+    /**
+     * The ResponseWrapperGetScanResultResultApprovalRisk model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultApprovalRisk}
+     */
+    ResponseWrapperGetScanResultResultApprovalRisk,
+
+    /**
+     * The ResponseWrapperGetScanResultResultApprovalRiskErc20Risk model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultApprovalRiskErc20Risk}
+     */
+    ResponseWrapperGetScanResultResultApprovalRiskErc20Risk,
+
+    /**
+     * The ResponseWrapperGetScanResultResultApprovalRiskRiskDetail model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultApprovalRiskRiskDetail}
+     */
+    ResponseWrapperGetScanResultResultApprovalRiskRiskDetail,
+
+    /**
+     * The ResponseWrapperGetScanResultResultStablecoinDepeg model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultStablecoinDepeg}
+     */
+    ResponseWrapperGetScanResultResultStablecoinDepeg,
+
+    /**
+     * The ResponseWrapperGetScanResultResultStablecoinDepegRiskDetail model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultStablecoinDepegRiskDetail}
+     */
+    ResponseWrapperGetScanResultResultStablecoinDepegRiskDetail,
+
+    /**
+     * The ResponseWrapperGetScanResultResultTokenAttention model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultTokenAttention}
+     */
+    ResponseWrapperGetScanResultResultTokenAttention,
+
+    /**
+     * The ResponseWrapperGetScanResultResultTokenAttentionRiskDetail model constructor.
+     * @property {module:model/ResponseWrapperGetScanResultResultTokenAttentionRiskDetail}
+     */
+    ResponseWrapperGetScanResultResultTokenAttentionRiskDetail,
 
     /**
      * The ResponseWrapperJSONObject model constructor.
@@ -448,6 +670,30 @@ export {
      * @property {module:model/ResponseWrapperNftLockerResponse}
      */
     ResponseWrapperNftLockerResponse,
+
+    /**
+     * The ResponseWrapperOpenScanAddressResp model constructor.
+     * @property {module:model/ResponseWrapperOpenScanAddressResp}
+     */
+    ResponseWrapperOpenScanAddressResp,
+
+    /**
+     * The ResponseWrapperPageResponseTaNftLockerLockInfo model constructor.
+     * @property {module:model/ResponseWrapperPageResponseTaNftLockerLockInfo}
+     */
+    ResponseWrapperPageResponseTaNftLockerLockInfo,
+
+    /**
+     * The ResponseWrapperPageResponseTaTokenLockerLockInfo model constructor.
+     * @property {module:model/ResponseWrapperPageResponseTaTokenLockerLockInfo}
+     */
+    ResponseWrapperPageResponseTaTokenLockerLockInfo,
+
+    /**
+     * The ResponseWrapperPageResponseV4NftLockerLockInfos model constructor.
+     * @property {module:model/ResponseWrapperPageResponseV4NftLockerLockInfos}
+     */
+    ResponseWrapperPageResponseV4NftLockerLockInfos,
 
     /**
      * The ResponseWrapperParseAbiDataResponse model constructor.
@@ -708,6 +954,66 @@ export {
     ResponseWrapperTokenSecurity,
 
     /**
+     * The ResponseWrapperTokenSecurityB20Token model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20Token}
+     */
+    ResponseWrapperTokenSecurityB20Token,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20Info model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20Info}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20Info,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoBlacklist model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoBlacklist}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoBlacklist,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoCannotBuy model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoCannotBuy}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoCannotBuy,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoCannotSell model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoCannotSell}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoCannotSell,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoMetadataModifiable model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoMetadataModifiable}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoMetadataModifiable,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoMintable model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoMintable}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoMintable,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoOwnerChangeBalance model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoOwnerChangeBalance}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoOwnerChangeBalance,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoTransferPausable model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoTransferPausable}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoTransferPausable,
+
+    /**
+     * The ResponseWrapperTokenSecurityB20TokenB20InfoWhitelist model constructor.
+     * @property {module:model/ResponseWrapperTokenSecurityB20TokenB20InfoWhitelist}
+     */
+    ResponseWrapperTokenSecurityB20TokenB20InfoWhitelist,
+
+    /**
      * The ResponseWrapperTokenSecurityDex model constructor.
      * @property {module:model/ResponseWrapperTokenSecurityDex}
      */
@@ -744,10 +1050,28 @@ export {
     ResponseWrapperTokenSecurityResult,
 
     /**
+     * The ResponseWrapperTransactionSecurityResponse model constructor.
+     * @property {module:model/ResponseWrapperTransactionSecurityResponse}
+     */
+    ResponseWrapperTransactionSecurityResponse,
+
+    /**
+     * The ResponseWrapperV4LpLockerLockInfoResp model constructor.
+     * @property {module:model/ResponseWrapperV4LpLockerLockInfoResp}
+     */
+    ResponseWrapperV4LpLockerLockInfoResp,
+
+    /**
      * The ResponseWrapperobject model constructor.
      * @property {module:model/ResponseWrapperobject}
      */
     ResponseWrapperobject,
+
+    /**
+     * The ResponseWrapperstring model constructor.
+     * @property {module:model/ResponseWrapperstring}
+     */
+    ResponseWrapperstring,
 
     /**
      * The SolanaAllowanceUpgrade model constructor.
@@ -798,10 +1122,22 @@ export {
     SolanaTxSolChange,
 
     /**
+     * The TaNftLockerLockInfo model constructor.
+     * @property {module:model/TaNftLockerLockInfo}
+     */
+    TaNftLockerLockInfo,
+
+    /**
      * The TaNftLockerLockInfoobject model constructor.
      * @property {module:model/TaNftLockerLockInfoobject}
      */
     TaNftLockerLockInfoobject,
+
+    /**
+     * The TaTokenLockerLockInfo model constructor.
+     * @property {module:model/TaTokenLockerLockInfo}
+     */
+    TaTokenLockerLockInfo,
 
     /**
      * The TaTokenLockerLockInfoobject model constructor.
@@ -820,6 +1156,30 @@ export {
      * @property {module:model/TokenLockerResponse}
      */
     TokenLockerResponse,
+
+    /**
+     * The TransactionSecurityRequest model constructor.
+     * @property {module:model/TransactionSecurityRequest}
+     */
+    TransactionSecurityRequest,
+
+    /**
+     * The TransactionSecurityResponse model constructor.
+     * @property {module:model/TransactionSecurityResponse}
+     */
+    TransactionSecurityResponse,
+
+    /**
+     * The V4LpLockerLockInfoResp model constructor.
+     * @property {module:model/V4LpLockerLockInfoResp}
+     */
+    V4LpLockerLockInfoResp,
+
+    /**
+     * The V4NftLockerLockInfos model constructor.
+     * @property {module:model/V4NftLockerLockInfos}
+     */
+    V4NftLockerLockInfos,
 
     /**
     * The ApproveControllerV1Api service constructor.
@@ -864,6 +1224,18 @@ export {
     NftControllerApi,
 
     /**
+    * The PublicControllerApi service constructor.
+    * @property {module:api/PublicControllerApi}
+    */
+    PublicControllerApi,
+
+    /**
+    * The SecWareOpenControllerApi service constructor.
+    * @property {module:api/SecWareOpenControllerApi}
+    */
+    SecWareOpenControllerApi,
+
+    /**
     * The TokenControllerApi service constructor.
     * @property {module:api/TokenControllerApi}
     */
@@ -886,6 +1258,12 @@ export {
     * @property {module:api/TokenSecurityAPIForSuiApi}
     */
     TokenSecurityAPIForSuiApi,
+
+    /**
+    * The TransactionSecurityControllerApi service constructor.
+    * @property {module:api/TransactionSecurityControllerApi}
+    */
+    TransactionSecurityControllerApi,
 
     /**
     * The TransactionSimulationForSolanaApi service constructor.
