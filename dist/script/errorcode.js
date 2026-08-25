@@ -23,5 +23,4 @@ const ErrorCode = {
   SERVER_ERROR: 5000,
   PARAM_ERROR: 5006
 };
-var _default = ErrorCode;
-exports.default = _default;
+var _default = exports.default = ErrorCode;

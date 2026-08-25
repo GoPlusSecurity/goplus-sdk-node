@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ResponseWrapperTokenSecurityResult = void 0;
 var _ApiClient = require("../ApiClient");
+var _ResponseWrapperTokenSecurityB20Token = require("./ResponseWrapperTokenSecurityB20Token");
 var _ResponseWrapperTokenSecurityDex = require("./ResponseWrapperTokenSecurityDex");
 var _ResponseWrapperTokenSecurityFakeToken = require("./ResponseWrapperTokenSecurityFakeToken");
 var _ResponseWrapperTokenSecurityHolders = require("./ResponseWrapperTokenSecurityHolders");
@@ -48,6 +49,7 @@ class ResponseWrapperTokenSecurityResult {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new ResponseWrapperTokenSecurityResult();
+      if (data.hasOwnProperty('b20_token')) obj.b20_token = _ResponseWrapperTokenSecurityB20Token.ResponseWrapperTokenSecurityB20Token.constructFromObject(data['b20_token']);
       if (data.hasOwnProperty('note')) obj.note = _ApiClient.ApiClient.convertToType(data['note'], 'String');
       if (data.hasOwnProperty('lp_total_supply')) obj.lp_total_supply = _ApiClient.ApiClient.convertToType(data['lp_total_supply'], 'String');
       if (data.hasOwnProperty('lp_holders')) obj.lp_holders = _ApiClient.ApiClient.convertToType(data['lp_holders'], [_ResponseWrapperTokenSecurityLpHolders.ResponseWrapperTokenSecurityLpHolders]);
@@ -98,10 +100,15 @@ class ResponseWrapperTokenSecurityResult {
 }
 
 /**
+ * @member {module:model/ResponseWrapperTokenSecurityB20Token} b20_token
+ */
+exports.ResponseWrapperTokenSecurityResult = ResponseWrapperTokenSecurityResult;
+ResponseWrapperTokenSecurityResult.prototype.b20_token = undefined;
+
+/**
  * It describes whether the contract has other things investors need to know.  Example:  \"note\": \"Contract owner is a multisign contract.\"(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)
  * @member {String} note
  */
-exports.ResponseWrapperTokenSecurityResult = ResponseWrapperTokenSecurityResult;
 ResponseWrapperTokenSecurityResult.prototype.note = undefined;
 
 /**
