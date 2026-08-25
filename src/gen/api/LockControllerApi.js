@@ -14,7 +14,10 @@
  */
 import {ApiClient} from "../ApiClient";
 import {ResponseWrapperNftLockerResponse} from '../model/ResponseWrapperNftLockerResponse';
+import {ResponseWrapperPageResponseTaNftLockerLockInfo} from '../model/ResponseWrapperPageResponseTaNftLockerLockInfo';
+import {ResponseWrapperPageResponseV4NftLockerLockInfos} from '../model/ResponseWrapperPageResponseV4NftLockerLockInfos';
 import {ResponseWrapperTokenLockerResponse} from '../model/ResponseWrapperTokenLockerResponse';
+import {ResponseWrapperV4LpLockerLockInfoResp} from '../model/ResponseWrapperV4LpLockerLockInfoResp';
 
 /**
 * LockController service.
@@ -35,6 +38,57 @@ export class LockControllerApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+    /**
+     * Callback function to receive the result of the getNftLockerLockInfosListUsingGET operation.
+     * @callback moduleapi/LockControllerApi~getNftLockerLockInfosListUsingGETCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ResponseWrapperPageResponseTaNftLockerLockInfo{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * get lpv3 locker infos
+     * @param {Number} pageNum pageNum
+     * @param {Number} pageSize pageSize
+     * @param {module:api/LockControllerApi~getNftLockerLockInfosListUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    getNftLockerLockInfosListUsingGET(pageNum, pageSize, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getNftLockerLockInfosListUsingGET");
+      }
+      // verify the required parameter 'pageSize' is set
+      if (pageSize === undefined || pageSize === null) {
+        throw new Error("Missing the required parameter 'pageSize' when calling getNftLockerLockInfosListUsingGET");
+      }
+
+      let pathParams = {
+        
+      };
+      let queryParams = {
+        'pageNum': pageNum,'pageSize': pageSize
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['*/*'];
+      let returnType = ResponseWrapperPageResponseTaNftLockerLockInfo;
+
+      return this.apiClient.callApi(
+        '/open/api/v1/locks/lpv3s', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
     /**
      * Callback function to receive the result of the getNftLockersUsingGET operation.
      * @callback moduleapi/LockControllerApi~getNftLockersUsingGETCallback
@@ -157,6 +211,118 @@ export class LockControllerApi {
 
       return this.apiClient.callApi(
         '/open/api/v1/locks/token', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the getV4NftLockerLockInfosListUsingGET operation.
+     * @callback moduleapi/LockControllerApi~getV4NftLockerLockInfosListUsingGETCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ResponseWrapperPageResponseV4NftLockerLockInfos{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * get lpv4 locker infos
+     * @param {Number} pageNum pageNum
+     * @param {Number} pageSize pageSize
+     * @param {module:api/LockControllerApi~getV4NftLockerLockInfosListUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    getV4NftLockerLockInfosListUsingGET(pageNum, pageSize, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getV4NftLockerLockInfosListUsingGET");
+      }
+      // verify the required parameter 'pageSize' is set
+      if (pageSize === undefined || pageSize === null) {
+        throw new Error("Missing the required parameter 'pageSize' when calling getV4NftLockerLockInfosListUsingGET");
+      }
+
+      let pathParams = {
+        
+      };
+      let queryParams = {
+        'pageNum': pageNum,'pageSize': pageSize
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['*/*'];
+      let returnType = ResponseWrapperPageResponseV4NftLockerLockInfos;
+
+      return this.apiClient.callApi(
+        '/open/api/v1/locks/lpv4s', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the getV4NftLockersUsingGET operation.
+     * @callback moduleapi/LockControllerApi~getV4NftLockersUsingGETCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ResponseWrapperV4LpLockerLockInfoResp{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * get v4 nft locker info
+     * @param {String} chainId chainId
+     * @param {Number} pageNum pageNum
+     * @param {Number} pageSize pageSize
+     * @param {String} poolId poolId
+     * @param {module:api/LockControllerApi~getV4NftLockersUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    getV4NftLockersUsingGET(chainId, pageNum, pageSize, poolId, callback) {
+      
+      let postBody = null;
+      // verify the required parameter 'chainId' is set
+      if (chainId === undefined || chainId === null) {
+        throw new Error("Missing the required parameter 'chainId' when calling getV4NftLockersUsingGET");
+      }
+      // verify the required parameter 'pageNum' is set
+      if (pageNum === undefined || pageNum === null) {
+        throw new Error("Missing the required parameter 'pageNum' when calling getV4NftLockersUsingGET");
+      }
+      // verify the required parameter 'pageSize' is set
+      if (pageSize === undefined || pageSize === null) {
+        throw new Error("Missing the required parameter 'pageSize' when calling getV4NftLockersUsingGET");
+      }
+      // verify the required parameter 'poolId' is set
+      if (poolId === undefined || poolId === null) {
+        throw new Error("Missing the required parameter 'poolId' when calling getV4NftLockersUsingGET");
+      }
+
+      let pathParams = {
+        
+      };
+      let queryParams = {
+        'chainId': chainId,'pageNum': pageNum,'pageSize': pageSize,'poolId': poolId
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['*/*'];
+      let returnType = ResponseWrapperV4LpLockerLockInfoResp;
+
+      return this.apiClient.callApi(
+        '/open/api/v1/locks/lpv4', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

@@ -13,6 +13,7 @@
  *
  */
 import {ApiClient} from '../ApiClient';
+import {ResponseWrapperTokenSecurityB20Token} from './ResponseWrapperTokenSecurityB20Token';
 import {ResponseWrapperTokenSecurityDex} from './ResponseWrapperTokenSecurityDex';
 import {ResponseWrapperTokenSecurityFakeToken} from './ResponseWrapperTokenSecurityFakeToken';
 import {ResponseWrapperTokenSecurityHolders} from './ResponseWrapperTokenSecurityHolders';
@@ -43,6 +44,8 @@ export class ResponseWrapperTokenSecurityResult {
   static constructFromObject(data, obj) {
     if (data) {
       obj = obj || new ResponseWrapperTokenSecurityResult();
+      if (data.hasOwnProperty('b20_token'))
+        obj.b20_token = ResponseWrapperTokenSecurityB20Token.constructFromObject(data['b20_token']);
       if (data.hasOwnProperty('note'))
         obj.note = ApiClient.convertToType(data['note'], 'String');
       if (data.hasOwnProperty('lp_total_supply'))
@@ -135,6 +138,11 @@ export class ResponseWrapperTokenSecurityResult {
     return obj;
   }
 }
+
+/**
+ * @member {module:model/ResponseWrapperTokenSecurityB20Token} b20_token
+ */
+ResponseWrapperTokenSecurityResult.prototype.b20_token = undefined;
 
 /**
  * It describes whether the contract has other things investors need to know.  Example:  \"note\": \"Contract owner is a multisign contract.\"(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)
